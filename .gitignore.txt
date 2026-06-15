@@ -1,0 +1,13 @@
+# PsychoPy data
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary PsychoPy files
+*.log

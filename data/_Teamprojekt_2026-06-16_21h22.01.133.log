@@ -1,0 +1,1588 @@
+6.3768 	INFO 	Loaded monitor calibration from ['2026_06_03 14:46']
+6.4013 	WARNING 	User requested fullscreen with size [1280  800], but screen is actually [2560, 1600]. Using actual size
+6.8506 	INFO 	Using renderer 'AMD RadeonT 780M' for graphics
+6.8507 	INFO 	OpenGL version supported by driver is 4..
+6.9016 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001A8DA9E6920>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001A8DA9E6980>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001A8DAB1E650>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([2560, 1600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.9016 	EXP 	window1: backgroundImage = ''
+6.9016 	EXP 	window1: backgroundFit = 'none'
+7.5349 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.5350 	EXP 	window1: recordFrameIntervals = False
+7.6881 	EXP 	window1: recordFrameIntervals = True
+7.8723 	WARNING 	t of last frame was 34.76ms (=1/28)
+8.0110 	EXP 	Screen (0) actual frame rate measured at 90.04Hz
+8.0110 	EXP 	window1: recordFrameIntervals = False
+8.1785 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1787 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1787 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1788 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1788 	EXP 	Teamprojekt: status = STARTED
+8.1820 	EXP 	Created FixationCrossBlank800 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank800', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.1833 	EXP 	Created FixationCrossBlank800 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank800', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.1846 	EXP 	Created FixationCrossBlank800 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank800', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.2890 	EXP 	Created textStartMessage = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='textStartMessage', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.2920 	EXP 	Created ternusObjLeft = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ternusObjLeft', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.2948 	EXP 	Created ternusObjMiddle = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ternusObjMiddle', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.2974 	EXP 	Created ternusObjRight = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ternusObjRight', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.2987 	EXP 	Created FixationCross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCross', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3001 	EXP 	Created portalLeft = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='portalLeft', opacity=1.0, ori=0.0, pos=array([-4.,  2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3020 	EXP 	Created portalRight = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='portalRight', opacity=1.0, ori=0.0, pos=array([4., 2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3037 	EXP 	Created Barrier = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Barrier', opacity=1.0, ori=0.0, pos=array([2., 2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3051 	EXP 	Created FixationCrossBlank = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3082 	EXP 	Created ternusObjLeft_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='ternusObjLeft_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3122 	EXP 	Created ternusObjMiddle_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='ternusObjMiddle_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3155 	EXP 	Created ternusObjRight_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='ternusObjRight_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3171 	EXP 	Created FixationCross_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCross_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3183 	EXP 	Created portalLeft_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='portalLeft_2', opacity=1.0, ori=0.0, pos=array([-4.,  2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3195 	EXP 	Created portalRight_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='portalRight_2', opacity=1.0, ori=0.0, pos=array([4., 2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3207 	EXP 	Created Barrier_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Barrier_2', opacity=1.0, ori=0.0, pos=array([2., 2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3220 	EXP 	Created FixationCrossBlank800 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank800', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3227 	EXP 	Created textBlockInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='textBlockInstructions', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.3303 	EXP 	Created textEnd = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='textEnd', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+0.0030 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0067 	EXP 	FixationCrossBlank800: autoDraw = True
+0.7987 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+0.8094 	EXP 	FixationCrossBlank800: autoDraw = False
+0.8094 	EXP 	FixationCrossBlank800: autoDraw = False
+0.8094 	EXP 	FixationCrossBlank800: autoDraw = True
+1.5985 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+1.6087 	EXP 	FixationCrossBlank800: autoDraw = False
+1.6087 	EXP 	FixationCrossBlank800: autoDraw = False
+1.6087 	EXP 	FixationCrossBlank800: autoDraw = True
+2.3988 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+2.4089 	EXP 	FixationCrossBlank800: autoDraw = False
+2.4089 	EXP 	FixationCrossBlank800: autoDraw = False
+2.4089 	EXP 	FixationCrossBlank800: autoDraw = True
+3.1987 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.2094 	EXP 	FixationCrossBlank800: autoDraw = False
+3.2094 	EXP 	FixationCrossBlank800: autoDraw = False
+3.2094 	EXP 	FixationCrossBlank800: autoDraw = True
+3.9959 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+4.0066 	EXP 	FixationCrossBlank800: autoDraw = False
+4.0066 	EXP 	FixationCrossBlank800: autoDraw = False
+4.0066 	EXP 	FixationCrossBlank800: autoDraw = True
+4.7972 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+4.8069 	EXP 	FixationCrossBlank800: autoDraw = False
+4.8069 	EXP 	FixationCrossBlank800: autoDraw = False
+4.8069 	EXP 	FixationCrossBlank800: autoDraw = True
+5.5956 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+5.6082 	EXP 	FixationCrossBlank800: autoDraw = False
+5.6082 	EXP 	FixationCrossBlank800: autoDraw = False
+5.6082 	EXP 	FixationCrossBlank800: autoDraw = True
+6.4028 	EXP 	Imported practiceLoopConditionsTeamprojekt.xlsx as conditions, 12 conditions, 2 params
+6.4031 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'conditions_practice': 'Barrier', 'ISI_practice': 0.08, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+6.4063 	EXP 	FixationCrossBlank800: autoDraw = False
+6.4063 	EXP 	FixationCrossBlank800: autoDraw = False
+6.4063 	EXP 	FixationCrossBlank800: autoDraw = True
+7.1955 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'conditions_practice': 'Standard', 'ISI_practice': 0.02, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+7.2063 	EXP 	FixationCrossBlank800: autoDraw = False
+7.2063 	EXP 	FixationCrossBlank800: autoDraw = False
+7.2063 	EXP 	FixationCrossBlank800: autoDraw = True
+7.9957 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'conditions_practice': 'Portal', 'ISI_practice': 0.02, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+8.0072 	EXP 	FixationCrossBlank800: autoDraw = False
+8.0072 	EXP 	FixationCrossBlank800: autoDraw = False
+8.0072 	EXP 	FixationCrossBlank800: autoDraw = True
+8.7958 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'conditions_practice': 'Barrier', 'ISI_practice': 0.16, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+8.8062 	EXP 	FixationCrossBlank800: autoDraw = False
+8.8062 	EXP 	FixationCrossBlank800: autoDraw = False
+8.8062 	EXP 	FixationCrossBlank800: autoDraw = True
+9.5963 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'conditions_practice': 'Standard', 'ISI_practice': 0.08, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+9.6071 	EXP 	FixationCrossBlank800: autoDraw = False
+9.6071 	EXP 	FixationCrossBlank800: autoDraw = False
+9.6071 	EXP 	FixationCrossBlank800: autoDraw = True
+10.3953 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'conditions_practice': 'Portal', 'ISI_practice': 0.08, 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+10.4070 	EXP 	FixationCrossBlank800: autoDraw = False
+10.4070 	EXP 	FixationCrossBlank800: autoDraw = False
+10.4070 	EXP 	FixationCrossBlank800: autoDraw = True
+11.1954 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'conditions_practice': 'Standard', 'ISI_practice': 0.16, 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+11.2063 	EXP 	FixationCrossBlank800: autoDraw = False
+11.2063 	EXP 	FixationCrossBlank800: autoDraw = False
+11.2063 	EXP 	FixationCrossBlank800: autoDraw = True
+11.9969 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'conditions_practice': 'Portal', 'ISI_practice': 0.16, 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+12.0060 	EXP 	FixationCrossBlank800: autoDraw = False
+12.0060 	EXP 	FixationCrossBlank800: autoDraw = False
+12.0060 	EXP 	FixationCrossBlank800: autoDraw = True
+12.7966 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'conditions_practice': 'Portal', 'ISI_practice': 0, 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+12.8062 	EXP 	FixationCrossBlank800: autoDraw = False
+12.8062 	EXP 	FixationCrossBlank800: autoDraw = False
+12.8062 	EXP 	FixationCrossBlank800: autoDraw = True
+13.5950 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'conditions_practice': 'Barrier', 'ISI_practice': 0, 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+13.6060 	EXP 	FixationCrossBlank800: autoDraw = False
+13.6060 	EXP 	FixationCrossBlank800: autoDraw = False
+13.6060 	EXP 	FixationCrossBlank800: autoDraw = True
+14.3952 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'conditions_practice': 'Standard', 'ISI_practice': 0, 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+14.4059 	EXP 	FixationCrossBlank800: autoDraw = False
+14.4059 	EXP 	FixationCrossBlank800: autoDraw = False
+14.4059 	EXP 	FixationCrossBlank800: autoDraw = True
+15.1950 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'conditions_practice': 'Barrier', 'ISI_practice': 0.02, 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+15.2062 	EXP 	FixationCrossBlank800: autoDraw = False
+15.2062 	EXP 	FixationCrossBlank800: autoDraw = False
+15.2062 	EXP 	FixationCrossBlank800: autoDraw = True
+16.0062 	EXP 	FixationCrossBlank800: autoDraw = False
+16.0062 	EXP 	FixationCrossBlank800: autoDraw = False
+16.0062 	EXP 	textStartMessage: autoDraw = True
+16.4953 	INFO 	Keyboard events cleared
+28.3321 	EXP 	Device response: <KeyPress from None: t=28.321362999966368, value=space, duration=None>
+28.3324 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+28.3381 	EXP 	Imported trialLoopConditionsTeamprojekt.xlsx as conditions, 18 conditions, 2 params
+28.3385 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'condition': 'Barrier', 'interstim_interval': 0.01, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+28.3444 	DATA 	Keypress: space
+28.3475 	EXP 	textStartMessage: autoDraw = False
+28.3475 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+28.3475 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+28.3475 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+28.3475 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+28.3475 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+28.3475 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+28.3475 	EXP 	ternusObjLeft: autoDraw = True
+28.3475 	EXP 	ternusObjMiddle: autoDraw = True
+28.3475 	EXP 	ternusObjRight: autoDraw = True
+28.3475 	EXP 	FixationCross: autoDraw = True
+28.3475 	EXP 	portalLeft: autoDraw = True
+28.3475 	EXP 	portalRight: autoDraw = True
+28.3475 	EXP 	Barrier: autoDraw = True
+28.4608 	EXP 	Device response: <KeyPress from None: t=28.321362999966368, value=space, duration=0.1300710000214167>
+29.3494 	EXP 	ternusObjLeft: autoDraw = False
+29.3494 	EXP 	ternusObjMiddle: autoDraw = False
+29.3494 	EXP 	ternusObjRight: autoDraw = False
+29.3494 	EXP 	FixationCross: autoDraw = False
+29.3494 	EXP 	portalLeft: autoDraw = False
+29.3494 	EXP 	portalRight: autoDraw = False
+29.3494 	EXP 	Barrier: autoDraw = False
+29.3494 	EXP 	ternusObjLeft: autoDraw = False
+29.3494 	EXP 	ternusObjMiddle: autoDraw = False
+29.3494 	EXP 	ternusObjRight: autoDraw = False
+29.3494 	EXP 	FixationCross: autoDraw = False
+29.3494 	EXP 	portalLeft: autoDraw = False
+29.3494 	EXP 	portalRight: autoDraw = False
+29.3494 	EXP 	Barrier: autoDraw = False
+29.3494 	EXP 	FixationCrossBlank: autoDraw = True
+29.3612 	EXP 	FixationCrossBlank: autoDraw = False
+29.3612 	EXP 	FixationCrossBlank: autoDraw = False
+29.3612 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+29.3612 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+29.3612 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+29.3612 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+29.3612 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+29.3612 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+29.3612 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+29.3612 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+29.3612 	EXP 	ternusObjLeft_2: autoDraw = True
+29.3612 	EXP 	ternusObjMiddle_2: autoDraw = True
+29.3612 	EXP 	ternusObjRight_2: autoDraw = True
+29.3612 	EXP 	FixationCross_2: autoDraw = True
+29.3612 	EXP 	portalLeft_2: autoDraw = True
+29.3612 	EXP 	portalRight_2: autoDraw = True
+29.3612 	EXP 	Barrier_2: autoDraw = True
+30.3504 	INFO 	Keyboard events cleared
+30.3616 	EXP 	ternusObjLeft_2: autoDraw = False
+30.3616 	EXP 	ternusObjMiddle_2: autoDraw = False
+30.3616 	EXP 	ternusObjRight_2: autoDraw = False
+30.3616 	EXP 	portalLeft_2: autoDraw = False
+30.3616 	EXP 	portalRight_2: autoDraw = False
+30.3616 	EXP 	Barrier_2: autoDraw = False
+31.4509 	DATA 	Keypress: f
+31.4614 	EXP 	Device response: <KeyPress from None: t=31.450396200001705, value=f, duration=None>
+31.4726 	EXP 	ternusObjLeft_2: autoDraw = False
+31.4726 	EXP 	ternusObjMiddle_2: autoDraw = False
+31.4726 	EXP 	ternusObjRight_2: autoDraw = False
+31.4726 	EXP 	FixationCross_2: autoDraw = False
+31.4726 	EXP 	portalLeft_2: autoDraw = False
+31.4726 	EXP 	portalRight_2: autoDraw = False
+31.4726 	EXP 	Barrier_2: autoDraw = False
+31.4726 	EXP 	FixationCrossBlank800: autoDraw = True
+31.5831 	EXP 	Device response: <KeyPress from None: t=31.450396200001705, value=f, duration=0.12800029997015372>
+32.2610 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'condition': 'Standard', 'interstim_interval': 0.08, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+32.2725 	EXP 	FixationCrossBlank800: autoDraw = False
+32.2725 	EXP 	FixationCrossBlank800: autoDraw = False
+32.2725 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+32.2725 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+32.2725 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+32.2725 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+32.2725 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+32.2725 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+32.2725 	EXP 	ternusObjLeft: autoDraw = True
+32.2725 	EXP 	ternusObjMiddle: autoDraw = True
+32.2725 	EXP 	ternusObjRight: autoDraw = True
+32.2725 	EXP 	FixationCross: autoDraw = True
+32.2725 	EXP 	portalLeft: autoDraw = True
+32.2725 	EXP 	portalRight: autoDraw = True
+32.2725 	EXP 	Barrier: autoDraw = True
+33.2715 	EXP 	ternusObjLeft: autoDraw = False
+33.2715 	EXP 	ternusObjMiddle: autoDraw = False
+33.2715 	EXP 	ternusObjRight: autoDraw = False
+33.2715 	EXP 	FixationCross: autoDraw = False
+33.2715 	EXP 	portalLeft: autoDraw = False
+33.2715 	EXP 	portalRight: autoDraw = False
+33.2715 	EXP 	Barrier: autoDraw = False
+33.2715 	EXP 	ternusObjLeft: autoDraw = False
+33.2715 	EXP 	ternusObjMiddle: autoDraw = False
+33.2715 	EXP 	ternusObjRight: autoDraw = False
+33.2715 	EXP 	FixationCross: autoDraw = False
+33.2715 	EXP 	portalLeft: autoDraw = False
+33.2715 	EXP 	portalRight: autoDraw = False
+33.2715 	EXP 	Barrier: autoDraw = False
+33.2715 	EXP 	FixationCrossBlank: autoDraw = True
+33.3495 	EXP 	FixationCrossBlank: autoDraw = False
+33.3495 	EXP 	FixationCrossBlank: autoDraw = False
+33.3495 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+33.3495 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+33.3495 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+33.3495 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+33.3495 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+33.3495 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+33.3495 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+33.3495 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+33.3495 	EXP 	ternusObjLeft_2: autoDraw = True
+33.3495 	EXP 	ternusObjMiddle_2: autoDraw = True
+33.3495 	EXP 	ternusObjRight_2: autoDraw = True
+33.3495 	EXP 	FixationCross_2: autoDraw = True
+33.3495 	EXP 	portalLeft_2: autoDraw = True
+33.3495 	EXP 	portalRight_2: autoDraw = True
+33.3495 	EXP 	Barrier_2: autoDraw = True
+34.3390 	INFO 	Keyboard events cleared
+34.3502 	EXP 	ternusObjLeft_2: autoDraw = False
+34.3502 	EXP 	ternusObjMiddle_2: autoDraw = False
+34.3502 	EXP 	ternusObjRight_2: autoDraw = False
+34.3502 	EXP 	portalLeft_2: autoDraw = False
+34.3502 	EXP 	portalRight_2: autoDraw = False
+34.3502 	EXP 	Barrier_2: autoDraw = False
+34.8395 	EXP 	Device response: <KeyPress from None: t=34.82801830000244, value=j, duration=None>
+34.8404 	DATA 	Keypress: j
+34.8492 	EXP 	ternusObjLeft_2: autoDraw = False
+34.8492 	EXP 	ternusObjMiddle_2: autoDraw = False
+34.8492 	EXP 	ternusObjRight_2: autoDraw = False
+34.8492 	EXP 	FixationCross_2: autoDraw = False
+34.8492 	EXP 	portalLeft_2: autoDraw = False
+34.8492 	EXP 	portalRight_2: autoDraw = False
+34.8492 	EXP 	Barrier_2: autoDraw = False
+34.8492 	EXP 	FixationCrossBlank800: autoDraw = True
+34.9504 	EXP 	Device response: <KeyPress from None: t=34.82801830000244, value=j, duration=0.11349459999473765>
+35.6388 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'condition': 'Standard', 'interstim_interval': 0, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+35.6492 	EXP 	FixationCrossBlank800: autoDraw = False
+35.6492 	EXP 	FixationCrossBlank800: autoDraw = False
+35.6492 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+35.6492 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+35.6492 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+35.6492 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+35.6492 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+35.6492 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+35.6492 	EXP 	ternusObjLeft: autoDraw = True
+35.6492 	EXP 	ternusObjMiddle: autoDraw = True
+35.6492 	EXP 	ternusObjRight: autoDraw = True
+35.6492 	EXP 	FixationCross: autoDraw = True
+35.6492 	EXP 	portalLeft: autoDraw = True
+35.6492 	EXP 	portalRight: autoDraw = True
+35.6492 	EXP 	Barrier: autoDraw = True
+36.6491 	EXP 	ternusObjLeft: autoDraw = False
+36.6491 	EXP 	ternusObjMiddle: autoDraw = False
+36.6491 	EXP 	ternusObjRight: autoDraw = False
+36.6491 	EXP 	FixationCross: autoDraw = False
+36.6491 	EXP 	portalLeft: autoDraw = False
+36.6491 	EXP 	portalRight: autoDraw = False
+36.6491 	EXP 	Barrier: autoDraw = False
+36.6491 	EXP 	ternusObjLeft: autoDraw = False
+36.6491 	EXP 	ternusObjMiddle: autoDraw = False
+36.6491 	EXP 	ternusObjRight: autoDraw = False
+36.6491 	EXP 	FixationCross: autoDraw = False
+36.6491 	EXP 	portalLeft: autoDraw = False
+36.6491 	EXP 	portalRight: autoDraw = False
+36.6491 	EXP 	Barrier: autoDraw = False
+36.6491 	EXP 	FixationCrossBlank: autoDraw = True
+36.6491 	EXP 	FixationCrossBlank: autoDraw = False
+36.6491 	EXP 	FixationCrossBlank: autoDraw = False
+36.6491 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+36.6491 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+36.6491 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+36.6491 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+36.6491 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+36.6491 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+36.6491 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+36.6491 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+36.6491 	EXP 	ternusObjLeft_2: autoDraw = True
+36.6491 	EXP 	ternusObjMiddle_2: autoDraw = True
+36.6491 	EXP 	ternusObjRight_2: autoDraw = True
+36.6491 	EXP 	FixationCross_2: autoDraw = True
+36.6491 	EXP 	portalLeft_2: autoDraw = True
+36.6491 	EXP 	portalRight_2: autoDraw = True
+36.6491 	EXP 	Barrier_2: autoDraw = True
+37.6379 	INFO 	Keyboard events cleared
+37.6491 	EXP 	ternusObjLeft_2: autoDraw = False
+37.6491 	EXP 	ternusObjMiddle_2: autoDraw = False
+37.6491 	EXP 	ternusObjRight_2: autoDraw = False
+37.6491 	EXP 	portalLeft_2: autoDraw = False
+37.6491 	EXP 	portalRight_2: autoDraw = False
+37.6491 	EXP 	Barrier_2: autoDraw = False
+38.1167 	EXP 	Device response: <KeyPress from None: t=38.11543689999962, value=f, duration=None>
+38.1175 	DATA 	Keypress: f
+38.1275 	EXP 	ternusObjLeft_2: autoDraw = False
+38.1275 	EXP 	ternusObjMiddle_2: autoDraw = False
+38.1275 	EXP 	ternusObjRight_2: autoDraw = False
+38.1275 	EXP 	FixationCross_2: autoDraw = False
+38.1275 	EXP 	portalLeft_2: autoDraw = False
+38.1275 	EXP 	portalRight_2: autoDraw = False
+38.1275 	EXP 	Barrier_2: autoDraw = False
+38.1275 	EXP 	FixationCrossBlank800: autoDraw = True
+38.2503 	EXP 	Device response: <KeyPress from None: t=38.11543689999962, value=f, duration=0.13264669995987788>
+38.9163 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'condition': 'Barrier', 'interstim_interval': 0.02, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+38.9267 	EXP 	FixationCrossBlank800: autoDraw = False
+38.9267 	EXP 	FixationCrossBlank800: autoDraw = False
+38.9267 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+38.9267 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+38.9267 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+38.9267 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+38.9267 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+38.9267 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+38.9267 	EXP 	ternusObjLeft: autoDraw = True
+38.9267 	EXP 	ternusObjMiddle: autoDraw = True
+38.9267 	EXP 	ternusObjRight: autoDraw = True
+38.9267 	EXP 	FixationCross: autoDraw = True
+38.9267 	EXP 	portalLeft: autoDraw = True
+38.9267 	EXP 	portalRight: autoDraw = True
+38.9267 	EXP 	Barrier: autoDraw = True
+39.9289 	EXP 	ternusObjLeft: autoDraw = False
+39.9289 	EXP 	ternusObjMiddle: autoDraw = False
+39.9289 	EXP 	ternusObjRight: autoDraw = False
+39.9289 	EXP 	FixationCross: autoDraw = False
+39.9289 	EXP 	portalLeft: autoDraw = False
+39.9289 	EXP 	portalRight: autoDraw = False
+39.9289 	EXP 	Barrier: autoDraw = False
+39.9289 	EXP 	ternusObjLeft: autoDraw = False
+39.9289 	EXP 	ternusObjMiddle: autoDraw = False
+39.9289 	EXP 	ternusObjRight: autoDraw = False
+39.9289 	EXP 	FixationCross: autoDraw = False
+39.9289 	EXP 	portalLeft: autoDraw = False
+39.9289 	EXP 	portalRight: autoDraw = False
+39.9289 	EXP 	Barrier: autoDraw = False
+39.9289 	EXP 	FixationCrossBlank: autoDraw = True
+39.9489 	EXP 	FixationCrossBlank: autoDraw = False
+39.9489 	EXP 	FixationCrossBlank: autoDraw = False
+39.9489 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+39.9489 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+39.9489 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+39.9489 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+39.9489 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+39.9489 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+39.9489 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+39.9489 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+39.9489 	EXP 	ternusObjLeft_2: autoDraw = True
+39.9489 	EXP 	ternusObjMiddle_2: autoDraw = True
+39.9489 	EXP 	ternusObjRight_2: autoDraw = True
+39.9489 	EXP 	FixationCross_2: autoDraw = True
+39.9489 	EXP 	portalLeft_2: autoDraw = True
+39.9489 	EXP 	portalRight_2: autoDraw = True
+39.9489 	EXP 	Barrier_2: autoDraw = True
+40.9382 	INFO 	Keyboard events cleared
+40.9495 	EXP 	ternusObjLeft_2: autoDraw = False
+40.9495 	EXP 	ternusObjMiddle_2: autoDraw = False
+40.9495 	EXP 	ternusObjRight_2: autoDraw = False
+40.9495 	EXP 	portalLeft_2: autoDraw = False
+40.9495 	EXP 	portalRight_2: autoDraw = False
+40.9495 	EXP 	Barrier_2: autoDraw = False
+41.9401 	DATA 	Keypress: j
+41.9493 	EXP 	Device response: <KeyPress from None: t=41.93902220000746, value=j, duration=None>
+41.9602 	EXP 	ternusObjLeft_2: autoDraw = False
+41.9602 	EXP 	ternusObjMiddle_2: autoDraw = False
+41.9602 	EXP 	ternusObjRight_2: autoDraw = False
+41.9602 	EXP 	FixationCross_2: autoDraw = False
+41.9602 	EXP 	portalLeft_2: autoDraw = False
+41.9602 	EXP 	portalRight_2: autoDraw = False
+41.9602 	EXP 	Barrier_2: autoDraw = False
+41.9602 	EXP 	FixationCrossBlank800: autoDraw = True
+42.0499 	EXP 	Device response: <KeyPress from None: t=41.93902220000746, value=j, duration=0.10852079995675012>
+42.7501 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'condition': 'Standard', 'interstim_interval': 0.16, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+42.7608 	EXP 	FixationCrossBlank800: autoDraw = False
+42.7608 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+42.7608 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+42.7608 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+42.7608 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+42.7608 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+42.7608 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+42.7608 	EXP 	ternusObjLeft: autoDraw = True
+42.7608 	EXP 	ternusObjMiddle: autoDraw = True
+42.7608 	EXP 	ternusObjRight: autoDraw = True
+42.7608 	EXP 	FixationCross: autoDraw = True
+42.7608 	EXP 	portalLeft: autoDraw = True
+42.7608 	EXP 	portalRight: autoDraw = True
+42.7608 	EXP 	Barrier: autoDraw = True
+43.7611 	EXP 	ternusObjLeft: autoDraw = False
+43.7611 	EXP 	ternusObjMiddle: autoDraw = False
+43.7611 	EXP 	ternusObjRight: autoDraw = False
+43.7611 	EXP 	FixationCross: autoDraw = False
+43.7611 	EXP 	portalLeft: autoDraw = False
+43.7611 	EXP 	portalRight: autoDraw = False
+43.7611 	EXP 	Barrier: autoDraw = False
+43.7611 	EXP 	ternusObjLeft: autoDraw = False
+43.7611 	EXP 	ternusObjMiddle: autoDraw = False
+43.7611 	EXP 	ternusObjRight: autoDraw = False
+43.7611 	EXP 	FixationCross: autoDraw = False
+43.7611 	EXP 	portalLeft: autoDraw = False
+43.7611 	EXP 	portalRight: autoDraw = False
+43.7611 	EXP 	Barrier: autoDraw = False
+43.7611 	EXP 	FixationCrossBlank: autoDraw = True
+43.9154 	EXP 	FixationCrossBlank: autoDraw = False
+43.9154 	EXP 	FixationCrossBlank: autoDraw = False
+43.9154 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+43.9154 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+43.9154 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+43.9154 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+43.9154 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+43.9154 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+43.9154 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+43.9154 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+43.9154 	EXP 	ternusObjLeft_2: autoDraw = True
+43.9154 	EXP 	ternusObjMiddle_2: autoDraw = True
+43.9154 	EXP 	ternusObjRight_2: autoDraw = True
+43.9154 	EXP 	FixationCross_2: autoDraw = True
+43.9154 	EXP 	portalLeft_2: autoDraw = True
+43.9154 	EXP 	portalRight_2: autoDraw = True
+43.9154 	EXP 	Barrier_2: autoDraw = True
+44.9059 	INFO 	Keyboard events cleared
+44.9155 	EXP 	ternusObjLeft_2: autoDraw = False
+44.9155 	EXP 	ternusObjMiddle_2: autoDraw = False
+44.9155 	EXP 	ternusObjRight_2: autoDraw = False
+44.9155 	EXP 	portalLeft_2: autoDraw = False
+44.9155 	EXP 	portalRight_2: autoDraw = False
+44.9155 	EXP 	Barrier_2: autoDraw = False
+46.0835 	EXP 	Device response: <KeyPress from None: t=46.08018920000177, value=f, duration=None>
+46.0846 	DATA 	Keypress: f
+46.0931 	EXP 	ternusObjLeft_2: autoDraw = False
+46.0931 	EXP 	ternusObjMiddle_2: autoDraw = False
+46.0931 	EXP 	ternusObjRight_2: autoDraw = False
+46.0931 	EXP 	FixationCross_2: autoDraw = False
+46.0931 	EXP 	portalLeft_2: autoDraw = False
+46.0931 	EXP 	portalRight_2: autoDraw = False
+46.0931 	EXP 	Barrier_2: autoDraw = False
+46.0931 	EXP 	FixationCrossBlank800: autoDraw = True
+46.2277 	EXP 	Device response: <KeyPress from None: t=46.08018920000177, value=f, duration=0.13631079997867346>
+46.8830 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'condition': 'Portal', 'interstim_interval': 0.08, 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+46.8930 	EXP 	FixationCrossBlank800: autoDraw = False
+46.8930 	EXP 	FixationCrossBlank800: autoDraw = False
+46.8930 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+46.8930 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+46.8930 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+46.8930 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+46.8930 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+46.8930 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+46.8930 	EXP 	ternusObjLeft: autoDraw = True
+46.8930 	EXP 	ternusObjMiddle: autoDraw = True
+46.8930 	EXP 	ternusObjRight: autoDraw = True
+46.8930 	EXP 	FixationCross: autoDraw = True
+46.8930 	EXP 	portalLeft: autoDraw = True
+46.8930 	EXP 	portalRight: autoDraw = True
+46.8930 	EXP 	Barrier: autoDraw = True
+47.8934 	EXP 	ternusObjLeft: autoDraw = False
+47.8934 	EXP 	ternusObjMiddle: autoDraw = False
+47.8934 	EXP 	ternusObjRight: autoDraw = False
+47.8934 	EXP 	FixationCross: autoDraw = False
+47.8934 	EXP 	portalLeft: autoDraw = False
+47.8934 	EXP 	portalRight: autoDraw = False
+47.8934 	EXP 	Barrier: autoDraw = False
+47.8934 	EXP 	ternusObjLeft: autoDraw = False
+47.8934 	EXP 	ternusObjMiddle: autoDraw = False
+47.8934 	EXP 	ternusObjRight: autoDraw = False
+47.8934 	EXP 	FixationCross: autoDraw = False
+47.8934 	EXP 	portalLeft: autoDraw = False
+47.8934 	EXP 	portalRight: autoDraw = False
+47.8934 	EXP 	Barrier: autoDraw = False
+47.8934 	EXP 	FixationCrossBlank: autoDraw = True
+47.9709 	EXP 	FixationCrossBlank: autoDraw = False
+47.9709 	EXP 	FixationCrossBlank: autoDraw = False
+47.9709 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+47.9709 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+47.9709 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+47.9709 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+47.9709 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+47.9709 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+47.9709 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+47.9709 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+47.9709 	EXP 	ternusObjLeft_2: autoDraw = True
+47.9709 	EXP 	ternusObjMiddle_2: autoDraw = True
+47.9709 	EXP 	ternusObjRight_2: autoDraw = True
+47.9709 	EXP 	FixationCross_2: autoDraw = True
+47.9709 	EXP 	portalLeft_2: autoDraw = True
+47.9709 	EXP 	portalRight_2: autoDraw = True
+47.9709 	EXP 	Barrier_2: autoDraw = True
+48.9601 	INFO 	Keyboard events cleared
+48.9710 	EXP 	ternusObjLeft_2: autoDraw = False
+48.9710 	EXP 	ternusObjMiddle_2: autoDraw = False
+48.9710 	EXP 	ternusObjRight_2: autoDraw = False
+48.9710 	EXP 	portalLeft_2: autoDraw = False
+48.9710 	EXP 	portalRight_2: autoDraw = False
+48.9710 	EXP 	Barrier_2: autoDraw = False
+49.7376 	EXP 	Device response: <KeyPress from None: t=49.73284829995828, value=j, duration=None>
+49.7383 	DATA 	Keypress: j
+49.7493 	EXP 	ternusObjLeft_2: autoDraw = False
+49.7493 	EXP 	ternusObjMiddle_2: autoDraw = False
+49.7493 	EXP 	ternusObjRight_2: autoDraw = False
+49.7493 	EXP 	FixationCross_2: autoDraw = False
+49.7493 	EXP 	portalLeft_2: autoDraw = False
+49.7493 	EXP 	portalRight_2: autoDraw = False
+49.7493 	EXP 	Barrier_2: autoDraw = False
+49.7493 	EXP 	FixationCrossBlank800: autoDraw = True
+49.8486 	EXP 	Device response: <KeyPress from None: t=49.73284829995828, value=j, duration=0.11333740002010018>
+50.5390 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'condition': 'Barrier', 'interstim_interval': 0.08, 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+50.5494 	EXP 	FixationCrossBlank800: autoDraw = False
+50.5494 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+50.5494 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+50.5494 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+50.5494 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+50.5494 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+50.5494 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+50.5494 	EXP 	ternusObjLeft: autoDraw = True
+50.5494 	EXP 	ternusObjMiddle: autoDraw = True
+50.5494 	EXP 	ternusObjRight: autoDraw = True
+50.5494 	EXP 	FixationCross: autoDraw = True
+50.5494 	EXP 	portalLeft: autoDraw = True
+50.5494 	EXP 	portalRight: autoDraw = True
+50.5494 	EXP 	Barrier: autoDraw = True
+51.5493 	EXP 	ternusObjLeft: autoDraw = False
+51.5493 	EXP 	ternusObjMiddle: autoDraw = False
+51.5493 	EXP 	ternusObjRight: autoDraw = False
+51.5493 	EXP 	FixationCross: autoDraw = False
+51.5493 	EXP 	portalLeft: autoDraw = False
+51.5493 	EXP 	portalRight: autoDraw = False
+51.5493 	EXP 	Barrier: autoDraw = False
+51.5493 	EXP 	ternusObjLeft: autoDraw = False
+51.5493 	EXP 	ternusObjMiddle: autoDraw = False
+51.5493 	EXP 	ternusObjRight: autoDraw = False
+51.5493 	EXP 	FixationCross: autoDraw = False
+51.5493 	EXP 	portalLeft: autoDraw = False
+51.5493 	EXP 	portalRight: autoDraw = False
+51.5493 	EXP 	Barrier: autoDraw = False
+51.5493 	EXP 	FixationCrossBlank: autoDraw = True
+51.6274 	EXP 	FixationCrossBlank: autoDraw = False
+51.6274 	EXP 	FixationCrossBlank: autoDraw = False
+51.6274 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+51.6274 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+51.6274 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+51.6274 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+51.6274 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+51.6274 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+51.6274 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+51.6274 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+51.6274 	EXP 	ternusObjLeft_2: autoDraw = True
+51.6274 	EXP 	ternusObjMiddle_2: autoDraw = True
+51.6274 	EXP 	ternusObjRight_2: autoDraw = True
+51.6274 	EXP 	FixationCross_2: autoDraw = True
+51.6274 	EXP 	portalLeft_2: autoDraw = True
+51.6274 	EXP 	portalRight_2: autoDraw = True
+51.6274 	EXP 	Barrier_2: autoDraw = True
+52.6150 	INFO 	Keyboard events cleared
+52.6264 	EXP 	ternusObjLeft_2: autoDraw = False
+52.6264 	EXP 	ternusObjMiddle_2: autoDraw = False
+52.6264 	EXP 	ternusObjRight_2: autoDraw = False
+52.6264 	EXP 	portalLeft_2: autoDraw = False
+52.6264 	EXP 	portalRight_2: autoDraw = False
+52.6264 	EXP 	Barrier_2: autoDraw = False
+70.0603 	EXP 	Device response: <KeyPress from None: t=70.05794349999633, value=f, duration=None>
+70.0615 	DATA 	Keypress: f
+70.0697 	EXP 	ternusObjLeft_2: autoDraw = False
+70.0697 	EXP 	ternusObjMiddle_2: autoDraw = False
+70.0697 	EXP 	ternusObjRight_2: autoDraw = False
+70.0697 	EXP 	FixationCross_2: autoDraw = False
+70.0697 	EXP 	portalLeft_2: autoDraw = False
+70.0697 	EXP 	portalRight_2: autoDraw = False
+70.0697 	EXP 	Barrier_2: autoDraw = False
+70.0697 	EXP 	FixationCrossBlank800: autoDraw = True
+70.1366 	EXP 	Device response: <KeyPress from None: t=70.05794349999633, value=f, duration=0.0755568000022322>
+70.8587 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'condition': 'Barrier', 'interstim_interval': 0.16, 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+70.8701 	EXP 	FixationCrossBlank800: autoDraw = False
+70.8701 	EXP 	FixationCrossBlank800: autoDraw = False
+70.8701 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+70.8701 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+70.8701 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+70.8701 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+70.8701 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+70.8701 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+70.8701 	EXP 	ternusObjLeft: autoDraw = True
+70.8701 	EXP 	ternusObjMiddle: autoDraw = True
+70.8701 	EXP 	ternusObjRight: autoDraw = True
+70.8701 	EXP 	FixationCross: autoDraw = True
+70.8701 	EXP 	portalLeft: autoDraw = True
+70.8701 	EXP 	portalRight: autoDraw = True
+70.8701 	EXP 	Barrier: autoDraw = True
+71.8705 	EXP 	ternusObjLeft: autoDraw = False
+71.8705 	EXP 	ternusObjMiddle: autoDraw = False
+71.8705 	EXP 	ternusObjRight: autoDraw = False
+71.8705 	EXP 	FixationCross: autoDraw = False
+71.8705 	EXP 	portalLeft: autoDraw = False
+71.8705 	EXP 	portalRight: autoDraw = False
+71.8705 	EXP 	Barrier: autoDraw = False
+71.8705 	EXP 	ternusObjLeft: autoDraw = False
+71.8705 	EXP 	ternusObjMiddle: autoDraw = False
+71.8705 	EXP 	ternusObjRight: autoDraw = False
+71.8705 	EXP 	FixationCross: autoDraw = False
+71.8705 	EXP 	portalLeft: autoDraw = False
+71.8705 	EXP 	portalRight: autoDraw = False
+71.8705 	EXP 	Barrier: autoDraw = False
+71.8705 	EXP 	FixationCrossBlank: autoDraw = True
+72.0249 	EXP 	FixationCrossBlank: autoDraw = False
+72.0249 	EXP 	FixationCrossBlank: autoDraw = False
+72.0249 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+72.0249 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+72.0249 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+72.0249 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+72.0249 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+72.0249 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+72.0249 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+72.0249 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.79, -0.8, -0.78, 1.0)>
+72.0249 	EXP 	ternusObjLeft_2: autoDraw = True
+72.0249 	EXP 	ternusObjMiddle_2: autoDraw = True
+72.0249 	EXP 	ternusObjRight_2: autoDraw = True
+72.0249 	EXP 	FixationCross_2: autoDraw = True
+72.0249 	EXP 	portalLeft_2: autoDraw = True
+72.0249 	EXP 	portalRight_2: autoDraw = True
+72.0249 	EXP 	Barrier_2: autoDraw = True
+73.0149 	INFO 	Keyboard events cleared
+73.0252 	EXP 	ternusObjLeft_2: autoDraw = False
+73.0252 	EXP 	ternusObjMiddle_2: autoDraw = False
+73.0252 	EXP 	ternusObjRight_2: autoDraw = False
+73.0252 	EXP 	portalLeft_2: autoDraw = False
+73.0252 	EXP 	portalRight_2: autoDraw = False
+73.0252 	EXP 	Barrier_2: autoDraw = False
+94.7027 	DATA 	Keypress: f
+94.7130 	EXP 	Device response: <KeyPress from None: t=94.70203280000715, value=f, duration=None>
+94.7248 	EXP 	ternusObjLeft_2: autoDraw = False
+94.7248 	EXP 	ternusObjMiddle_2: autoDraw = False
+94.7248 	EXP 	ternusObjRight_2: autoDraw = False
+94.7248 	EXP 	FixationCross_2: autoDraw = False
+94.7248 	EXP 	portalLeft_2: autoDraw = False
+94.7248 	EXP 	portalRight_2: autoDraw = False
+94.7248 	EXP 	Barrier_2: autoDraw = False
+94.7248 	EXP 	FixationCrossBlank800: autoDraw = True
+94.7685 	EXP 	Device response: <KeyPress from None: t=94.70203280000715, value=f, duration=0.06546239997260273>
+95.5142 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'condition': 'Portal', 'interstim_interval': 0.16, 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+95.5237 	EXP 	FixationCrossBlank800: autoDraw = False
+95.5237 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+95.5237 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+95.5237 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+95.5237 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+95.5237 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+95.5237 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+95.5237 	EXP 	ternusObjLeft: autoDraw = True
+95.5237 	EXP 	ternusObjMiddle: autoDraw = True
+95.5237 	EXP 	ternusObjRight: autoDraw = True
+95.5237 	EXP 	FixationCross: autoDraw = True
+95.5237 	EXP 	portalLeft: autoDraw = True
+95.5237 	EXP 	portalRight: autoDraw = True
+95.5237 	EXP 	Barrier: autoDraw = True
+96.5250 	EXP 	ternusObjLeft: autoDraw = False
+96.5250 	EXP 	ternusObjMiddle: autoDraw = False
+96.5250 	EXP 	ternusObjRight: autoDraw = False
+96.5250 	EXP 	FixationCross: autoDraw = False
+96.5250 	EXP 	portalLeft: autoDraw = False
+96.5250 	EXP 	portalRight: autoDraw = False
+96.5250 	EXP 	Barrier: autoDraw = False
+96.5250 	EXP 	ternusObjLeft: autoDraw = False
+96.5250 	EXP 	ternusObjMiddle: autoDraw = False
+96.5250 	EXP 	ternusObjRight: autoDraw = False
+96.5250 	EXP 	FixationCross: autoDraw = False
+96.5250 	EXP 	portalLeft: autoDraw = False
+96.5250 	EXP 	portalRight: autoDraw = False
+96.5250 	EXP 	Barrier: autoDraw = False
+96.5250 	EXP 	FixationCrossBlank: autoDraw = True
+96.6792 	EXP 	FixationCrossBlank: autoDraw = False
+96.6792 	EXP 	FixationCrossBlank: autoDraw = False
+96.6792 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+96.6792 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+96.6792 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+96.6792 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+96.6792 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+96.6792 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+96.6792 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+96.6792 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+96.6792 	EXP 	ternusObjLeft_2: autoDraw = True
+96.6792 	EXP 	ternusObjMiddle_2: autoDraw = True
+96.6792 	EXP 	ternusObjRight_2: autoDraw = True
+96.6792 	EXP 	FixationCross_2: autoDraw = True
+96.6792 	EXP 	portalLeft_2: autoDraw = True
+96.6792 	EXP 	portalRight_2: autoDraw = True
+96.6792 	EXP 	Barrier_2: autoDraw = True
+97.6681 	INFO 	Keyboard events cleared
+97.6798 	EXP 	ternusObjLeft_2: autoDraw = False
+97.6798 	EXP 	ternusObjMiddle_2: autoDraw = False
+97.6798 	EXP 	ternusObjRight_2: autoDraw = False
+97.6798 	EXP 	portalLeft_2: autoDraw = False
+97.6798 	EXP 	portalRight_2: autoDraw = False
+97.6798 	EXP 	Barrier_2: autoDraw = False
+98.7017 	EXP 	Device response: <KeyPress from None: t=98.69119069998851, value=j, duration=None>
+98.7023 	DATA 	Keypress: j
+98.7129 	EXP 	ternusObjLeft_2: autoDraw = False
+98.7129 	EXP 	ternusObjMiddle_2: autoDraw = False
+98.7129 	EXP 	ternusObjRight_2: autoDraw = False
+98.7129 	EXP 	FixationCross_2: autoDraw = False
+98.7129 	EXP 	portalLeft_2: autoDraw = False
+98.7129 	EXP 	portalRight_2: autoDraw = False
+98.7129 	EXP 	Barrier_2: autoDraw = False
+98.7129 	EXP 	FixationCrossBlank800: autoDraw = True
+98.8028 	EXP 	Device response: <KeyPress from None: t=98.69119069998851, value=j, duration=0.10244119999697432>
+99.5018 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'condition': 'Standard', 'interstim_interval': 0.02, 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+99.5124 	EXP 	FixationCrossBlank800: autoDraw = False
+99.5124 	EXP 	FixationCrossBlank800: autoDraw = False
+99.5124 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+99.5124 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+99.5124 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+99.5124 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+99.5124 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+99.5124 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+99.5124 	EXP 	ternusObjLeft: autoDraw = True
+99.5124 	EXP 	ternusObjMiddle: autoDraw = True
+99.5124 	EXP 	ternusObjRight: autoDraw = True
+99.5124 	EXP 	FixationCross: autoDraw = True
+99.5124 	EXP 	portalLeft: autoDraw = True
+99.5124 	EXP 	portalRight: autoDraw = True
+99.5124 	EXP 	Barrier: autoDraw = True
+100.5136 	EXP 	ternusObjLeft: autoDraw = False
+100.5136 	EXP 	ternusObjMiddle: autoDraw = False
+100.5136 	EXP 	ternusObjRight: autoDraw = False
+100.5136 	EXP 	FixationCross: autoDraw = False
+100.5136 	EXP 	portalLeft: autoDraw = False
+100.5136 	EXP 	portalRight: autoDraw = False
+100.5136 	EXP 	Barrier: autoDraw = False
+100.5136 	EXP 	ternusObjLeft: autoDraw = False
+100.5136 	EXP 	ternusObjMiddle: autoDraw = False
+100.5136 	EXP 	ternusObjRight: autoDraw = False
+100.5136 	EXP 	FixationCross: autoDraw = False
+100.5136 	EXP 	portalLeft: autoDraw = False
+100.5136 	EXP 	portalRight: autoDraw = False
+100.5136 	EXP 	Barrier: autoDraw = False
+100.5136 	EXP 	FixationCrossBlank: autoDraw = True
+100.5346 	EXP 	FixationCrossBlank: autoDraw = False
+100.5346 	EXP 	FixationCrossBlank: autoDraw = False
+100.5346 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+100.5346 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+100.5346 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+100.5346 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+100.5346 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+100.5346 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+100.5346 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+100.5346 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+100.5346 	EXP 	ternusObjLeft_2: autoDraw = True
+100.5346 	EXP 	ternusObjMiddle_2: autoDraw = True
+100.5346 	EXP 	ternusObjRight_2: autoDraw = True
+100.5346 	EXP 	FixationCross_2: autoDraw = True
+100.5346 	EXP 	portalLeft_2: autoDraw = True
+100.5346 	EXP 	portalRight_2: autoDraw = True
+100.5346 	EXP 	Barrier_2: autoDraw = True
+101.5244 	INFO 	Keyboard events cleared
+101.5353 	EXP 	ternusObjLeft_2: autoDraw = False
+101.5353 	EXP 	ternusObjMiddle_2: autoDraw = False
+101.5353 	EXP 	ternusObjRight_2: autoDraw = False
+101.5353 	EXP 	portalLeft_2: autoDraw = False
+101.5353 	EXP 	portalRight_2: autoDraw = False
+101.5353 	EXP 	Barrier_2: autoDraw = False
+101.8477 	EXP 	Device response: <KeyPress from None: t=101.84722419996979, value=f, duration=None>
+101.8485 	DATA 	Keypress: f
+101.8580 	EXP 	ternusObjLeft_2: autoDraw = False
+101.8580 	EXP 	ternusObjMiddle_2: autoDraw = False
+101.8580 	EXP 	ternusObjRight_2: autoDraw = False
+101.8580 	EXP 	FixationCross_2: autoDraw = False
+101.8580 	EXP 	portalLeft_2: autoDraw = False
+101.8580 	EXP 	portalRight_2: autoDraw = False
+101.8580 	EXP 	Barrier_2: autoDraw = False
+101.8580 	EXP 	FixationCrossBlank800: autoDraw = True
+101.9355 	EXP 	Device response: <KeyPress from None: t=101.84722419996979, value=f, duration=0.0789500999962911>
+102.6461 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'condition': 'Barrier', 'interstim_interval': 0, 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+102.6567 	EXP 	FixationCrossBlank800: autoDraw = False
+102.6567 	EXP 	FixationCrossBlank800: autoDraw = False
+102.6567 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+102.6567 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+102.6567 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+102.6567 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+102.6567 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+102.6567 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+102.6567 	EXP 	ternusObjLeft: autoDraw = True
+102.6567 	EXP 	ternusObjMiddle: autoDraw = True
+102.6567 	EXP 	ternusObjRight: autoDraw = True
+102.6567 	EXP 	FixationCross: autoDraw = True
+102.6567 	EXP 	portalLeft: autoDraw = True
+102.6567 	EXP 	portalRight: autoDraw = True
+102.6567 	EXP 	Barrier: autoDraw = True
+103.6571 	EXP 	ternusObjLeft: autoDraw = False
+103.6571 	EXP 	ternusObjMiddle: autoDraw = False
+103.6571 	EXP 	ternusObjRight: autoDraw = False
+103.6571 	EXP 	FixationCross: autoDraw = False
+103.6571 	EXP 	portalLeft: autoDraw = False
+103.6571 	EXP 	portalRight: autoDraw = False
+103.6571 	EXP 	Barrier: autoDraw = False
+103.6571 	EXP 	ternusObjLeft: autoDraw = False
+103.6571 	EXP 	ternusObjMiddle: autoDraw = False
+103.6571 	EXP 	ternusObjRight: autoDraw = False
+103.6571 	EXP 	FixationCross: autoDraw = False
+103.6571 	EXP 	portalLeft: autoDraw = False
+103.6571 	EXP 	portalRight: autoDraw = False
+103.6571 	EXP 	Barrier: autoDraw = False
+103.6571 	EXP 	FixationCrossBlank: autoDraw = True
+103.6571 	EXP 	FixationCrossBlank: autoDraw = False
+103.6571 	EXP 	FixationCrossBlank: autoDraw = False
+103.6571 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+103.6571 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+103.6571 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+103.6571 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+103.6571 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+103.6571 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+103.6571 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+103.6571 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+103.6571 	EXP 	ternusObjLeft_2: autoDraw = True
+103.6571 	EXP 	ternusObjMiddle_2: autoDraw = True
+103.6571 	EXP 	ternusObjRight_2: autoDraw = True
+103.6571 	EXP 	FixationCross_2: autoDraw = True
+103.6571 	EXP 	portalLeft_2: autoDraw = True
+103.6571 	EXP 	portalRight_2: autoDraw = True
+103.6571 	EXP 	Barrier_2: autoDraw = True
+104.6457 	INFO 	Keyboard events cleared
+104.6567 	EXP 	ternusObjLeft_2: autoDraw = False
+104.6567 	EXP 	ternusObjMiddle_2: autoDraw = False
+104.6567 	EXP 	ternusObjRight_2: autoDraw = False
+104.6567 	EXP 	portalLeft_2: autoDraw = False
+104.6567 	EXP 	portalRight_2: autoDraw = False
+104.6567 	EXP 	Barrier_2: autoDraw = False
+104.9126 	EXP 	Device response: <KeyPress from None: t=104.91216850001365, value=j, duration=None>
+104.9132 	DATA 	Keypress: j
+104.9344 	EXP 	ternusObjLeft_2: autoDraw = False
+104.9344 	EXP 	ternusObjMiddle_2: autoDraw = False
+104.9344 	EXP 	ternusObjRight_2: autoDraw = False
+104.9344 	EXP 	FixationCross_2: autoDraw = False
+104.9344 	EXP 	portalLeft_2: autoDraw = False
+104.9344 	EXP 	portalRight_2: autoDraw = False
+104.9344 	EXP 	Barrier_2: autoDraw = False
+104.9344 	EXP 	FixationCrossBlank800: autoDraw = True
+105.0460 	EXP 	Device response: <KeyPress from None: t=104.91216850001365, value=j, duration=0.13313659996492788>
+105.7236 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'condition': 'Portal', 'interstim_interval': 0.02, 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+105.7343 	EXP 	FixationCrossBlank800: autoDraw = False
+105.7343 	EXP 	FixationCrossBlank800: autoDraw = False
+105.7343 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+105.7343 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+105.7343 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+105.7343 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+105.7343 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+105.7343 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+105.7343 	EXP 	ternusObjLeft: autoDraw = True
+105.7343 	EXP 	ternusObjMiddle: autoDraw = True
+105.7343 	EXP 	ternusObjRight: autoDraw = True
+105.7343 	EXP 	FixationCross: autoDraw = True
+105.7343 	EXP 	portalLeft: autoDraw = True
+105.7343 	EXP 	portalRight: autoDraw = True
+105.7343 	EXP 	Barrier: autoDraw = True
+106.7353 	EXP 	ternusObjLeft: autoDraw = False
+106.7353 	EXP 	ternusObjMiddle: autoDraw = False
+106.7353 	EXP 	ternusObjRight: autoDraw = False
+106.7353 	EXP 	FixationCross: autoDraw = False
+106.7353 	EXP 	portalLeft: autoDraw = False
+106.7353 	EXP 	portalRight: autoDraw = False
+106.7353 	EXP 	Barrier: autoDraw = False
+106.7353 	EXP 	ternusObjLeft: autoDraw = False
+106.7353 	EXP 	ternusObjMiddle: autoDraw = False
+106.7353 	EXP 	ternusObjRight: autoDraw = False
+106.7353 	EXP 	FixationCross: autoDraw = False
+106.7353 	EXP 	portalLeft: autoDraw = False
+106.7353 	EXP 	portalRight: autoDraw = False
+106.7353 	EXP 	Barrier: autoDraw = False
+106.7353 	EXP 	FixationCrossBlank: autoDraw = True
+106.7565 	EXP 	FixationCrossBlank: autoDraw = False
+106.7565 	EXP 	FixationCrossBlank: autoDraw = False
+106.7565 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+106.7565 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+106.7565 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+106.7565 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+106.7565 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+106.7565 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+106.7565 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+106.7565 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+106.7565 	EXP 	ternusObjLeft_2: autoDraw = True
+106.7565 	EXP 	ternusObjMiddle_2: autoDraw = True
+106.7565 	EXP 	ternusObjRight_2: autoDraw = True
+106.7565 	EXP 	FixationCross_2: autoDraw = True
+106.7565 	EXP 	portalLeft_2: autoDraw = True
+106.7565 	EXP 	portalRight_2: autoDraw = True
+106.7565 	EXP 	Barrier_2: autoDraw = True
+107.7461 	INFO 	Keyboard events cleared
+107.7575 	EXP 	ternusObjLeft_2: autoDraw = False
+107.7575 	EXP 	ternusObjMiddle_2: autoDraw = False
+107.7575 	EXP 	ternusObjRight_2: autoDraw = False
+107.7575 	EXP 	portalLeft_2: autoDraw = False
+107.7575 	EXP 	portalRight_2: autoDraw = False
+107.7575 	EXP 	Barrier_2: autoDraw = False
+108.0800 	EXP 	Device response: <KeyPress from None: t=108.07375669997418, value=f, duration=None>
+108.0809 	DATA 	Keypress: f
+108.0904 	EXP 	ternusObjLeft_2: autoDraw = False
+108.0904 	EXP 	ternusObjMiddle_2: autoDraw = False
+108.0904 	EXP 	ternusObjRight_2: autoDraw = False
+108.0904 	EXP 	FixationCross_2: autoDraw = False
+108.0904 	EXP 	portalLeft_2: autoDraw = False
+108.0904 	EXP 	portalRight_2: autoDraw = False
+108.0904 	EXP 	Barrier_2: autoDraw = False
+108.0904 	EXP 	FixationCrossBlank800: autoDraw = True
+108.1901 	EXP 	Device response: <KeyPress from None: t=108.07375669997418, value=f, duration=0.1131042999913916>
+108.8806 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'condition': 'Standard', 'interstim_interval': 0.01, 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+108.8901 	EXP 	FixationCrossBlank800: autoDraw = False
+108.8901 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+108.8901 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+108.8901 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+108.8901 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+108.8901 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+108.8901 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+108.8901 	EXP 	ternusObjLeft: autoDraw = True
+108.8901 	EXP 	ternusObjMiddle: autoDraw = True
+108.8901 	EXP 	ternusObjRight: autoDraw = True
+108.8901 	EXP 	FixationCross: autoDraw = True
+108.8901 	EXP 	portalLeft: autoDraw = True
+108.8901 	EXP 	portalRight: autoDraw = True
+108.8901 	EXP 	Barrier: autoDraw = True
+109.8901 	EXP 	ternusObjLeft: autoDraw = False
+109.8901 	EXP 	ternusObjMiddle: autoDraw = False
+109.8901 	EXP 	ternusObjRight: autoDraw = False
+109.8901 	EXP 	FixationCross: autoDraw = False
+109.8901 	EXP 	portalLeft: autoDraw = False
+109.8901 	EXP 	portalRight: autoDraw = False
+109.8901 	EXP 	Barrier: autoDraw = False
+109.8901 	EXP 	ternusObjLeft: autoDraw = False
+109.8901 	EXP 	ternusObjMiddle: autoDraw = False
+109.8901 	EXP 	ternusObjRight: autoDraw = False
+109.8901 	EXP 	FixationCross: autoDraw = False
+109.8901 	EXP 	portalLeft: autoDraw = False
+109.8901 	EXP 	portalRight: autoDraw = False
+109.8901 	EXP 	Barrier: autoDraw = False
+109.8901 	EXP 	FixationCrossBlank: autoDraw = True
+109.9019 	EXP 	FixationCrossBlank: autoDraw = False
+109.9019 	EXP 	FixationCrossBlank: autoDraw = False
+109.9019 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+109.9019 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+109.9019 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+109.9019 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+109.9019 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+109.9019 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+109.9019 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+109.9019 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+109.9019 	EXP 	ternusObjLeft_2: autoDraw = True
+109.9019 	EXP 	ternusObjMiddle_2: autoDraw = True
+109.9019 	EXP 	ternusObjRight_2: autoDraw = True
+109.9019 	EXP 	FixationCross_2: autoDraw = True
+109.9019 	EXP 	portalLeft_2: autoDraw = True
+109.9019 	EXP 	portalRight_2: autoDraw = True
+109.9019 	EXP 	Barrier_2: autoDraw = True
+110.8905 	INFO 	Keyboard events cleared
+110.9015 	EXP 	ternusObjLeft_2: autoDraw = False
+110.9015 	EXP 	ternusObjMiddle_2: autoDraw = False
+110.9015 	EXP 	ternusObjRight_2: autoDraw = False
+110.9015 	EXP 	portalLeft_2: autoDraw = False
+110.9015 	EXP 	portalRight_2: autoDraw = False
+110.9015 	EXP 	Barrier_2: autoDraw = False
+111.2460 	EXP 	Device response: <KeyPress from None: t=111.23897989996476, value=f, duration=None>
+111.2467 	DATA 	Keypress: f
+111.2568 	EXP 	ternusObjLeft_2: autoDraw = False
+111.2568 	EXP 	ternusObjMiddle_2: autoDraw = False
+111.2568 	EXP 	ternusObjRight_2: autoDraw = False
+111.2568 	EXP 	FixationCross_2: autoDraw = False
+111.2568 	EXP 	portalLeft_2: autoDraw = False
+111.2568 	EXP 	portalRight_2: autoDraw = False
+111.2568 	EXP 	Barrier_2: autoDraw = False
+111.2568 	EXP 	FixationCrossBlank800: autoDraw = True
+111.3676 	EXP 	Device response: <KeyPress from None: t=111.23897989996476, value=f, duration=0.12295059999451041>
+112.0459 	EXP 	New trial (rep=0, index=13): <Trial 13 (13 in rep 0) data={'condition': 'Portal', 'interstim_interval': 0, 'thisN': 13, 'thisTrialN': 13, 'thisRepN': 0}>
+112.0563 	EXP 	FixationCrossBlank800: autoDraw = False
+112.0563 	EXP 	FixationCrossBlank800: autoDraw = False
+112.0563 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+112.0563 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+112.0563 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+112.0563 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+112.0563 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+112.0563 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+112.0563 	EXP 	ternusObjLeft: autoDraw = True
+112.0563 	EXP 	ternusObjMiddle: autoDraw = True
+112.0563 	EXP 	ternusObjRight: autoDraw = True
+112.0563 	EXP 	FixationCross: autoDraw = True
+112.0563 	EXP 	portalLeft: autoDraw = True
+112.0563 	EXP 	portalRight: autoDraw = True
+112.0563 	EXP 	Barrier: autoDraw = True
+113.0562 	EXP 	ternusObjLeft: autoDraw = False
+113.0562 	EXP 	ternusObjMiddle: autoDraw = False
+113.0562 	EXP 	ternusObjRight: autoDraw = False
+113.0562 	EXP 	FixationCross: autoDraw = False
+113.0562 	EXP 	portalLeft: autoDraw = False
+113.0562 	EXP 	portalRight: autoDraw = False
+113.0562 	EXP 	Barrier: autoDraw = False
+113.0562 	EXP 	ternusObjLeft: autoDraw = False
+113.0562 	EXP 	ternusObjMiddle: autoDraw = False
+113.0562 	EXP 	ternusObjRight: autoDraw = False
+113.0562 	EXP 	FixationCross: autoDraw = False
+113.0562 	EXP 	portalLeft: autoDraw = False
+113.0562 	EXP 	portalRight: autoDraw = False
+113.0562 	EXP 	Barrier: autoDraw = False
+113.0562 	EXP 	FixationCrossBlank: autoDraw = True
+113.0562 	EXP 	FixationCrossBlank: autoDraw = False
+113.0562 	EXP 	FixationCrossBlank: autoDraw = False
+113.0562 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+113.0562 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+113.0562 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+113.0562 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+113.0562 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+113.0562 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+113.0562 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+113.0562 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+113.0562 	EXP 	ternusObjLeft_2: autoDraw = True
+113.0562 	EXP 	ternusObjMiddle_2: autoDraw = True
+113.0562 	EXP 	ternusObjRight_2: autoDraw = True
+113.0562 	EXP 	FixationCross_2: autoDraw = True
+113.0562 	EXP 	portalLeft_2: autoDraw = True
+113.0562 	EXP 	portalRight_2: autoDraw = True
+113.0562 	EXP 	Barrier_2: autoDraw = True
+114.0454 	INFO 	Keyboard events cleared
+114.0562 	EXP 	ternusObjLeft_2: autoDraw = False
+114.0562 	EXP 	ternusObjMiddle_2: autoDraw = False
+114.0562 	EXP 	ternusObjRight_2: autoDraw = False
+114.0562 	EXP 	portalLeft_2: autoDraw = False
+114.0562 	EXP 	portalRight_2: autoDraw = False
+114.0562 	EXP 	Barrier_2: autoDraw = False
+114.3015 	DATA 	Keypress: j
+114.3128 	EXP 	Device response: <KeyPress from None: t=114.30051589995855, value=j, duration=None>
+114.3237 	EXP 	ternusObjLeft_2: autoDraw = False
+114.3237 	EXP 	ternusObjMiddle_2: autoDraw = False
+114.3237 	EXP 	ternusObjRight_2: autoDraw = False
+114.3237 	EXP 	FixationCross_2: autoDraw = False
+114.3237 	EXP 	portalLeft_2: autoDraw = False
+114.3237 	EXP 	portalRight_2: autoDraw = False
+114.3237 	EXP 	Barrier_2: autoDraw = False
+114.3237 	EXP 	FixationCrossBlank800: autoDraw = True
+114.4229 	EXP 	Device response: <KeyPress from None: t=114.30051589995855, value=j, duration=0.11692470003617927>
+115.1121 	EXP 	New trial (rep=0, index=14): <Trial 14 (14 in rep 0) data={'condition': 'Portal', 'interstim_interval': 0.04, 'thisN': 14, 'thisTrialN': 14, 'thisRepN': 0}>
+115.1227 	EXP 	FixationCrossBlank800: autoDraw = False
+115.1227 	EXP 	FixationCrossBlank800: autoDraw = False
+115.1227 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+115.1227 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+115.1227 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+115.1227 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+115.1227 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+115.1227 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+115.1227 	EXP 	ternusObjLeft: autoDraw = True
+115.1227 	EXP 	ternusObjMiddle: autoDraw = True
+115.1227 	EXP 	ternusObjRight: autoDraw = True
+115.1227 	EXP 	FixationCross: autoDraw = True
+115.1227 	EXP 	portalLeft: autoDraw = True
+115.1227 	EXP 	portalRight: autoDraw = True
+115.1227 	EXP 	Barrier: autoDraw = True
+116.1235 	EXP 	ternusObjLeft: autoDraw = False
+116.1235 	EXP 	ternusObjMiddle: autoDraw = False
+116.1235 	EXP 	ternusObjRight: autoDraw = False
+116.1235 	EXP 	FixationCross: autoDraw = False
+116.1235 	EXP 	portalLeft: autoDraw = False
+116.1235 	EXP 	portalRight: autoDraw = False
+116.1235 	EXP 	Barrier: autoDraw = False
+116.1235 	EXP 	ternusObjLeft: autoDraw = False
+116.1235 	EXP 	ternusObjMiddle: autoDraw = False
+116.1235 	EXP 	ternusObjRight: autoDraw = False
+116.1235 	EXP 	FixationCross: autoDraw = False
+116.1235 	EXP 	portalLeft: autoDraw = False
+116.1235 	EXP 	portalRight: autoDraw = False
+116.1235 	EXP 	Barrier: autoDraw = False
+116.1235 	EXP 	FixationCrossBlank: autoDraw = True
+116.1671 	EXP 	FixationCrossBlank: autoDraw = False
+116.1671 	EXP 	FixationCrossBlank: autoDraw = False
+116.1671 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+116.1671 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+116.1671 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+116.1671 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+116.1671 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+116.1671 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+116.1671 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+116.1671 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (-0.57, -0.01, 0.44, 1.0)>
+116.1671 	EXP 	ternusObjLeft_2: autoDraw = True
+116.1671 	EXP 	ternusObjMiddle_2: autoDraw = True
+116.1671 	EXP 	ternusObjRight_2: autoDraw = True
+116.1671 	EXP 	FixationCross_2: autoDraw = True
+116.1671 	EXP 	portalLeft_2: autoDraw = True
+116.1671 	EXP 	portalRight_2: autoDraw = True
+116.1671 	EXP 	Barrier_2: autoDraw = True
+117.1565 	INFO 	Keyboard events cleared
+117.1682 	EXP 	ternusObjLeft_2: autoDraw = False
+117.1682 	EXP 	ternusObjMiddle_2: autoDraw = False
+117.1682 	EXP 	ternusObjRight_2: autoDraw = False
+117.1682 	EXP 	portalLeft_2: autoDraw = False
+117.1682 	EXP 	portalRight_2: autoDraw = False
+117.1682 	EXP 	Barrier_2: autoDraw = False
+117.4451 	EXP 	Device response: <KeyPress from None: t=117.44102819997352, value=f, duration=None>
+117.4459 	DATA 	Keypress: f
+117.4568 	EXP 	ternusObjLeft_2: autoDraw = False
+117.4568 	EXP 	ternusObjMiddle_2: autoDraw = False
+117.4568 	EXP 	ternusObjRight_2: autoDraw = False
+117.4568 	EXP 	FixationCross_2: autoDraw = False
+117.4568 	EXP 	portalLeft_2: autoDraw = False
+117.4568 	EXP 	portalRight_2: autoDraw = False
+117.4568 	EXP 	Barrier_2: autoDraw = False
+117.4568 	EXP 	FixationCrossBlank800: autoDraw = True
+117.5795 	EXP 	Device response: <KeyPress from None: t=117.44102819997352, value=f, duration=0.12772600003518164>
+118.2458 	EXP 	New trial (rep=0, index=15): <Trial 15 (15 in rep 0) data={'condition': 'Standard', 'interstim_interval': 0.04, 'thisN': 15, 'thisTrialN': 15, 'thisRepN': 0}>
+118.2559 	EXP 	FixationCrossBlank800: autoDraw = False
+118.2559 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+118.2559 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+118.2559 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+118.2559 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+118.2559 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+118.2559 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+118.2559 	EXP 	ternusObjLeft: autoDraw = True
+118.2559 	EXP 	ternusObjMiddle: autoDraw = True
+118.2559 	EXP 	ternusObjRight: autoDraw = True
+118.2559 	EXP 	FixationCross: autoDraw = True
+118.2559 	EXP 	portalLeft: autoDraw = True
+118.2559 	EXP 	portalRight: autoDraw = True
+118.2559 	EXP 	Barrier: autoDraw = True
+119.2567 	EXP 	ternusObjLeft: autoDraw = False
+119.2567 	EXP 	ternusObjMiddle: autoDraw = False
+119.2567 	EXP 	ternusObjRight: autoDraw = False
+119.2567 	EXP 	FixationCross: autoDraw = False
+119.2567 	EXP 	portalLeft: autoDraw = False
+119.2567 	EXP 	portalRight: autoDraw = False
+119.2567 	EXP 	Barrier: autoDraw = False
+119.2567 	EXP 	ternusObjLeft: autoDraw = False
+119.2567 	EXP 	ternusObjMiddle: autoDraw = False
+119.2567 	EXP 	ternusObjRight: autoDraw = False
+119.2567 	EXP 	FixationCross: autoDraw = False
+119.2567 	EXP 	portalLeft: autoDraw = False
+119.2567 	EXP 	portalRight: autoDraw = False
+119.2567 	EXP 	Barrier: autoDraw = False
+119.2567 	EXP 	FixationCrossBlank: autoDraw = True
+119.3006 	EXP 	FixationCrossBlank: autoDraw = False
+119.3006 	EXP 	FixationCrossBlank: autoDraw = False
+119.3006 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+119.3006 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+119.3006 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+119.3006 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+119.3006 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+119.3006 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+119.3006 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+119.3006 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.3, -0.33, -0.69, 1.0)>
+119.3006 	EXP 	ternusObjLeft_2: autoDraw = True
+119.3006 	EXP 	ternusObjMiddle_2: autoDraw = True
+119.3006 	EXP 	ternusObjRight_2: autoDraw = True
+119.3006 	EXP 	FixationCross_2: autoDraw = True
+119.3006 	EXP 	portalLeft_2: autoDraw = True
+119.3006 	EXP 	portalRight_2: autoDraw = True
+119.3006 	EXP 	Barrier_2: autoDraw = True
+120.2892 	INFO 	Keyboard events cleared
+120.3004 	EXP 	ternusObjLeft_2: autoDraw = False
+120.3004 	EXP 	ternusObjMiddle_2: autoDraw = False
+120.3004 	EXP 	ternusObjRight_2: autoDraw = False
+120.3004 	EXP 	portalLeft_2: autoDraw = False
+120.3004 	EXP 	portalRight_2: autoDraw = False
+120.3004 	EXP 	Barrier_2: autoDraw = False
+120.5004 	EXP 	Device response: <KeyPress from None: t=120.49533599999268, value=j, duration=None>
+120.5011 	DATA 	Keypress: j
+120.5122 	EXP 	ternusObjLeft_2: autoDraw = False
+120.5122 	EXP 	ternusObjMiddle_2: autoDraw = False
+120.5122 	EXP 	ternusObjRight_2: autoDraw = False
+120.5122 	EXP 	FixationCross_2: autoDraw = False
+120.5122 	EXP 	portalLeft_2: autoDraw = False
+120.5122 	EXP 	portalRight_2: autoDraw = False
+120.5122 	EXP 	Barrier_2: autoDraw = False
+120.5122 	EXP 	FixationCrossBlank800: autoDraw = True
+120.6227 	EXP 	Device response: <KeyPress from None: t=120.49533599999268, value=j, duration=0.12499290000414476>
+121.3012 	EXP 	New trial (rep=0, index=16): <Trial 16 (16 in rep 0) data={'condition': 'Portal', 'interstim_interval': 0.01, 'thisN': 16, 'thisTrialN': 16, 'thisRepN': 0}>
+121.3118 	EXP 	FixationCrossBlank800: autoDraw = False
+121.3118 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+121.3118 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+121.3118 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+121.3118 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+121.3118 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+121.3118 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+121.3118 	EXP 	ternusObjLeft: autoDraw = True
+121.3118 	EXP 	ternusObjMiddle: autoDraw = True
+121.3118 	EXP 	ternusObjRight: autoDraw = True
+121.3118 	EXP 	FixationCross: autoDraw = True
+121.3118 	EXP 	portalLeft: autoDraw = True
+121.3118 	EXP 	portalRight: autoDraw = True
+121.3118 	EXP 	Barrier: autoDraw = True
+122.3123 	EXP 	ternusObjLeft: autoDraw = False
+122.3123 	EXP 	ternusObjMiddle: autoDraw = False
+122.3123 	EXP 	ternusObjRight: autoDraw = False
+122.3123 	EXP 	FixationCross: autoDraw = False
+122.3123 	EXP 	portalLeft: autoDraw = False
+122.3123 	EXP 	portalRight: autoDraw = False
+122.3123 	EXP 	Barrier: autoDraw = False
+122.3123 	EXP 	ternusObjLeft: autoDraw = False
+122.3123 	EXP 	ternusObjMiddle: autoDraw = False
+122.3123 	EXP 	ternusObjRight: autoDraw = False
+122.3123 	EXP 	FixationCross: autoDraw = False
+122.3123 	EXP 	portalLeft: autoDraw = False
+122.3123 	EXP 	portalRight: autoDraw = False
+122.3123 	EXP 	Barrier: autoDraw = False
+122.3123 	EXP 	FixationCrossBlank: autoDraw = True
+122.3223 	EXP 	FixationCrossBlank: autoDraw = False
+122.3223 	EXP 	FixationCrossBlank: autoDraw = False
+122.3223 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+122.3223 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+122.3223 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+122.3223 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+122.3223 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+122.3223 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+122.3223 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+122.3223 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+122.3223 	EXP 	ternusObjLeft_2: autoDraw = True
+122.3223 	EXP 	ternusObjMiddle_2: autoDraw = True
+122.3223 	EXP 	ternusObjRight_2: autoDraw = True
+122.3223 	EXP 	FixationCross_2: autoDraw = True
+122.3223 	EXP 	portalLeft_2: autoDraw = True
+122.3223 	EXP 	portalRight_2: autoDraw = True
+122.3223 	EXP 	Barrier_2: autoDraw = True
+123.3114 	INFO 	Keyboard events cleared
+123.3231 	EXP 	ternusObjLeft_2: autoDraw = False
+123.3231 	EXP 	ternusObjMiddle_2: autoDraw = False
+123.3231 	EXP 	ternusObjRight_2: autoDraw = False
+123.3231 	EXP 	portalLeft_2: autoDraw = False
+123.3231 	EXP 	portalRight_2: autoDraw = False
+123.3231 	EXP 	Barrier_2: autoDraw = False
+123.5783 	EXP 	Device response: <KeyPress from None: t=123.57433559995843, value=f, duration=None>
+123.5791 	DATA 	Keypress: f
+123.5895 	EXP 	ternusObjLeft_2: autoDraw = False
+123.5895 	EXP 	ternusObjMiddle_2: autoDraw = False
+123.5895 	EXP 	ternusObjRight_2: autoDraw = False
+123.5895 	EXP 	FixationCross_2: autoDraw = False
+123.5895 	EXP 	portalLeft_2: autoDraw = False
+123.5895 	EXP 	portalRight_2: autoDraw = False
+123.5895 	EXP 	Barrier_2: autoDraw = False
+123.5895 	EXP 	FixationCrossBlank800: autoDraw = True
+123.6894 	EXP 	Device response: <KeyPress from None: t=123.57433559995843, value=f, duration=0.10496150003746152>
+124.3788 	EXP 	New trial (rep=0, index=17): <Trial 17 (17 in rep 0) data={'condition': 'Barrier', 'interstim_interval': 0.04, 'thisN': 17, 'thisTrialN': 17, 'thisRepN': 0}>
+124.3889 	EXP 	FixationCrossBlank800: autoDraw = False
+124.3889 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+124.3889 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+124.3889 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+124.3889 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+124.3889 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+124.3889 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+124.3889 	EXP 	ternusObjLeft: autoDraw = True
+124.3889 	EXP 	ternusObjMiddle: autoDraw = True
+124.3889 	EXP 	ternusObjRight: autoDraw = True
+124.3889 	EXP 	FixationCross: autoDraw = True
+124.3889 	EXP 	portalLeft: autoDraw = True
+124.3889 	EXP 	portalRight: autoDraw = True
+124.3889 	EXP 	Barrier: autoDraw = True
+125.3891 	EXP 	ternusObjLeft: autoDraw = False
+125.3891 	EXP 	ternusObjMiddle: autoDraw = False
+125.3891 	EXP 	ternusObjRight: autoDraw = False
+125.3891 	EXP 	FixationCross: autoDraw = False
+125.3891 	EXP 	portalLeft: autoDraw = False
+125.3891 	EXP 	portalRight: autoDraw = False
+125.3891 	EXP 	Barrier: autoDraw = False
+125.3891 	EXP 	ternusObjLeft: autoDraw = False
+125.3891 	EXP 	ternusObjMiddle: autoDraw = False
+125.3891 	EXP 	ternusObjRight: autoDraw = False
+125.3891 	EXP 	FixationCross: autoDraw = False
+125.3891 	EXP 	portalLeft: autoDraw = False
+125.3891 	EXP 	portalRight: autoDraw = False
+125.3891 	EXP 	Barrier: autoDraw = False
+125.3891 	EXP 	FixationCrossBlank: autoDraw = True
+125.4231 	EXP 	FixationCrossBlank: autoDraw = False
+125.4231 	EXP 	FixationCrossBlank: autoDraw = False
+125.4231 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+125.4231 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+125.4231 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+125.4231 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+125.4231 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+125.4231 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+125.4231 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+125.4231 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (1.0, -0.0, -1.0, 1.0)>
+125.4231 	EXP 	ternusObjLeft_2: autoDraw = True
+125.4231 	EXP 	ternusObjMiddle_2: autoDraw = True
+125.4231 	EXP 	ternusObjRight_2: autoDraw = True
+125.4231 	EXP 	FixationCross_2: autoDraw = True
+125.4231 	EXP 	portalLeft_2: autoDraw = True
+125.4231 	EXP 	portalRight_2: autoDraw = True
+125.4231 	EXP 	Barrier_2: autoDraw = True
+126.4121 	INFO 	Keyboard events cleared
+126.4237 	EXP 	ternusObjLeft_2: autoDraw = False
+126.4237 	EXP 	ternusObjMiddle_2: autoDraw = False
+126.4237 	EXP 	ternusObjRight_2: autoDraw = False
+126.4237 	EXP 	portalLeft_2: autoDraw = False
+126.4237 	EXP 	portalRight_2: autoDraw = False
+126.4237 	EXP 	Barrier_2: autoDraw = False
+126.7891 	EXP 	Device response: <KeyPress from None: t=126.78838139999425, value=j, duration=None>
+126.7899 	DATA 	Keypress: j
+126.8011 	EXP 	ternusObjLeft_2: autoDraw = False
+126.8011 	EXP 	ternusObjMiddle_2: autoDraw = False
+126.8011 	EXP 	ternusObjRight_2: autoDraw = False
+126.8011 	EXP 	FixationCross_2: autoDraw = False
+126.8011 	EXP 	portalLeft_2: autoDraw = False
+126.8011 	EXP 	portalRight_2: autoDraw = False
+126.8011 	EXP 	Barrier_2: autoDraw = False
+126.8011 	EXP 	FixationCrossBlank800: autoDraw = True
+126.8902 	EXP 	Device response: <KeyPress from None: t=126.78838139999425, value=j, duration=0.09101480001118034>
+127.6074 	INFO 	Keyboard events cleared
+127.6073 	EXP 	FixationCrossBlank800: autoDraw = False
+127.6073 	EXP 	textBlockInstructions: height = 0.025
+127.6073 	EXP 	textBlockInstructions: height = 0.025
+127.6073 	EXP 	textBlockInstructions: height = 0.025
+127.6073 	EXP 	textBlockInstructions: text = "Sehr gut! Du hast Block 1 von 10 abgeschlossen.\n\nMach gerne eine kurze Pause.\n\nBitte drücke die 'F'-Taste, wenn sich die Elemente unabhängig voneinander bewegen (Elementbewegung), und die 'J'-Taste, wenn sich die Elemente gemeinsam  bewegen (Gruppenbewegung).\n\nDrücke die Leertaste, um mit dem nächsten Block fortzufahren."
+127.6073 	EXP 	textBlockInstructions: autoDraw = True
+128.5672 	EXP 	Device response: <KeyPress from None: t=128.55790740001248, value=space, duration=None>
+128.5674 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+128.5733 	EXP 	Imported trialLoopConditionsTeamprojekt.xlsx as conditions, 18 conditions, 2 params
+128.5737 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'condition': 'Standard', 'interstim_interval': 0.02, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+128.5793 	DATA 	Keypress: space
+128.5820 	EXP 	textBlockInstructions: autoDraw = False
+128.5820 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+128.5820 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+128.5820 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+128.5820 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+128.5820 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+128.5820 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+128.5820 	EXP 	ternusObjLeft: autoDraw = True
+128.5820 	EXP 	ternusObjMiddle: autoDraw = True
+128.5820 	EXP 	ternusObjRight: autoDraw = True
+128.5820 	EXP 	FixationCross: autoDraw = True
+128.5820 	EXP 	portalLeft: autoDraw = True
+128.5820 	EXP 	portalRight: autoDraw = True
+128.5820 	EXP 	Barrier: autoDraw = True
+128.6889 	EXP 	Device response: <KeyPress from None: t=128.55790740001248, value=space, duration=0.12941729999147356>
+129.5776 	EXP 	ternusObjLeft: autoDraw = False
+129.5776 	EXP 	ternusObjMiddle: autoDraw = False
+129.5776 	EXP 	ternusObjRight: autoDraw = False
+129.5776 	EXP 	FixationCross: autoDraw = False
+129.5776 	EXP 	portalLeft: autoDraw = False
+129.5776 	EXP 	portalRight: autoDraw = False
+129.5776 	EXP 	Barrier: autoDraw = False
+129.5776 	EXP 	ternusObjLeft: autoDraw = False
+129.5776 	EXP 	ternusObjMiddle: autoDraw = False
+129.5776 	EXP 	ternusObjRight: autoDraw = False
+129.5776 	EXP 	FixationCross: autoDraw = False
+129.5776 	EXP 	portalLeft: autoDraw = False
+129.5776 	EXP 	portalRight: autoDraw = False
+129.5776 	EXP 	Barrier: autoDraw = False
+129.5776 	EXP 	FixationCrossBlank: autoDraw = True
+129.5998 	EXP 	FixationCrossBlank: autoDraw = False
+129.5998 	EXP 	FixationCrossBlank: autoDraw = False
+129.5998 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+129.5998 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+129.5998 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+129.5998 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+129.5998 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+129.5998 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+129.5998 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+129.5998 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (-0.4, 0.37, -0.42, 1.0)>
+129.5998 	EXP 	ternusObjLeft_2: autoDraw = True
+129.5998 	EXP 	ternusObjMiddle_2: autoDraw = True
+129.5998 	EXP 	ternusObjRight_2: autoDraw = True
+129.5998 	EXP 	FixationCross_2: autoDraw = True
+129.5998 	EXP 	portalLeft_2: autoDraw = True
+129.5998 	EXP 	portalRight_2: autoDraw = True
+129.5998 	EXP 	Barrier_2: autoDraw = True
+130.5906 	INFO 	Keyboard events cleared
+130.5919 	DATA 	Keypress: f
+130.6006 	EXP 	ternusObjLeft_2: autoDraw = False
+130.6006 	EXP 	ternusObjMiddle_2: autoDraw = False
+130.6006 	EXP 	ternusObjRight_2: autoDraw = False
+130.6006 	EXP 	portalLeft_2: autoDraw = False
+130.6006 	EXP 	portalRight_2: autoDraw = False
+130.6006 	EXP 	Barrier_2: autoDraw = False
+130.6009 	EXP 	Device response: <KeyPress from None: t=130.5910493999836, value=f, duration=None>
+130.6111 	EXP 	ternusObjLeft_2: autoDraw = False
+130.6111 	EXP 	ternusObjMiddle_2: autoDraw = False
+130.6111 	EXP 	ternusObjRight_2: autoDraw = False
+130.6111 	EXP 	FixationCross_2: autoDraw = False
+130.6111 	EXP 	portalLeft_2: autoDraw = False
+130.6111 	EXP 	portalRight_2: autoDraw = False
+130.6111 	EXP 	Barrier_2: autoDraw = False
+130.6111 	EXP 	FixationCrossBlank800: autoDraw = True
+130.7444 	EXP 	Device response: <KeyPress from None: t=130.5910493999836, value=f, duration=0.1469470000010915>
+131.4014 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'condition': 'Portal', 'interstim_interval': 0.02, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+131.4108 	EXP 	FixationCrossBlank800: autoDraw = False
+131.4108 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+131.4108 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+131.4108 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+131.4108 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+131.4108 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+131.4108 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+131.4108 	EXP 	ternusObjLeft: autoDraw = True
+131.4108 	EXP 	ternusObjMiddle: autoDraw = True
+131.4108 	EXP 	ternusObjRight: autoDraw = True
+131.4108 	EXP 	FixationCross: autoDraw = True
+131.4108 	EXP 	portalLeft: autoDraw = True
+131.4108 	EXP 	portalRight: autoDraw = True
+131.4108 	EXP 	Barrier: autoDraw = True
+131.4789 	EXP 	Device response: <KeyPress from None: t=131.47428849997232, value=f, duration=None>
+131.4801 	DATA 	Keypress: f
+131.5795 	EXP 	Device response: <KeyPress from None: t=131.47428849997232, value=f, duration=0.10171040002023801>
+132.4114 	EXP 	ternusObjLeft: autoDraw = False
+132.4114 	EXP 	ternusObjMiddle: autoDraw = False
+132.4114 	EXP 	ternusObjRight: autoDraw = False
+132.4114 	EXP 	FixationCross: autoDraw = False
+132.4114 	EXP 	portalLeft: autoDraw = False
+132.4114 	EXP 	portalRight: autoDraw = False
+132.4114 	EXP 	Barrier: autoDraw = False
+132.4114 	EXP 	ternusObjLeft: autoDraw = False
+132.4114 	EXP 	ternusObjMiddle: autoDraw = False
+132.4114 	EXP 	ternusObjRight: autoDraw = False
+132.4114 	EXP 	FixationCross: autoDraw = False
+132.4114 	EXP 	portalLeft: autoDraw = False
+132.4114 	EXP 	portalRight: autoDraw = False
+132.4114 	EXP 	Barrier: autoDraw = False
+132.4114 	EXP 	FixationCrossBlank: autoDraw = True
+132.4331 	EXP 	FixationCrossBlank: autoDraw = False
+132.4331 	EXP 	FixationCrossBlank: autoDraw = False
+132.4331 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+132.4331 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+132.4331 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+132.4331 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+132.4331 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+132.4331 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+132.4331 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+132.4331 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.94, 0.01, 0.5, 1.0)>
+132.4331 	EXP 	ternusObjLeft_2: autoDraw = True
+132.4331 	EXP 	ternusObjMiddle_2: autoDraw = True
+132.4331 	EXP 	ternusObjRight_2: autoDraw = True
+132.4331 	EXP 	FixationCross_2: autoDraw = True
+132.4331 	EXP 	portalLeft_2: autoDraw = True
+132.4331 	EXP 	portalRight_2: autoDraw = True
+132.4331 	EXP 	Barrier_2: autoDraw = True
+132.7024 	EXP 	Device response: <KeyPress from None: t=132.69422229996417, value=f, duration=None>
+132.7035 	DATA 	Keypress: f
+132.8564 	EXP 	Device response: <KeyPress from None: t=132.69422229996417, value=f, duration=0.1544763999991119>
+133.4227 	INFO 	Keyboard events cleared
+133.4335 	EXP 	ternusObjLeft_2: autoDraw = False
+133.4335 	EXP 	ternusObjMiddle_2: autoDraw = False
+133.4335 	EXP 	ternusObjRight_2: autoDraw = False
+133.4335 	EXP 	portalLeft_2: autoDraw = False
+133.4335 	EXP 	portalRight_2: autoDraw = False
+133.4335 	EXP 	Barrier_2: autoDraw = False
+133.8013 	EXP 	Device response: <KeyPress from None: t=133.7935081999749, value=f, duration=None>
+133.8026 	DATA 	Keypress: f
+133.8108 	EXP 	ternusObjLeft_2: autoDraw = False
+133.8108 	EXP 	ternusObjMiddle_2: autoDraw = False
+133.8108 	EXP 	ternusObjRight_2: autoDraw = False
+133.8108 	EXP 	FixationCross_2: autoDraw = False
+133.8108 	EXP 	portalLeft_2: autoDraw = False
+133.8108 	EXP 	portalRight_2: autoDraw = False
+133.8108 	EXP 	Barrier_2: autoDraw = False
+133.8108 	EXP 	FixationCrossBlank800: autoDraw = True
+133.8998 	EXP 	Device response: <KeyPress from None: t=133.7935081999749, value=f, duration=0.09714570001233369>
+134.5997 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'condition': 'Barrier', 'interstim_interval': 0.01, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+134.6106 	EXP 	FixationCrossBlank800: autoDraw = False
+134.6106 	EXP 	FixationCrossBlank800: autoDraw = False
+134.6106 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+134.6106 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+134.6106 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+134.6106 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+134.6106 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+134.6106 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+134.6106 	EXP 	ternusObjLeft: autoDraw = True
+134.6106 	EXP 	ternusObjMiddle: autoDraw = True
+134.6106 	EXP 	ternusObjRight: autoDraw = True
+134.6106 	EXP 	FixationCross: autoDraw = True
+134.6106 	EXP 	portalLeft: autoDraw = True
+134.6106 	EXP 	portalRight: autoDraw = True
+134.6106 	EXP 	Barrier: autoDraw = True
+135.6108 	EXP 	ternusObjLeft: autoDraw = False
+135.6108 	EXP 	ternusObjMiddle: autoDraw = False
+135.6108 	EXP 	ternusObjRight: autoDraw = False
+135.6108 	EXP 	FixationCross: autoDraw = False
+135.6108 	EXP 	portalLeft: autoDraw = False
+135.6108 	EXP 	portalRight: autoDraw = False
+135.6108 	EXP 	Barrier: autoDraw = False
+135.6108 	EXP 	ternusObjLeft: autoDraw = False
+135.6108 	EXP 	ternusObjMiddle: autoDraw = False
+135.6108 	EXP 	ternusObjRight: autoDraw = False
+135.6108 	EXP 	FixationCross: autoDraw = False
+135.6108 	EXP 	portalLeft: autoDraw = False
+135.6108 	EXP 	portalRight: autoDraw = False
+135.6108 	EXP 	Barrier: autoDraw = False
+135.6108 	EXP 	FixationCrossBlank: autoDraw = True
+135.6216 	EXP 	FixationCrossBlank: autoDraw = False
+135.6216 	EXP 	FixationCrossBlank: autoDraw = False
+135.6216 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+135.6216 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+135.6216 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+135.6216 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+135.6216 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+135.6216 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+135.6216 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+135.6216 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (-0.79, 0.24, -0.07, 1.0)>
+135.6216 	EXP 	ternusObjLeft_2: autoDraw = True
+135.6216 	EXP 	ternusObjMiddle_2: autoDraw = True
+135.6216 	EXP 	ternusObjRight_2: autoDraw = True
+135.6216 	EXP 	FixationCross_2: autoDraw = True
+135.6216 	EXP 	portalLeft_2: autoDraw = True
+135.6216 	EXP 	portalRight_2: autoDraw = True
+135.6216 	EXP 	Barrier_2: autoDraw = True
+136.6107 	INFO 	Keyboard events cleared
+136.6236 	EXP 	ternusObjLeft_2: autoDraw = False
+136.6236 	EXP 	ternusObjMiddle_2: autoDraw = False
+136.6236 	EXP 	ternusObjRight_2: autoDraw = False
+136.6236 	EXP 	portalLeft_2: autoDraw = False
+136.6236 	EXP 	portalRight_2: autoDraw = False
+136.6236 	EXP 	Barrier_2: autoDraw = False
+137.5671 	EXP 	Device response: <KeyPress from None: t=137.5575547000044, value=j, duration=None>
+137.5678 	DATA 	Keypress: j
+137.5778 	EXP 	ternusObjLeft_2: autoDraw = False
+137.5778 	EXP 	ternusObjMiddle_2: autoDraw = False
+137.5778 	EXP 	ternusObjRight_2: autoDraw = False
+137.5778 	EXP 	FixationCross_2: autoDraw = False
+137.5778 	EXP 	portalLeft_2: autoDraw = False
+137.5778 	EXP 	portalRight_2: autoDraw = False
+137.5778 	EXP 	Barrier_2: autoDraw = False
+137.5778 	EXP 	FixationCrossBlank800: autoDraw = True
+137.6999 	EXP 	Device response: <KeyPress from None: t=137.5575547000044, value=j, duration=0.14152459998149425>
+138.3676 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'condition': 'Barrier', 'interstim_interval': 0.16, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+138.3771 	EXP 	FixationCrossBlank800: autoDraw = False
+138.3771 	EXP 	portalLeft: fillColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+138.3771 	EXP 	portalLeft: borderColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+138.3771 	EXP 	portalRight: fillColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+138.3771 	EXP 	portalRight: borderColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+138.3771 	EXP 	Barrier: fillColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+138.3771 	EXP 	Barrier: borderColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+138.3771 	EXP 	ternusObjLeft: autoDraw = True
+138.3771 	EXP 	ternusObjMiddle: autoDraw = True
+138.3771 	EXP 	ternusObjRight: autoDraw = True
+138.3771 	EXP 	FixationCross: autoDraw = True
+138.3771 	EXP 	portalLeft: autoDraw = True
+138.3771 	EXP 	portalRight: autoDraw = True
+138.3771 	EXP 	Barrier: autoDraw = True
+139.3782 	EXP 	ternusObjLeft: autoDraw = False
+139.3782 	EXP 	ternusObjMiddle: autoDraw = False
+139.3782 	EXP 	ternusObjRight: autoDraw = False
+139.3782 	EXP 	FixationCross: autoDraw = False
+139.3782 	EXP 	portalLeft: autoDraw = False
+139.3782 	EXP 	portalRight: autoDraw = False
+139.3782 	EXP 	Barrier: autoDraw = False
+139.3782 	EXP 	ternusObjLeft: autoDraw = False
+139.3782 	EXP 	ternusObjMiddle: autoDraw = False
+139.3782 	EXP 	ternusObjRight: autoDraw = False
+139.3782 	EXP 	FixationCross: autoDraw = False
+139.3782 	EXP 	portalLeft: autoDraw = False
+139.3782 	EXP 	portalRight: autoDraw = False
+139.3782 	EXP 	Barrier: autoDraw = False
+139.3782 	EXP 	FixationCrossBlank: autoDraw = True
+139.5338 	EXP 	FixationCrossBlank: autoDraw = False
+139.5338 	EXP 	FixationCrossBlank: autoDraw = False
+139.5338 	EXP 	ternusObjRight_2: fillColor = <psychopy.colors.Color: black, alpha=1.0>
+139.5338 	EXP 	ternusObjRight_2: borderColor = <psychopy.colors.Color: black, alpha=1.0>
+139.5338 	EXP 	portalLeft_2: fillColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+139.5338 	EXP 	portalLeft_2: borderColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+139.5338 	EXP 	portalRight_2: fillColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+139.5338 	EXP 	portalRight_2: borderColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+139.5338 	EXP 	Barrier_2: fillColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+139.5338 	EXP 	Barrier_2: borderColor = <psychopy.colors.Color: (0.19, -0.39, 0.28, 1.0)>
+139.5338 	EXP 	ternusObjLeft_2: autoDraw = True
+139.5338 	EXP 	ternusObjMiddle_2: autoDraw = True
+139.5338 	EXP 	ternusObjRight_2: autoDraw = True
+139.5338 	EXP 	FixationCross_2: autoDraw = True
+139.5338 	EXP 	portalLeft_2: autoDraw = True
+139.5338 	EXP 	portalRight_2: autoDraw = True
+139.5338 	EXP 	Barrier_2: autoDraw = True
+140.5218 	INFO 	Keyboard events cleared
+140.5333 	EXP 	ternusObjLeft_2: autoDraw = False
+140.5333 	EXP 	ternusObjMiddle_2: autoDraw = False
+140.5333 	EXP 	ternusObjRight_2: autoDraw = False
+140.5333 	EXP 	portalLeft_2: autoDraw = False
+140.5333 	EXP 	portalRight_2: autoDraw = False
+140.5333 	EXP 	Barrier_2: autoDraw = False
+141.0995 	EXP 	Device response: <KeyPress from None: t=141.09876089997124, value=escape, duration=None>
+141.1000 	DATA 	Keypress: escape
+141.1773 	EXP 	Device response: <KeyPress from None: t=141.09876089997124, value=escape, duration=0.07638660003431141>
+141.1773 	EXP 	Teamprojekt: status = STOPPED
+141.1890 	EXP 	FixationCross_2: autoDraw = False
+141.1892 	EXP 	Teamprojekt: status = STOPPED
+141.2170 	INFO 	saved data to 'C:\\Users\\maria\\Documents\\Teamprojekt_Testphase\\data\\_Teamprojekt_2026-06-16_21h22.01.133.csv'
+141.2186 	INFO 	saved data to C:\Users\maria\Documents\Teamprojekt_Testphase\data\_Teamprojekt_2026-06-16_21h22.01.133.psydat
+141.5562 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+141.5782 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+141.5782 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+141.5782 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

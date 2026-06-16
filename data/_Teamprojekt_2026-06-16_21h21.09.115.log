@@ -1,0 +1,135 @@
+6.4045 	INFO 	Loaded monitor calibration from ['2026_06_03 14:46']
+6.4261 	WARNING 	User requested fullscreen with size [1280  800], but screen is actually [2560, 1600]. Using actual size
+6.9041 	INFO 	Using renderer 'AMD RadeonT 780M' for graphics
+6.9041 	INFO 	OpenGL version supported by driver is 4..
+6.9565 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000170D2429CF0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000170D2429C90>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000170D255E650>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([2560, 1600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.9565 	EXP 	window1: backgroundImage = ''
+6.9565 	EXP 	window1: backgroundFit = 'none'
+7.5962 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.5962 	EXP 	window1: recordFrameIntervals = False
+7.7522 	EXP 	window1: recordFrameIntervals = True
+8.0053 	EXP 	Screen (0) actual frame rate measured at 85.50Hz
+8.0053 	EXP 	window1: recordFrameIntervals = False
+8.1675 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1677 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1678 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1679 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1679 	EXP 	Teamprojekt: status = STARTED
+8.1709 	EXP 	Created FixationCrossBlank800 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank800', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.1724 	EXP 	Created FixationCrossBlank800 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank800', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.1739 	EXP 	Created FixationCrossBlank800 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank800', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3003 	EXP 	Created textStartMessage = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='textStartMessage', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.3036 	EXP 	Created ternusObjLeft = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ternusObjLeft', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3065 	EXP 	Created ternusObjMiddle = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ternusObjMiddle', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3094 	EXP 	Created ternusObjRight = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='ternusObjRight', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3108 	EXP 	Created FixationCross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCross', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3123 	EXP 	Created portalLeft = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='portalLeft', opacity=1.0, ori=0.0, pos=array([-4.,  2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3135 	EXP 	Created portalRight = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='portalRight', opacity=1.0, ori=0.0, pos=array([4., 2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3146 	EXP 	Created Barrier = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Barrier', opacity=1.0, ori=0.0, pos=array([2., 2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3160 	EXP 	Created FixationCrossBlank = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3195 	EXP 	Created ternusObjLeft_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='ternusObjLeft_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3226 	EXP 	Created ternusObjMiddle_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.0, name='ternusObjMiddle_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3256 	EXP 	Created ternusObjRight_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='ternusObjRight_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.6, 1.6]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3270 	EXP 	Created FixationCross_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCross_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3283 	EXP 	Created portalLeft_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='portalLeft_2', opacity=1.0, ori=0.0, pos=array([-4.,  2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3295 	EXP 	Created portalRight_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='portalRight_2', opacity=1.0, ori=0.0, pos=array([4., 2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3307 	EXP 	Created Barrier_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Barrier_2', opacity=1.0, ori=0.0, pos=array([2., 2.]), size=array([0.1, 2. ]), units='deg', vertices=ndarray(...), win=Window(...))
+8.3320 	EXP 	Created FixationCrossBlank800 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='FixationCrossBlank800', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), units='deg', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.3329 	EXP 	Created textBlockInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='textBlockInstructions', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.3422 	EXP 	Created textEnd = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='textEnd', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+0.0051 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0129 	EXP 	FixationCrossBlank800: autoDraw = True
+0.7968 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+0.8081 	EXP 	FixationCrossBlank800: autoDraw = False
+0.8081 	EXP 	FixationCrossBlank800: autoDraw = False
+0.8081 	EXP 	FixationCrossBlank800: autoDraw = True
+1.5978 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+1.6085 	EXP 	FixationCrossBlank800: autoDraw = False
+1.6085 	EXP 	FixationCrossBlank800: autoDraw = False
+1.6085 	EXP 	FixationCrossBlank800: autoDraw = True
+2.3972 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+2.4078 	EXP 	FixationCrossBlank800: autoDraw = False
+2.4078 	EXP 	FixationCrossBlank800: autoDraw = False
+2.4078 	EXP 	FixationCrossBlank800: autoDraw = True
+3.1757 	DATA 	Keypress: f
+3.2584 	EXP 	Device response: <KeyPress from None: t=3.175248500017915, value=f, duration=None>
+3.2630 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.2690 	EXP 	FixationCrossBlank800: autoDraw = False
+3.2690 	EXP 	FixationCrossBlank800: autoDraw = True
+3.2853 	EXP 	Device response: <KeyPress from None: t=3.175248500017915, value=f, duration=0.10125700000207871>
+4.0074 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+4.0183 	EXP 	FixationCrossBlank800: autoDraw = False
+4.0183 	EXP 	FixationCrossBlank800: autoDraw = True
+4.8062 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+4.8171 	EXP 	FixationCrossBlank800: autoDraw = False
+4.8171 	EXP 	FixationCrossBlank800: autoDraw = True
+4.8510 	EXP 	Device response: <KeyPress from None: t=4.842375400010496, value=j, duration=None>
+4.8516 	DATA 	Keypress: j
+4.9418 	EXP 	Device response: <KeyPress from None: t=4.842375400010496, value=j, duration=0.09832809999352321>
+5.2515 	EXP 	Device response: <KeyPress from None: t=5.244300000020303, value=f, duration=None>
+5.2522 	DATA 	Keypress: f
+5.3840 	EXP 	Device response: <KeyPress from None: t=5.379489800019655, value=j, duration=None>
+5.3846 	DATA 	Keypress: j
+5.4061 	EXP 	Device response: <KeyPress from None: t=5.244300000020303, value=f, duration=0.153085199999623>
+5.4967 	EXP 	Device response: <KeyPress from None: t=5.379489800019655, value=j, duration=0.10790809994796291>
+5.6076 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+5.6181 	EXP 	FixationCrossBlank800: autoDraw = False
+5.6181 	EXP 	FixationCrossBlank800: autoDraw = True
+5.6199 	DATA 	Keypress: space
+5.6286 	EXP 	Device response: <KeyPress from None: t=5.619272299984004, value=space, duration=None>
+5.7516 	EXP 	Device response: <KeyPress from None: t=5.619272299984004, value=space, duration=0.12806080002337694>
+6.4131 	EXP 	Imported practiceLoopConditionsTeamprojekt.xlsx as conditions, 12 conditions, 2 params
+6.4135 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'conditions_practice': 'Portal', 'ISI_practice': 0, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+6.4168 	EXP 	FixationCrossBlank800: autoDraw = False
+6.4168 	EXP 	FixationCrossBlank800: autoDraw = True
+7.0948 	EXP 	Device response: <KeyPress from None: t=7.092468200018629, value=f, duration=None>
+7.0952 	DATA 	Keypress: f
+7.1512 	EXP 	Device response: <KeyPress from None: t=7.141200000012759, value=j, duration=None>
+7.1518 	DATA 	Keypress: j
+7.1837 	EXP 	Device response: <KeyPress from None: t=7.092468200018629, value=f, duration=0.08762169996043667>
+7.2069 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'conditions_practice': 'Barrier', 'ISI_practice': 0, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+7.2178 	EXP 	FixationCrossBlank800: autoDraw = False
+7.2178 	EXP 	FixationCrossBlank800: autoDraw = True
+7.2281 	EXP 	Device response: <KeyPress from None: t=7.141200000012759, value=j, duration=0.07961289997911081>
+7.2731 	EXP 	Device response: <KeyPress from None: t=7.267301000014413, value=f, duration=None>
+7.2736 	DATA 	Keypress: f
+7.3504 	EXP 	Device response: <KeyPress from None: t=7.267301000014413, value=f, duration=0.07641109998803586>
+7.3505 	EXP 	Device response: <KeyPress from None: t=7.346393599989824, value=j, duration=None>
+7.3511 	DATA 	Keypress: j
+7.4182 	EXP 	Device response: <KeyPress from None: t=7.346393599989824, value=j, duration=0.05982020002556965>
+7.4286 	EXP 	Device response: <KeyPress from None: t=7.42527180002071, value=f, duration=None>
+7.4290 	DATA 	Keypress: f
+7.5172 	EXP 	Device response: <KeyPress from None: t=7.42527180002071, value=f, duration=0.08052769995993003>
+7.5509 	EXP 	Device response: <KeyPress from None: t=7.545222099986859, value=j, duration=None>
+7.5513 	DATA 	Keypress: j
+7.6170 	EXP 	Device response: <KeyPress from None: t=7.545222099986859, value=j, duration=0.06823069998063147>
+7.6283 	EXP 	Device response: <KeyPress from None: t=7.62674470001366, value=f, duration=None>
+7.6288 	DATA 	Keypress: f
+7.7293 	EXP 	Device response: <KeyPress from None: t=7.62674470001366, value=f, duration=0.09349199995631352>
+7.7836 	EXP 	Device response: <KeyPress from None: t=7.777926800015848, value=j, duration=None>
+7.7841 	DATA 	Keypress: j
+7.8510 	EXP 	Device response: <KeyPress from None: t=7.843096099968534, value=f, duration=None>
+7.8515 	DATA 	Keypress: f
+7.8851 	EXP 	Device response: <KeyPress from None: t=7.777926800015848, value=j, duration=0.10472249996382743>
+7.9514 	EXP 	Device response: <KeyPress from None: t=7.843096099968534, value=f, duration=0.10284629999659956>
+8.0062 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'conditions_practice': 'Standard', 'ISI_practice': 0.16, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+8.0168 	EXP 	FixationCrossBlank800: autoDraw = False
+8.0168 	EXP 	FixationCrossBlank800: autoDraw = True
+8.8207 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'conditions_practice': 'Standard', 'ISI_practice': 0.08, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+8.8287 	EXP 	FixationCrossBlank800: autoDraw = False
+8.8287 	EXP 	FixationCrossBlank800: autoDraw = True
+9.6106 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'conditions_practice': 'Portal', 'ISI_practice': 0.02, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+9.6225 	EXP 	FixationCrossBlank800: autoDraw = False
+9.6225 	EXP 	FixationCrossBlank800: autoDraw = True
+10.1780 	EXP 	Device response: <KeyPress from None: t=10.168017200019676, value=escape, duration=None>
+10.1785 	DATA 	Keypress: escape
+10.2450 	EXP 	Device response: <KeyPress from None: t=10.168017200019676, value=escape, duration=0.07243269996251911>
+10.2451 	EXP 	Teamprojekt: status = STOPPED
+10.2549 	EXP 	FixationCrossBlank800: autoDraw = False
+10.2550 	EXP 	Teamprojekt: status = STOPPED
+10.2687 	INFO 	saved data to 'C:\\Users\\maria\\Documents\\Teamprojekt_Testphase\\data\\_Teamprojekt_2026-06-16_21h21.09.115.csv'
+10.2698 	INFO 	saved data to C:\Users\maria\Documents\Teamprojekt_Testphase\data\_Teamprojekt_2026-06-16_21h21.09.115.psydat
+10.6348 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+10.6441 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+10.6442 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+10.6442 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

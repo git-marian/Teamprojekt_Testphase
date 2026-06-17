@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.0),
-    on June 16, 2026, at 22:25
+    on June 17, 2026, at 15:32
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -415,7 +415,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "InstructionScreen" ---
     keyInstructionContinue = keyboard.Keyboard(deviceName='keyInstructionContinue')
     textInstructions = visual.TextStim(win=win, name='textInstructions',
-        text='Im folgenden Teil der Studie siehst du wiederholt kurze Abfolgen von drei Kreisen. \n\nZwischen den beiden Darstellungen können die Kreise auf unterschiedliche Weise wahrgenommen werden:\n\n\n• Bei einer Gruppenbewegung scheinen sich alle drei Kreise gemeinsam als Gruppe nach rechts zu bewegen.\n\n• Bei einer Elementbewegung scheint der linke Kreis zu verschwinden, während gleichzeitig rechts ein neuer Kreis erscheint. Die beiden mittleren Kreise scheinen dabei an ihrer Position zu bleiben. \n\nDeine Aufgabe besteht darin, bei jedem Durchgang anzugeben, welche Wahrnehmung du hattest.\n\nDrücke:\n\nF = Elementbewegung\n\nJ = Gruppenbewegung\n\nEs gibt keine richtigen oder falschen Antworten. Bitte gib jeweils die Wahrnehmung an, die deinem Eindruck am besten entspricht.\n\n Zunächst siehst du zwei Beispiele und bearbeitest anschließend einige Übungsdurchgänge.\n\nDrücke die Leertaste, um fortzufahren.',
+        text='Im folgenden Teil der Studie siehst du wiederholt kurze Abfolgen von drei Kreisen. \n\nZwischen den beiden Darstellungen können die Kreise auf unterschiedliche Weise wahrgenommen werden:\n\n\n• Bei einer Gruppenbewegung scheinen sich alle drei Kreise gemeinsam als Gruppe zu bewegen.\n\n• Bei einer Elementbewegung entsteht der Eindruck, dass zwei Kreise ihre Position beibehalten, während ein weiterer Kreis verschwindet und auf der gegenüberliegenden Seite wieder erscheint.\n\nDeine Aufgabe besteht darin, bei jedem Durchgang anzugeben, welche Wahrnehmung du hattest.\n\nDrücke:\n\nF = Elementbewegung\n\nJ = Gruppenbewegung\n\nEs gibt keine richtigen oder falschen Antworten. Bitte gib jeweils die Wahrnehmung an, die deinem Eindruck am besten entspricht.\n\n Zunächst siehst du zwei Beispiele und bearbeitest anschließend einige Übungsdurchgänge.\n\nBitte fixiere während aller Durchgänge das Fixationskreuz in der Bildschirmmitte.\n\nDrücke die Leertaste, um fortzufahren.',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -494,7 +494,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "elementMotionExplained" ---
     keyElementMotionExplained = keyboard.Keyboard(deviceName='keyElementMotionExplained')
     textElementMotion = visual.TextStim(win=win, name='textElementMotion',
-        text='Bei sehr kurzen Unterbrechungen entsteht häufig der Eindruck einer Elementbewegung.\n\n\n\nDabei scheinen die beiden mittleren Kreise an ihrer Position zu bleiben, während links ein Kreis verschwindet und rechts ein neuer Kreis erscheint.\n\n\n\nDrücke die Leertaste, um fortzufahren.',
+        text='Bei sehr kurzen Unterbrechungen entsteht häufig der Eindruck einer Elementbewegung.\n\n\n\nBei kurzen Unterbrechungen entsteht häufig der Eindruck einer Elementbewegung. Dabei scheinen zwei Kreise ihre Position beizubehalten, während ein weiterer Kreis auf der gegenüberliegenden Seite erscheint.\n\n\n\nDrücke die Leertaste, um fortzufahren.',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -582,7 +582,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "groupMotionExplained" ---
     keyGroupMotionExplained = keyboard.Keyboard(deviceName='keyGroupMotionExplained')
     textGroupMotion = visual.TextStim(win=win, name='textGroupMotion',
-        text="Bei längeren Unterbrechungen entsteht häufig der Eindruck einer Gruppenbewegung.\n\n\n\nDabei scheinen sich alle drei Kreise gemeinsam nach rechts zu bewegen.\n\n\n\nDrücke die Leertaste, um mit den Übungsdurchgängen zu beginnen.\n\nDabei musst du nach jeder Bewegung deinen Eindruck angeben, ob es sich um eine Elementbewegung ('F'-Taste) oder eine Gruppenbewegung ('J'-Taste) handelte.",
+        text="Bei längeren Unterbrechungen entsteht häufig der Eindruck einer Gruppenbewegung.\n\n\n\nDabei scheinen sich alle drei Kreise gemeinsam als Gruppe zu bewegen.\n\n\n\nDrücke die Leertaste, um mit den Übungsdurchgängen zu beginnen.\n\nDabei musst du nach jeder Bewegung deinen Eindruck angeben, ob es sich um eine Elementbewegung ('F'-Taste) oder eine Gruppenbewegung ('J'-Taste) handelte.\n\nBitte halte während aller Durchgänge deinen Blick auf das Fixationskreuz in der Bildschirmmitte gerichtet.",
         font='Arial',
         pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -866,15 +866,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-2.0);
-    
-    # --- Initialize components for Routine "EndScreen" ---
-    textEnd = visual.TextStim(win=win, name='textEnd',
-        text='Das Experiment ist abgeschlossen! \n\nDu kannst den Arbeitsplatz jetzt verlassen und dem Versuchsleiter Bescheid geben.\n\nVielen Dank für die Teilnahme!',
-        font='Arial',
-        pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=0.0);
     
     # create some handy timers
     
@@ -5065,6 +5056,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             " bewegen (Gruppenbewegung).\n\n"
             "Drücke die Leertaste, um mit dem nächsten Block fortzufahren."
         )
+        
+        if blockNumber == 10:
+            breakText = (
+            "Sehr gut! Du hast Block " +str(blockNumber) + " von 10 abgeschlossen.\n\n"
+            "Das Experiment ist damit beendet! \n\n"
+            "Du kannst den Arbeitsplatz jetzt verlassen und dem Versuchsleiter Bescheid geben.\n\n"
+            "Vielen Dank für die Teilnahme!"
+        )
+        
         # create starting attributes for keyBlockContinue
         keyBlockContinue.keys = []
         keyBlockContinue.rt = []
@@ -5215,108 +5215,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # completed 10.0 repeats of 'blockLoop'
     blockLoop.status = FINISHED
     
-    
-    # --- Prepare to start Routine "EndScreen" ---
-    # create an object to store info about Routine EndScreen
-    EndScreen = data.Routine(
-        name='EndScreen',
-        components=[textEnd],
-    )
-    EndScreen.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # store start times for EndScreen
-    EndScreen.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    EndScreen.tStart = globalClock.getTime(format='float')
-    EndScreen.status = STARTED
-    thisExp.addData('EndScreen.started', EndScreen.tStart)
-    EndScreen.maxDuration = None
-    # keep track of which components have finished
-    EndScreenComponents = EndScreen.components
-    for thisComponent in EndScreen.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "EndScreen" ---
-    EndScreen.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *textEnd* updates
-        
-        # if textEnd is starting this frame...
-        if textEnd.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            textEnd.frameNStart = frameN  # exact frame index
-            textEnd.tStart = t  # local t and not account for scr refresh
-            textEnd.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(textEnd, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'textEnd.started')
-            # update status
-            textEnd.status = STARTED
-            textEnd.setAutoDraw(True)
-        
-        # if textEnd is active this frame...
-        if textEnd.status == STARTED:
-            # update params
-            pass
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=EndScreen,
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            EndScreen.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in EndScreen.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "EndScreen" ---
-    for thisComponent in EndScreen.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for EndScreen
-    EndScreen.tStop = globalClock.getTime(format='float')
-    EndScreen.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('EndScreen.stopped', EndScreen.tStop)
-    thisExp.nextEntry()
-    # the Routine "EndScreen" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     
     # mark experiment as finished
     endExperiment(thisExp, win=win)

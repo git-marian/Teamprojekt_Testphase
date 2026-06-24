@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.0),
-    on June 17, 2026, at 15:08
+    on June 24, 2026, at 15:37
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -202,7 +202,7 @@ def setupWindow(expInfo=None, win=None):
         win = visual.Window(
             size=_winSize, fullscr=_fullScr, screen=0,
             winType='pyglet', allowGUI=False, allowStencil=False,
-            monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+            monitor='testMonitor', color='#E0E0E0', colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='height',
@@ -210,7 +210,7 @@ def setupWindow(expInfo=None, win=None):
         )
     else:
         # if we have a window, just set the attributes which are safe to set
-        win.color = [0,0,0]
+        win.color = '#E0E0E0'
         win.colorSpace = 'rgb'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
@@ -263,6 +263,12 @@ def setupDevices(expInfo, thisExp, win):
         deviceManager.addDevice(
             deviceClass='keyboard', deviceName='defaultKeyboard', backend='ptb'
         )
+    if deviceManager.getDevice('keyColorTest') is None:
+        # initialise keyColorTest
+        keyColorTest = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='keyColorTest',
+        )
     if deviceManager.getDevice('keyInstructionContinue') is None:
         # initialise keyInstructionContinue
         keyInstructionContinue = deviceManager.addDevice(
@@ -280,6 +286,12 @@ def setupDevices(expInfo, thisExp, win):
         keyGroupMotionExplained = deviceManager.addDevice(
             deviceClass='keyboard',
             deviceName='keyGroupMotionExplained',
+        )
+    if deviceManager.getDevice('keyPracticeStart') is None:
+        # initialise keyPracticeStart
+        keyPracticeStart = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='keyPracticeStart',
         )
     if deviceManager.getDevice('keyPractice') is None:
         # initialise keyPractice
@@ -412,159 +424,172 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # Start Code - component code to be run after the window creation
     
+    # --- Initialize components for Routine "colorTest" ---
+    keyColorTest = keyboard.Keyboard(deviceName='keyColorTest')
+    redCircle = visual.ShapeStim(
+        win=win, name='redCircle',units='deg', 
+        size=(0.5, 0.5), vertices='circle',
+        ori=0.0, pos=(5, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='#E41A1C', fillColor='#E41A1C',
+        opacity=None, depth=-1.0, interpolate=True)
+    blueCircle = visual.ShapeStim(
+        win=win, name='blueCircle',units='deg', 
+        size=(0.5, 0.5), vertices='circle',
+        ori=0.0, pos=(4, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='#2196F3', fillColor='#2196F3',
+        opacity=None, depth=-2.0, interpolate=True)
+    greenCircle = visual.ShapeStim(
+        win=win, name='greenCircle',units='deg', 
+        size=(0.5, 0.5), vertices='circle',
+        ori=0.0, pos=(3, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='#32CD32', fillColor='#32CD32',
+        opacity=None, depth=-3.0, interpolate=True)
+    purpleCircle = visual.ShapeStim(
+        win=win, name='purpleCircle',units='deg', 
+        size=(0.5, 0.5), vertices='circle',
+        ori=0.0, pos=(2, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='#7F00FF', fillColor='#7F00FF',
+        opacity=None, depth=-4.0, interpolate=True)
+    orangeCircle = visual.ShapeStim(
+        win=win, name='orangeCircle',units='deg', 
+        size=(0.5, 0.5), vertices='circle',
+        ori=0.0, pos=(1, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='#c200fb', fillColor='#c200fb',
+        opacity=None, depth=-5.0, interpolate=True)
+    brownCircle = visual.ShapeStim(
+        win=win, name='brownCircle',units='deg', 
+        size=(0.5, 0.5), vertices='circle',
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='#007ad1', fillColor='#007ad1',
+        opacity=None, depth=-6.0, interpolate=True)
+    pinkCircle = visual.ShapeStim(
+        win=win, name='pinkCircle',units='deg', 
+        size=(0.5, 0.5), vertices='circle',
+        ori=0.0, pos=(-1, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='#3f8700', fillColor='#3f8700',
+        opacity=None, depth=-7.0, interpolate=True)
+    tealCircle = visual.ShapeStim(
+        win=win, name='tealCircle',units='deg', 
+        size=(0.5, 0.5), vertices='circle',
+        ori=0.0, pos=(-2, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='#ee002c', fillColor='#ee002c',
+        opacity=None, depth=-8.0, interpolate=True)
+    
     # --- Initialize components for Routine "InstructionScreen" ---
+    # Run 'Begin Experiment' code from codeGroupTracker
+    participantID = int(expInfo["participant"])
+    
+    if participantID % 2 == 1:
+        group = "A"
+    else:
+        group = "B"
+    
+    thisExp.addData("group", group)
+    
+    
+    
+    # Run 'Begin Experiment' code from codeDimensionsAndPositions
+    blockNumber = 0
+    ternusDuration = 0.2
+    
+    ternusDiameter = (2.8)
+    fixationCrossDim = (0.3, 0.3)
+    PortalBarrierDim = (0.2, 3.2)
+    portalLeftPos = (-8, 3)
+    portalRightPos = (8, 3)
+    barrierPos = (4,3)
+    
     keyInstructionContinue = keyboard.Keyboard(deviceName='keyInstructionContinue')
     textInstructions = visual.TextStim(win=win, name='textInstructions',
-        text='Im folgenden Teil der Studie siehst du wiederholt kurze Abfolgen von drei Kreisen. \n\nZwischen den beiden Darstellungen können die Kreise auf unterschiedliche Weise wahrgenommen werden:\n\n\n• Bei einer Gruppenbewegung scheinen sich alle drei Kreise gemeinsam als Gruppe nach rechts zu bewegen.\n\n• Bei einer Elementbewegung scheint der linke Kreis zu verschwinden, während gleichzeitig rechts ein neuer Kreis erscheint. Die beiden mittleren Kreise scheinen dabei an ihrer Position zu bleiben. \n\nDeine Aufgabe besteht darin, bei jedem Durchgang anzugeben, welche Wahrnehmung du hattest.\n\nDrücke:\n\nF = Elementbewegung\n\nJ = Gruppenbewegung\n\nEs gibt keine richtigen oder falschen Antworten. Bitte gib jeweils die Wahrnehmung an, die deinem Eindruck am besten entspricht.\n\n Zunächst siehst du zwei Beispiele und bearbeitest anschließend einige Übungsdurchgänge.\n\nDrücke die Leertaste, um fortzufahren.',
+        text='Im folgenden Teil der Studie siehst du wiederholt kurze Abfolgen von drei Kreisen. \n\nZwischen den beiden Darstellungen können die Kreise auf unterschiedliche Weise wahrgenommen werden:\n\n• Bei einer Elementbewegung entsteht der Eindruck, dass zwei Kreise ihre Position beibehalten, während ein weiterer Kreis verschwindet und auf der gegenüberliegenden Seite wieder erscheint.\n\n\n• Bei einer Gruppenbewegung scheinen sich alle drei Kreise gemeinsam als Gruppe zu bewegen.\n\nDeine Aufgabe besteht darin, bei jedem Durchgang anzugeben, welche Wahrnehmung du hattest.\n\nDrücke:\n\nF = Elementbewegung\n\nJ = Gruppenbewegung\n\nEs gibt keine richtigen oder falschen Antworten. Bitte gib jeweils die Wahrnehmung an, die deinem Eindruck am besten entspricht.\n\n Zunächst siehst du zwei Beispiele und bearbeitest anschließend einige Übungsdurchgänge.\n\nBitte fixiere während aller Durchgänge das Fixationskreuz in der Bildschirmmitte.\n\nDrücke die Leertaste, um fortzufahren.',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-1.0);
-    
-    # --- Initialize components for Routine "exampleFrame1" ---
-    ternusExampleLeft = visual.ShapeStim(
-        win=win, name='ternusExampleLeft',units='deg', 
-        size=(1.6), vertices='circle',
-        ori=0.0, pos=[0,0], draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=-1.0, interpolate=True)
-    ternusExampleMiddle = visual.ShapeStim(
-        win=win, name='ternusExampleMiddle',units='deg', 
-        size=(1.6), vertices='circle',
-        ori=0.0, pos=[0,0], draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=-2.0, interpolate=True)
-    ternusExampleRight = visual.ShapeStim(
-        win=win, name='ternusExampleRight',units='deg', 
-        size=(1.6), vertices='circle',
-        ori=0.0, pos=[0,0], draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=-3.0, interpolate=True)
-    FixationCrossExample = visual.ShapeStim(
-        win=win, name='FixationCrossExample', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=-4.0, interpolate=True)
-    
-    # --- Initialize components for Routine "exampleFrame2" ---
-    ternusExampleLeft_2 = visual.ShapeStim(
-        win=win, name='ternusExampleLeft_2',units='deg', 
-        size=(1.6), vertices='circle',
-        ori=0.0, pos=[0,0], draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=0.0, interpolate=True)
-    ternusExampleMiddle_2 = visual.ShapeStim(
-        win=win, name='ternusExampleMiddle_2',units='deg', 
-        size=(1.6), vertices='circle',
-        ori=0.0, pos=[0,0], draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=-1.0, interpolate=True)
-    ternusExampleRight_2 = visual.ShapeStim(
-        win=win, name='ternusExampleRight_2',units='deg', 
-        size=(1.6), vertices='circle',
-        ori=0.0, pos=[0,0], draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=-2.0, interpolate=True)
-    FixationCrossExample_2 = visual.ShapeStim(
-        win=win, name='FixationCrossExample_2', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=-3.0, interpolate=True)
-    
-    # --- Initialize components for Routine "blank800" ---
-    FixationCrossBlank800 = visual.ShapeStim(
-        win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=0.0, interpolate=True)
+        depth=-3.0);
     
     # --- Initialize components for Routine "elementMotionExplained" ---
     keyElementMotionExplained = keyboard.Keyboard(deviceName='keyElementMotionExplained')
     textElementMotion = visual.TextStim(win=win, name='textElementMotion',
-        text='Bei sehr kurzen Unterbrechungen entsteht häufig der Eindruck einer Elementbewegung.\n\n\n\nDabei scheinen die beiden mittleren Kreise an ihrer Position zu bleiben, während links ein Kreis verschwindet und rechts ein neuer Kreis erscheint.\n\n\n\nDrücke die Leertaste, um fortzufahren.',
+        text='Bei kurzen Unterbrechungen entsteht häufig der Eindruck einer Elementbewegung. \n\nDabei scheinen zwei Kreise ihre Position beizubehalten, während ein weiterer Kreis auf der gegenüberliegenden Seite erscheint.\n\n\n\nDrücke die Leertaste, um das Beispiel zu sehen.\nLass deinen Blick dabei auf dem Fixationskreuz ruhen.',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
+    
+    # --- Initialize components for Routine "blank800" ---
+    FixationCrossBlank800 = visual.ShapeStim(
+        win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=0.0, interpolate=True)
     
     # --- Initialize components for Routine "exampleFrame1" ---
     ternusExampleLeft = visual.ShapeStim(
         win=win, name='ternusExampleLeft',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-1.0, interpolate=True)
     ternusExampleMiddle = visual.ShapeStim(
         win=win, name='ternusExampleMiddle',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-2.0, interpolate=True)
     ternusExampleRight = visual.ShapeStim(
         win=win, name='ternusExampleRight',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-3.0, interpolate=True)
     FixationCrossExample = visual.ShapeStim(
         win=win, name='FixationCrossExample', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-4.0, interpolate=True)
     
-    # --- Initialize components for Routine "blank160" ---
-    FixationCrossBlank160 = visual.ShapeStim(
-        win=win, name='FixationCrossBlank160', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
-        opacity=None, depth=0.0, interpolate=True)
-    
     # --- Initialize components for Routine "exampleFrame2" ---
     ternusExampleLeft_2 = visual.ShapeStim(
         win=win, name='ternusExampleLeft_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=0.0, interpolate=True)
     ternusExampleMiddle_2 = visual.ShapeStim(
         win=win, name='ternusExampleMiddle_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-1.0, interpolate=True)
     ternusExampleRight_2 = visual.ShapeStim(
         win=win, name='ternusExampleRight_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-2.0, interpolate=True)
     FixationCrossExample_2 = visual.ShapeStim(
         win=win, name='FixationCrossExample_2', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
@@ -573,7 +598,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "blank800" ---
     FixationCrossBlank800 = visual.ShapeStim(
         win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
@@ -582,67 +607,170 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "groupMotionExplained" ---
     keyGroupMotionExplained = keyboard.Keyboard(deviceName='keyGroupMotionExplained')
     textGroupMotion = visual.TextStim(win=win, name='textGroupMotion',
-        text="Bei längeren Unterbrechungen entsteht häufig der Eindruck einer Gruppenbewegung.\n\n\n\nDabei scheinen sich alle drei Kreise gemeinsam nach rechts zu bewegen.\n\n\n\nDrücke die Leertaste, um mit den Übungsdurchgängen zu beginnen.\n\nDabei musst du nach jeder Bewegung deinen Eindruck angeben, ob es sich um eine Elementbewegung ('F'-Taste) oder eine Gruppenbewegung ('J'-Taste) handelte.\n\nBitte halte während aller Durchgänge deinen Blick auf das Fixationskreuz in der Bildschirmmitte gerichtet.",
+        text='Bei längeren Unterbrechungen entsteht häufig der Eindruck einer Gruppenbewegung.\n\n\nDabei scheinen sich alle drei Kreise gemeinsam als Gruppe zu bewegen.\n\n\nDrücke die Leertaste, um das Beispiel zu sehen.',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     
+    # --- Initialize components for Routine "blank800" ---
+    FixationCrossBlank800 = visual.ShapeStim(
+        win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=0.0, interpolate=True)
+    
+    # --- Initialize components for Routine "exampleFrame1" ---
+    ternusExampleLeft = visual.ShapeStim(
+        win=win, name='ternusExampleLeft',units='deg', 
+        size=ternusDiameter, vertices='circle',
+        ori=0.0, pos=[0,0], draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=-1.0, interpolate=True)
+    ternusExampleMiddle = visual.ShapeStim(
+        win=win, name='ternusExampleMiddle',units='deg', 
+        size=ternusDiameter, vertices='circle',
+        ori=0.0, pos=[0,0], draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=-2.0, interpolate=True)
+    ternusExampleRight = visual.ShapeStim(
+        win=win, name='ternusExampleRight',units='deg', 
+        size=ternusDiameter, vertices='circle',
+        ori=0.0, pos=[0,0], draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=-3.0, interpolate=True)
+    FixationCrossExample = visual.ShapeStim(
+        win=win, name='FixationCrossExample', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=-4.0, interpolate=True)
+    
+    # --- Initialize components for Routine "blank160" ---
+    FixationCrossBlank160 = visual.ShapeStim(
+        win=win, name='FixationCrossBlank160', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=0.0, interpolate=True)
+    
+    # --- Initialize components for Routine "exampleFrame2" ---
+    ternusExampleLeft_2 = visual.ShapeStim(
+        win=win, name='ternusExampleLeft_2',units='deg', 
+        size=ternusDiameter, vertices='circle',
+        ori=0.0, pos=[0,0], draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=0.0, interpolate=True)
+    ternusExampleMiddle_2 = visual.ShapeStim(
+        win=win, name='ternusExampleMiddle_2',units='deg', 
+        size=ternusDiameter, vertices='circle',
+        ori=0.0, pos=[0,0], draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=-1.0, interpolate=True)
+    ternusExampleRight_2 = visual.ShapeStim(
+        win=win, name='ternusExampleRight_2',units='deg', 
+        size=ternusDiameter, vertices='circle',
+        ori=0.0, pos=[0,0], draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=-2.0, interpolate=True)
+    FixationCrossExample_2 = visual.ShapeStim(
+        win=win, name='FixationCrossExample_2', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=-3.0, interpolate=True)
+    
+    # --- Initialize components for Routine "blank800" ---
+    FixationCrossBlank800 = visual.ShapeStim(
+        win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=0.0, interpolate=True)
+    
+    # --- Initialize components for Routine "PracticeExplained" ---
+    keyPracticeStart = keyboard.Keyboard(deviceName='keyPracticeStart')
+    textPracticeExplained = visual.TextStim(win=win, name='textPracticeExplained',
+        text="Drücke die Leertaste, um mit den Übungsdurchgängen zu beginnen.\n\nDabei musst du nach jeder Bewegung deinen Eindruck angeben, ob es sich um eine Elementbewegung ('F'-Taste) oder eine Gruppenbewegung ('J'-Taste) handelte.\n\nBitte halte während aller Durchgänge deinen Blick auf das Fixationskreuz in der Bildschirmmitte gerichtet.",
+        font='Arial',
+        pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
+    
+    # --- Initialize components for Routine "blank800" ---
+    FixationCrossBlank800 = visual.ShapeStim(
+        win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=0.0, interpolate=True)
+    
     # --- Initialize components for Routine "practiceFrame1" ---
     # Run 'Begin Experiment' code from codeObjectParametersPractice
-    blockNumber = 0
-    ternusDuration = 0.2
-    
     # default Frame 2 Ternus colors
     leftFrame2_Color = "black"
     middleFrame2_Color = "black"
     rightFrame2_Color = "black"
     ternusObjLeftPrac = visual.ShapeStim(
         win=win, name='ternusObjLeftPrac',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-1.0, interpolate=True)
     ternusObjMiddlePrac = visual.ShapeStim(
         win=win, name='ternusObjMiddlePrac',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-2.0, interpolate=True)
     ternusObjRightPrac = visual.ShapeStim(
         win=win, name='ternusObjRightPrac',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-3.0, interpolate=True)
     FixationCrossPrac = visual.ShapeStim(
         win=win, name='FixationCrossPrac', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-4.0, interpolate=True)
     portalLeftPrac = visual.Rect(
         win=win, name='portalLeftPrac',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
-        ori=0.0, pos=(-4, 2), draggable=False, anchor='center',
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
+        ori=0.0, pos=portalLeftPos, draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-5.0, interpolate=True)
     portalRightPrac = visual.Rect(
         win=win, name='portalRightPrac',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
-        ori=0.0, pos=(4, 2), draggable=False, anchor='center',
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
+        ori=0.0, pos=portalRightPos, draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-6.0, interpolate=True)
     BarrierPrac = visual.Rect(
         win=win, name='BarrierPrac',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -651,7 +779,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "blankISI_Practice" ---
     FixationCrossBlankPractice = visual.ShapeStim(
         win=win, name='FixationCrossBlankPractice', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
@@ -661,58 +789,67 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     keyPractice = keyboard.Keyboard(deviceName='keyPractice')
     ternusObjLeftPrac_2 = visual.ShapeStim(
         win=win, name='ternusObjLeftPrac_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     ternusObjMiddlePrac_2 = visual.ShapeStim(
         win=win, name='ternusObjMiddlePrac_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-2.0, interpolate=True)
     ternusObjRightPrac_2 = visual.ShapeStim(
         win=win, name='ternusObjRightPrac_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=None, depth=-3.0, interpolate=True)
     FixationCrossPrac_2 = visual.ShapeStim(
         win=win, name='FixationCrossPrac_2', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-4.0, interpolate=True)
     portalLeftPrac_2 = visual.Rect(
         win=win, name='portalLeftPrac_2',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
-        ori=0.0, pos=(-4, 2), draggable=False, anchor='center',
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
+        ori=0.0, pos=portalLeftPos, draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-5.0, interpolate=True)
     portalRightPrac_2 = visual.Rect(
         win=win, name='portalRightPrac_2',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
-        ori=0.0, pos=(4, 2), draggable=False, anchor='center',
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
+        ori=0.0, pos=portalRightPos, draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-6.0, interpolate=True)
     BarrierPrac_2 = visual.Rect(
         win=win, name='BarrierPrac_2',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-7.0, interpolate=True)
     
+    # --- Initialize components for Routine "blank500" ---
+    blankText500 = visual.TextStim(win=win, name='blankText500',
+        text=None,
+        font='Arial',
+        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    
     # --- Initialize components for Routine "blank800" ---
     FixationCrossBlank800 = visual.ShapeStim(
         win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
@@ -724,14 +861,21 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         text="Hiermit startet das Experiment!\n\nDu musst 10 Blocks absolvieren.\nGib nach jeder Bewegung an, ob es sich um eine Elementbewegung ('F'-Taste) oder eine Gruppenbewegung ('J'-Taste) handelte.\n\nDrücke die Leertaste, um zu beginnen.",
         font='Arial',
         pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     
+    # --- Initialize components for Routine "blank800" ---
+    FixationCrossBlank800 = visual.ShapeStim(
+        win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=0.0, interpolate=True)
+    
     # --- Initialize components for Routine "ternusFrame1" ---
     # Run 'Begin Experiment' code from codeObjectParameters
-    barrierPos = (2,2)
-    
     # default Frame 2 Ternus colors
     leftFrame2_Color = "black"
     middleFrame2_Color = "black"
@@ -739,49 +883,49 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     ternusObjLeft = visual.ShapeStim(
         win=win, name='ternusObjLeft',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-1.0, interpolate=True)
     ternusObjMiddle = visual.ShapeStim(
         win=win, name='ternusObjMiddle',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-2.0, interpolate=True)
     ternusObjRight = visual.ShapeStim(
         win=win, name='ternusObjRight',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-3.0, interpolate=True)
     FixationCross = visual.ShapeStim(
         win=win, name='FixationCross', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-4.0, interpolate=True)
     portalLeft = visual.Rect(
         win=win, name='portalLeft',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
-        ori=0.0, pos=(-4, 2), draggable=False, anchor='center',
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
+        ori=0.0, pos=portalLeftPos, draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-5.0, interpolate=True)
     portalRight = visual.Rect(
         win=win, name='portalRight',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
-        ori=0.0, pos=(4, 2), draggable=False, anchor='center',
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
+        ori=0.0, pos=portalRightPos, draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-6.0, interpolate=True)
     Barrier = visual.Rect(
         win=win, name='Barrier',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -790,7 +934,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "blankISI" ---
     FixationCrossBlank = visual.ShapeStim(
         win=win, name='FixationCrossBlank', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
@@ -800,58 +944,67 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     key_resp = keyboard.Keyboard(deviceName='key_resp')
     ternusObjLeft_2 = visual.ShapeStim(
         win=win, name='ternusObjLeft_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     ternusObjMiddle_2 = visual.ShapeStim(
         win=win, name='ternusObjMiddle_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=middleFrame2_Color, fillColor=middleFrame2_Color,
         opacity=None, depth=-2.0, interpolate=True)
     ternusObjRight_2 = visual.ShapeStim(
         win=win, name='ternusObjRight_2',units='deg', 
-        size=(1.6), vertices='circle',
+        size=ternusDiameter, vertices='circle',
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=None, depth=-3.0, interpolate=True)
     FixationCross_2 = visual.ShapeStim(
         win=win, name='FixationCross_2', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=-4.0, interpolate=True)
     portalLeft_2 = visual.Rect(
         win=win, name='portalLeft_2',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
-        ori=0.0, pos=(-4, 2), draggable=False, anchor='center',
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
+        ori=0.0, pos=portalLeftPos, draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-5.0, interpolate=True)
     portalRight_2 = visual.Rect(
         win=win, name='portalRight_2',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
-        ori=0.0, pos=(4, 2), draggable=False, anchor='center',
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
+        ori=0.0, pos=portalRightPos, draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-6.0, interpolate=True)
     Barrier_2 = visual.Rect(
         win=win, name='Barrier_2',units='deg', 
-        width=(0.1, 2)[0], height=(0.1, 2)[1],
+        width=PortalBarrierDim[0], height=PortalBarrierDim[1],
         ori=0.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=1.0, depth=-7.0, interpolate=True)
     
+    # --- Initialize components for Routine "blank500" ---
+    blankText500 = visual.TextStim(win=win, name='blankText500',
+        text=None,
+        font='Arial',
+        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    
     # --- Initialize components for Routine "blank800" ---
     FixationCrossBlank800 = visual.ShapeStim(
         win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
-        size=(0.2, 0.2),
+        size=fixationCrossDim,
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
@@ -863,9 +1016,18 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         text='',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.025, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-2.0);
+    
+    # --- Initialize components for Routine "blank800" ---
+    FixationCrossBlank800 = visual.ShapeStim(
+        win=win, name='FixationCrossBlank800', vertices='cross',units='deg', 
+        size=fixationCrossDim,
+        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, -1.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+        opacity=None, depth=0.0, interpolate=True)
     
     # create some handy timers
     
@@ -894,6 +1056,287 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     expInfo['expStart'] = data.getDateStr(
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
+    
+    # --- Prepare to start Routine "colorTest" ---
+    # create an object to store info about Routine colorTest
+    colorTest = data.Routine(
+        name='colorTest',
+        components=[keyColorTest, redCircle, blueCircle, greenCircle, purpleCircle, orangeCircle, brownCircle, pinkCircle, tealCircle],
+    )
+    colorTest.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # create starting attributes for keyColorTest
+    keyColorTest.keys = []
+    keyColorTest.rt = []
+    _keyColorTest_allKeys = []
+    # store start times for colorTest
+    colorTest.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    colorTest.tStart = globalClock.getTime(format='float')
+    colorTest.status = STARTED
+    thisExp.addData('colorTest.started', colorTest.tStart)
+    colorTest.maxDuration = None
+    # keep track of which components have finished
+    colorTestComponents = colorTest.components
+    for thisComponent in colorTest.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "colorTest" ---
+    colorTest.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *keyColorTest* updates
+        waitOnFlip = False
+        
+        # if keyColorTest is starting this frame...
+        if keyColorTest.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            keyColorTest.frameNStart = frameN  # exact frame index
+            keyColorTest.tStart = t  # local t and not account for scr refresh
+            keyColorTest.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(keyColorTest, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'keyColorTest.started')
+            # update status
+            keyColorTest.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(keyColorTest.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(keyColorTest.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if keyColorTest.status == STARTED and not waitOnFlip:
+            theseKeys = keyColorTest.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _keyColorTest_allKeys.extend(theseKeys)
+            if len(_keyColorTest_allKeys):
+                keyColorTest.keys = _keyColorTest_allKeys[-1].name  # just the last key pressed
+                keyColorTest.rt = _keyColorTest_allKeys[-1].rt
+                keyColorTest.duration = _keyColorTest_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
+        
+        # *redCircle* updates
+        
+        # if redCircle is starting this frame...
+        if redCircle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            redCircle.frameNStart = frameN  # exact frame index
+            redCircle.tStart = t  # local t and not account for scr refresh
+            redCircle.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(redCircle, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'redCircle.started')
+            # update status
+            redCircle.status = STARTED
+            redCircle.setAutoDraw(True)
+        
+        # if redCircle is active this frame...
+        if redCircle.status == STARTED:
+            # update params
+            pass
+        
+        # *blueCircle* updates
+        
+        # if blueCircle is starting this frame...
+        if blueCircle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            blueCircle.frameNStart = frameN  # exact frame index
+            blueCircle.tStart = t  # local t and not account for scr refresh
+            blueCircle.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(blueCircle, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'blueCircle.started')
+            # update status
+            blueCircle.status = STARTED
+            blueCircle.setAutoDraw(True)
+        
+        # if blueCircle is active this frame...
+        if blueCircle.status == STARTED:
+            # update params
+            pass
+        
+        # *greenCircle* updates
+        
+        # if greenCircle is starting this frame...
+        if greenCircle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            greenCircle.frameNStart = frameN  # exact frame index
+            greenCircle.tStart = t  # local t and not account for scr refresh
+            greenCircle.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(greenCircle, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'greenCircle.started')
+            # update status
+            greenCircle.status = STARTED
+            greenCircle.setAutoDraw(True)
+        
+        # if greenCircle is active this frame...
+        if greenCircle.status == STARTED:
+            # update params
+            pass
+        
+        # *purpleCircle* updates
+        
+        # if purpleCircle is starting this frame...
+        if purpleCircle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            purpleCircle.frameNStart = frameN  # exact frame index
+            purpleCircle.tStart = t  # local t and not account for scr refresh
+            purpleCircle.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(purpleCircle, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'purpleCircle.started')
+            # update status
+            purpleCircle.status = STARTED
+            purpleCircle.setAutoDraw(True)
+        
+        # if purpleCircle is active this frame...
+        if purpleCircle.status == STARTED:
+            # update params
+            pass
+        
+        # *orangeCircle* updates
+        
+        # if orangeCircle is starting this frame...
+        if orangeCircle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            orangeCircle.frameNStart = frameN  # exact frame index
+            orangeCircle.tStart = t  # local t and not account for scr refresh
+            orangeCircle.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(orangeCircle, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'orangeCircle.started')
+            # update status
+            orangeCircle.status = STARTED
+            orangeCircle.setAutoDraw(True)
+        
+        # if orangeCircle is active this frame...
+        if orangeCircle.status == STARTED:
+            # update params
+            pass
+        
+        # *brownCircle* updates
+        
+        # if brownCircle is starting this frame...
+        if brownCircle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            brownCircle.frameNStart = frameN  # exact frame index
+            brownCircle.tStart = t  # local t and not account for scr refresh
+            brownCircle.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(brownCircle, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'brownCircle.started')
+            # update status
+            brownCircle.status = STARTED
+            brownCircle.setAutoDraw(True)
+        
+        # if brownCircle is active this frame...
+        if brownCircle.status == STARTED:
+            # update params
+            pass
+        
+        # *pinkCircle* updates
+        
+        # if pinkCircle is starting this frame...
+        if pinkCircle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            pinkCircle.frameNStart = frameN  # exact frame index
+            pinkCircle.tStart = t  # local t and not account for scr refresh
+            pinkCircle.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(pinkCircle, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'pinkCircle.started')
+            # update status
+            pinkCircle.status = STARTED
+            pinkCircle.setAutoDraw(True)
+        
+        # if pinkCircle is active this frame...
+        if pinkCircle.status == STARTED:
+            # update params
+            pass
+        
+        # *tealCircle* updates
+        
+        # if tealCircle is starting this frame...
+        if tealCircle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            tealCircle.frameNStart = frameN  # exact frame index
+            tealCircle.tStart = t  # local t and not account for scr refresh
+            tealCircle.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(tealCircle, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'tealCircle.started')
+            # update status
+            tealCircle.status = STARTED
+            tealCircle.setAutoDraw(True)
+        
+        # if tealCircle is active this frame...
+        if tealCircle.status == STARTED:
+            # update params
+            pass
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=colorTest,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            colorTest.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in colorTest.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "colorTest" ---
+    for thisComponent in colorTest.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for colorTest
+    colorTest.tStop = globalClock.getTime(format='float')
+    colorTest.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('colorTest.stopped', colorTest.tStop)
+    # check responses
+    if keyColorTest.keys in ['', [], None]:  # No response was made
+        keyColorTest.keys = None
+    thisExp.addData('keyColorTest.keys',keyColorTest.keys)
+    if keyColorTest.keys != None:  # we had a response
+        thisExp.addData('keyColorTest.rt', keyColorTest.rt)
+        thisExp.addData('keyColorTest.duration', keyColorTest.duration)
+    thisExp.nextEntry()
+    # the Routine "colorTest" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # --- Prepare to start Routine "InstructionScreen" ---
     # create an object to store info about Routine InstructionScreen
@@ -1036,6 +1479,268 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # the Routine "InstructionScreen" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
+    # --- Prepare to start Routine "elementMotionExplained" ---
+    # create an object to store info about Routine elementMotionExplained
+    elementMotionExplained = data.Routine(
+        name='elementMotionExplained',
+        components=[keyElementMotionExplained, textElementMotion],
+    )
+    elementMotionExplained.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # create starting attributes for keyElementMotionExplained
+    keyElementMotionExplained.keys = []
+    keyElementMotionExplained.rt = []
+    _keyElementMotionExplained_allKeys = []
+    # store start times for elementMotionExplained
+    elementMotionExplained.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    elementMotionExplained.tStart = globalClock.getTime(format='float')
+    elementMotionExplained.status = STARTED
+    thisExp.addData('elementMotionExplained.started', elementMotionExplained.tStart)
+    elementMotionExplained.maxDuration = None
+    # keep track of which components have finished
+    elementMotionExplainedComponents = elementMotionExplained.components
+    for thisComponent in elementMotionExplained.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "elementMotionExplained" ---
+    elementMotionExplained.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *keyElementMotionExplained* updates
+        waitOnFlip = False
+        
+        # if keyElementMotionExplained is starting this frame...
+        if keyElementMotionExplained.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+            # keep track of start time/frame for later
+            keyElementMotionExplained.frameNStart = frameN  # exact frame index
+            keyElementMotionExplained.tStart = t  # local t and not account for scr refresh
+            keyElementMotionExplained.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(keyElementMotionExplained, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'keyElementMotionExplained.started')
+            # update status
+            keyElementMotionExplained.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(keyElementMotionExplained.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(keyElementMotionExplained.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if keyElementMotionExplained.status == STARTED and not waitOnFlip:
+            theseKeys = keyElementMotionExplained.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _keyElementMotionExplained_allKeys.extend(theseKeys)
+            if len(_keyElementMotionExplained_allKeys):
+                keyElementMotionExplained.keys = _keyElementMotionExplained_allKeys[-1].name  # just the last key pressed
+                keyElementMotionExplained.rt = _keyElementMotionExplained_allKeys[-1].rt
+                keyElementMotionExplained.duration = _keyElementMotionExplained_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
+        
+        # *textElementMotion* updates
+        
+        # if textElementMotion is starting this frame...
+        if textElementMotion.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            textElementMotion.frameNStart = frameN  # exact frame index
+            textElementMotion.tStart = t  # local t and not account for scr refresh
+            textElementMotion.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textElementMotion, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'textElementMotion.started')
+            # update status
+            textElementMotion.status = STARTED
+            textElementMotion.setAutoDraw(True)
+        
+        # if textElementMotion is active this frame...
+        if textElementMotion.status == STARTED:
+            # update params
+            pass
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=elementMotionExplained,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            elementMotionExplained.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in elementMotionExplained.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "elementMotionExplained" ---
+    for thisComponent in elementMotionExplained.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for elementMotionExplained
+    elementMotionExplained.tStop = globalClock.getTime(format='float')
+    elementMotionExplained.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('elementMotionExplained.stopped', elementMotionExplained.tStop)
+    # check responses
+    if keyElementMotionExplained.keys in ['', [], None]:  # No response was made
+        keyElementMotionExplained.keys = None
+    thisExp.addData('keyElementMotionExplained.keys',keyElementMotionExplained.keys)
+    if keyElementMotionExplained.keys != None:  # we had a response
+        thisExp.addData('keyElementMotionExplained.rt', keyElementMotionExplained.rt)
+        thisExp.addData('keyElementMotionExplained.duration', keyElementMotionExplained.duration)
+    thisExp.nextEntry()
+    # the Routine "elementMotionExplained" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # --- Prepare to start Routine "blank800" ---
+    # create an object to store info about Routine blank800
+    blank800 = data.Routine(
+        name='blank800',
+        components=[FixationCrossBlank800],
+    )
+    blank800.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # store start times for blank800
+    blank800.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    blank800.tStart = globalClock.getTime(format='float')
+    blank800.status = STARTED
+    thisExp.addData('blank800.started', blank800.tStart)
+    blank800.maxDuration = None
+    # keep track of which components have finished
+    blank800Components = blank800.components
+    for thisComponent in blank800.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "blank800" ---
+    blank800.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine and routineTimer.getTime() < 0.8:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *FixationCrossBlank800* updates
+        
+        # if FixationCrossBlank800 is starting this frame...
+        if FixationCrossBlank800.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            FixationCrossBlank800.frameNStart = frameN  # exact frame index
+            FixationCrossBlank800.tStart = t  # local t and not account for scr refresh
+            FixationCrossBlank800.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(FixationCrossBlank800, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'FixationCrossBlank800.started')
+            # update status
+            FixationCrossBlank800.status = STARTED
+            FixationCrossBlank800.setAutoDraw(True)
+        
+        # if FixationCrossBlank800 is active this frame...
+        if FixationCrossBlank800.status == STARTED:
+            # update params
+            pass
+        
+        # if FixationCrossBlank800 is stopping this frame...
+        if FixationCrossBlank800.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > FixationCrossBlank800.tStartRefresh + 0.8-frameTolerance:
+                # keep track of stop time/frame for later
+                FixationCrossBlank800.tStop = t  # not accounting for scr refresh
+                FixationCrossBlank800.tStopRefresh = tThisFlipGlobal  # on global time
+                FixationCrossBlank800.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'FixationCrossBlank800.stopped')
+                # update status
+                FixationCrossBlank800.status = FINISHED
+                FixationCrossBlank800.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=blank800,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            blank800.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in blank800.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "blank800" ---
+    for thisComponent in blank800.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for blank800
+    blank800.tStop = globalClock.getTime(format='float')
+    blank800.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('blank800.stopped', blank800.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if blank800.maxDurationReached:
+        routineTimer.addTime(-blank800.maxDuration)
+    elif blank800.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-0.800000)
+    thisExp.nextEntry()
+    
     # set up handler to look after randomisation of conditions etc
     elementMotionDemo = data.TrialHandler2(
         name='elementMotionDemo',
@@ -1084,22 +1789,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisExp.addData("direction", direction)
         
         if direction == "LR":
-            leftFrame1_Pos = (-3, 2)
-            middleFrame1_Pos = (-1, 2)
-            rightFrame1_Pos = (1, 2)
+            leftFrame1_Pos = (-6, 3)
+            middleFrame1_Pos = (-2, 3)
+            rightFrame1_Pos = (2, 3)
         
-            leftFrame2_Pos = (-1, 2)
-            middleFrame2_Pos = (1, 2)
-            rightFrame2_Pos = (3, 2)
+            leftFrame2_Pos = (-2, 3)
+            middleFrame2_Pos = (2, 3)
+            rightFrame2_Pos = (6, 3)
         
         elif direction == "RL":
-            leftFrame1_Pos = (-1, 2)
-            middleFrame1_Pos = (1, 2)
-            rightFrame1_Pos = (3, 2)
+            leftFrame1_Pos = (-2, 3)
+            middleFrame1_Pos = (2, 3)
+            rightFrame1_Pos = (6, 3)
         
-            leftFrame2_Pos = (-3, 2)
-            middleFrame2_Pos = (-1, 2)
-            rightFrame2_Pos = (1, 2)
+            leftFrame2_Pos = (-6, 3)
+            middleFrame2_Pos = (-2, 3)
+            rightFrame2_Pos = (2, 3)
         ternusExampleLeft.setPos(leftFrame1_Pos)
         ternusExampleMiddle.setPos(middleFrame1_Pos)
         ternusExampleRight.setPos(rightFrame1_Pos)
@@ -1681,28 +2386,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if running in a Session with a Liaison client, send data up to now
         thisSession.sendExperimentData()
     
-    # --- Prepare to start Routine "elementMotionExplained" ---
-    # create an object to store info about Routine elementMotionExplained
-    elementMotionExplained = data.Routine(
-        name='elementMotionExplained',
-        components=[keyElementMotionExplained, textElementMotion],
+    # --- Prepare to start Routine "groupMotionExplained" ---
+    # create an object to store info about Routine groupMotionExplained
+    groupMotionExplained = data.Routine(
+        name='groupMotionExplained',
+        components=[keyGroupMotionExplained, textGroupMotion],
     )
-    elementMotionExplained.status = NOT_STARTED
+    groupMotionExplained.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    # create starting attributes for keyElementMotionExplained
-    keyElementMotionExplained.keys = []
-    keyElementMotionExplained.rt = []
-    _keyElementMotionExplained_allKeys = []
-    # store start times for elementMotionExplained
-    elementMotionExplained.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    elementMotionExplained.tStart = globalClock.getTime(format='float')
-    elementMotionExplained.status = STARTED
-    thisExp.addData('elementMotionExplained.started', elementMotionExplained.tStart)
-    elementMotionExplained.maxDuration = None
+    # create starting attributes for keyGroupMotionExplained
+    keyGroupMotionExplained.keys = []
+    keyGroupMotionExplained.rt = []
+    _keyGroupMotionExplained_allKeys = []
+    # store start times for groupMotionExplained
+    groupMotionExplained.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    groupMotionExplained.tStart = globalClock.getTime(format='float')
+    groupMotionExplained.status = STARTED
+    thisExp.addData('groupMotionExplained.started', groupMotionExplained.tStart)
+    groupMotionExplained.maxDuration = None
     # keep track of which components have finished
-    elementMotionExplainedComponents = elementMotionExplained.components
-    for thisComponent in elementMotionExplained.components:
+    groupMotionExplainedComponents = groupMotionExplained.components
+    for thisComponent in groupMotionExplained.components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1714,8 +2419,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "elementMotionExplained" ---
-    elementMotionExplained.forceEnded = routineForceEnded = not continueRoutine
+    # --- Run Routine "groupMotionExplained" ---
+    groupMotionExplained.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
         t = routineTimer.getTime()
@@ -1724,51 +2429,51 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *keyElementMotionExplained* updates
+        # *keyGroupMotionExplained* updates
         waitOnFlip = False
         
-        # if keyElementMotionExplained is starting this frame...
-        if keyElementMotionExplained.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+        # if keyGroupMotionExplained is starting this frame...
+        if keyGroupMotionExplained.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
             # keep track of start time/frame for later
-            keyElementMotionExplained.frameNStart = frameN  # exact frame index
-            keyElementMotionExplained.tStart = t  # local t and not account for scr refresh
-            keyElementMotionExplained.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(keyElementMotionExplained, 'tStartRefresh')  # time at next scr refresh
+            keyGroupMotionExplained.frameNStart = frameN  # exact frame index
+            keyGroupMotionExplained.tStart = t  # local t and not account for scr refresh
+            keyGroupMotionExplained.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(keyGroupMotionExplained, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'keyElementMotionExplained.started')
+            thisExp.timestampOnFlip(win, 'keyGroupMotionExplained.started')
             # update status
-            keyElementMotionExplained.status = STARTED
+            keyGroupMotionExplained.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(keyElementMotionExplained.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(keyElementMotionExplained.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if keyElementMotionExplained.status == STARTED and not waitOnFlip:
-            theseKeys = keyElementMotionExplained.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
-            _keyElementMotionExplained_allKeys.extend(theseKeys)
-            if len(_keyElementMotionExplained_allKeys):
-                keyElementMotionExplained.keys = _keyElementMotionExplained_allKeys[-1].name  # just the last key pressed
-                keyElementMotionExplained.rt = _keyElementMotionExplained_allKeys[-1].rt
-                keyElementMotionExplained.duration = _keyElementMotionExplained_allKeys[-1].duration
+            win.callOnFlip(keyGroupMotionExplained.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(keyGroupMotionExplained.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if keyGroupMotionExplained.status == STARTED and not waitOnFlip:
+            theseKeys = keyGroupMotionExplained.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _keyGroupMotionExplained_allKeys.extend(theseKeys)
+            if len(_keyGroupMotionExplained_allKeys):
+                keyGroupMotionExplained.keys = _keyGroupMotionExplained_allKeys[-1].name  # just the last key pressed
+                keyGroupMotionExplained.rt = _keyGroupMotionExplained_allKeys[-1].rt
+                keyGroupMotionExplained.duration = _keyGroupMotionExplained_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
         
-        # *textElementMotion* updates
+        # *textGroupMotion* updates
         
-        # if textElementMotion is starting this frame...
-        if textElementMotion.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if textGroupMotion is starting this frame...
+        if textGroupMotion.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            textElementMotion.frameNStart = frameN  # exact frame index
-            textElementMotion.tStart = t  # local t and not account for scr refresh
-            textElementMotion.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(textElementMotion, 'tStartRefresh')  # time at next scr refresh
+            textGroupMotion.frameNStart = frameN  # exact frame index
+            textGroupMotion.tStart = t  # local t and not account for scr refresh
+            textGroupMotion.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textGroupMotion, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'textElementMotion.started')
+            thisExp.timestampOnFlip(win, 'textGroupMotion.started')
             # update status
-            textElementMotion.status = STARTED
-            textElementMotion.setAutoDraw(True)
+            textGroupMotion.status = STARTED
+            textGroupMotion.setAutoDraw(True)
         
-        # if textElementMotion is active this frame...
-        if textElementMotion.status == STARTED:
+        # if textGroupMotion is active this frame...
+        if textGroupMotion.status == STARTED:
             # update params
             pass
         
@@ -1784,17 +2489,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 thisExp=thisExp, 
                 win=win, 
                 timers=[routineTimer, globalClock], 
-                currentRoutine=elementMotionExplained,
+                currentRoutine=groupMotionExplained,
             )
             # skip the frame we paused on
             continue
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
-            elementMotionExplained.forceEnded = routineForceEnded = True
+            groupMotionExplained.forceEnded = routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in elementMotionExplained.components:
+        for thisComponent in groupMotionExplained.components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1803,24 +2508,145 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "elementMotionExplained" ---
-    for thisComponent in elementMotionExplained.components:
+    # --- Ending Routine "groupMotionExplained" ---
+    for thisComponent in groupMotionExplained.components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    # store stop times for elementMotionExplained
-    elementMotionExplained.tStop = globalClock.getTime(format='float')
-    elementMotionExplained.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('elementMotionExplained.stopped', elementMotionExplained.tStop)
+    # store stop times for groupMotionExplained
+    groupMotionExplained.tStop = globalClock.getTime(format='float')
+    groupMotionExplained.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('groupMotionExplained.stopped', groupMotionExplained.tStop)
     # check responses
-    if keyElementMotionExplained.keys in ['', [], None]:  # No response was made
-        keyElementMotionExplained.keys = None
-    thisExp.addData('keyElementMotionExplained.keys',keyElementMotionExplained.keys)
-    if keyElementMotionExplained.keys != None:  # we had a response
-        thisExp.addData('keyElementMotionExplained.rt', keyElementMotionExplained.rt)
-        thisExp.addData('keyElementMotionExplained.duration', keyElementMotionExplained.duration)
+    if keyGroupMotionExplained.keys in ['', [], None]:  # No response was made
+        keyGroupMotionExplained.keys = None
+    thisExp.addData('keyGroupMotionExplained.keys',keyGroupMotionExplained.keys)
+    if keyGroupMotionExplained.keys != None:  # we had a response
+        thisExp.addData('keyGroupMotionExplained.rt', keyGroupMotionExplained.rt)
+        thisExp.addData('keyGroupMotionExplained.duration', keyGroupMotionExplained.duration)
     thisExp.nextEntry()
-    # the Routine "elementMotionExplained" was not non-slip safe, so reset the non-slip timer
+    # the Routine "groupMotionExplained" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
+    
+    # --- Prepare to start Routine "blank800" ---
+    # create an object to store info about Routine blank800
+    blank800 = data.Routine(
+        name='blank800',
+        components=[FixationCrossBlank800],
+    )
+    blank800.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # store start times for blank800
+    blank800.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    blank800.tStart = globalClock.getTime(format='float')
+    blank800.status = STARTED
+    thisExp.addData('blank800.started', blank800.tStart)
+    blank800.maxDuration = None
+    # keep track of which components have finished
+    blank800Components = blank800.components
+    for thisComponent in blank800.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "blank800" ---
+    blank800.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine and routineTimer.getTime() < 0.8:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *FixationCrossBlank800* updates
+        
+        # if FixationCrossBlank800 is starting this frame...
+        if FixationCrossBlank800.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            FixationCrossBlank800.frameNStart = frameN  # exact frame index
+            FixationCrossBlank800.tStart = t  # local t and not account for scr refresh
+            FixationCrossBlank800.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(FixationCrossBlank800, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'FixationCrossBlank800.started')
+            # update status
+            FixationCrossBlank800.status = STARTED
+            FixationCrossBlank800.setAutoDraw(True)
+        
+        # if FixationCrossBlank800 is active this frame...
+        if FixationCrossBlank800.status == STARTED:
+            # update params
+            pass
+        
+        # if FixationCrossBlank800 is stopping this frame...
+        if FixationCrossBlank800.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > FixationCrossBlank800.tStartRefresh + 0.8-frameTolerance:
+                # keep track of stop time/frame for later
+                FixationCrossBlank800.tStop = t  # not accounting for scr refresh
+                FixationCrossBlank800.tStopRefresh = tThisFlipGlobal  # on global time
+                FixationCrossBlank800.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'FixationCrossBlank800.stopped')
+                # update status
+                FixationCrossBlank800.status = FINISHED
+                FixationCrossBlank800.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=blank800,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            blank800.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in blank800.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "blank800" ---
+    for thisComponent in blank800.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for blank800
+    blank800.tStop = globalClock.getTime(format='float')
+    blank800.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('blank800.stopped', blank800.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if blank800.maxDurationReached:
+        routineTimer.addTime(-blank800.maxDuration)
+    elif blank800.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-0.800000)
+    thisExp.nextEntry()
     
     # set up handler to look after randomisation of conditions etc
     groupMotionDemo = data.TrialHandler2(
@@ -1870,22 +2696,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisExp.addData("direction", direction)
         
         if direction == "LR":
-            leftFrame1_Pos = (-3, 2)
-            middleFrame1_Pos = (-1, 2)
-            rightFrame1_Pos = (1, 2)
+            leftFrame1_Pos = (-6, 3)
+            middleFrame1_Pos = (-2, 3)
+            rightFrame1_Pos = (2, 3)
         
-            leftFrame2_Pos = (-1, 2)
-            middleFrame2_Pos = (1, 2)
-            rightFrame2_Pos = (3, 2)
+            leftFrame2_Pos = (-2, 3)
+            middleFrame2_Pos = (2, 3)
+            rightFrame2_Pos = (6, 3)
         
         elif direction == "RL":
-            leftFrame1_Pos = (-1, 2)
-            middleFrame1_Pos = (1, 2)
-            rightFrame1_Pos = (3, 2)
+            leftFrame1_Pos = (-2, 3)
+            middleFrame1_Pos = (2, 3)
+            rightFrame1_Pos = (6, 3)
         
-            leftFrame2_Pos = (-3, 2)
-            middleFrame2_Pos = (-1, 2)
-            rightFrame2_Pos = (1, 2)
+            leftFrame2_Pos = (-6, 3)
+            middleFrame2_Pos = (-2, 3)
+            rightFrame2_Pos = (2, 3)
         ternusExampleLeft.setPos(leftFrame1_Pos)
         ternusExampleMiddle.setPos(middleFrame1_Pos)
         ternusExampleRight.setPos(rightFrame1_Pos)
@@ -2590,28 +3416,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if running in a Session with a Liaison client, send data up to now
         thisSession.sendExperimentData()
     
-    # --- Prepare to start Routine "groupMotionExplained" ---
-    # create an object to store info about Routine groupMotionExplained
-    groupMotionExplained = data.Routine(
-        name='groupMotionExplained',
-        components=[keyGroupMotionExplained, textGroupMotion],
+    # --- Prepare to start Routine "PracticeExplained" ---
+    # create an object to store info about Routine PracticeExplained
+    PracticeExplained = data.Routine(
+        name='PracticeExplained',
+        components=[keyPracticeStart, textPracticeExplained],
     )
-    groupMotionExplained.status = NOT_STARTED
+    PracticeExplained.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    # create starting attributes for keyGroupMotionExplained
-    keyGroupMotionExplained.keys = []
-    keyGroupMotionExplained.rt = []
-    _keyGroupMotionExplained_allKeys = []
-    # store start times for groupMotionExplained
-    groupMotionExplained.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    groupMotionExplained.tStart = globalClock.getTime(format='float')
-    groupMotionExplained.status = STARTED
-    thisExp.addData('groupMotionExplained.started', groupMotionExplained.tStart)
-    groupMotionExplained.maxDuration = None
+    # create starting attributes for keyPracticeStart
+    keyPracticeStart.keys = []
+    keyPracticeStart.rt = []
+    _keyPracticeStart_allKeys = []
+    # store start times for PracticeExplained
+    PracticeExplained.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    PracticeExplained.tStart = globalClock.getTime(format='float')
+    PracticeExplained.status = STARTED
+    thisExp.addData('PracticeExplained.started', PracticeExplained.tStart)
+    PracticeExplained.maxDuration = None
     # keep track of which components have finished
-    groupMotionExplainedComponents = groupMotionExplained.components
-    for thisComponent in groupMotionExplained.components:
+    PracticeExplainedComponents = PracticeExplained.components
+    for thisComponent in PracticeExplained.components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -2623,8 +3449,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "groupMotionExplained" ---
-    groupMotionExplained.forceEnded = routineForceEnded = not continueRoutine
+    # --- Run Routine "PracticeExplained" ---
+    PracticeExplained.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
         t = routineTimer.getTime()
@@ -2633,51 +3459,51 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *keyGroupMotionExplained* updates
+        # *keyPracticeStart* updates
         waitOnFlip = False
         
-        # if keyGroupMotionExplained is starting this frame...
-        if keyGroupMotionExplained.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+        # if keyPracticeStart is starting this frame...
+        if keyPracticeStart.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
             # keep track of start time/frame for later
-            keyGroupMotionExplained.frameNStart = frameN  # exact frame index
-            keyGroupMotionExplained.tStart = t  # local t and not account for scr refresh
-            keyGroupMotionExplained.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(keyGroupMotionExplained, 'tStartRefresh')  # time at next scr refresh
+            keyPracticeStart.frameNStart = frameN  # exact frame index
+            keyPracticeStart.tStart = t  # local t and not account for scr refresh
+            keyPracticeStart.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(keyPracticeStart, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'keyGroupMotionExplained.started')
+            thisExp.timestampOnFlip(win, 'keyPracticeStart.started')
             # update status
-            keyGroupMotionExplained.status = STARTED
+            keyPracticeStart.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(keyGroupMotionExplained.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(keyGroupMotionExplained.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if keyGroupMotionExplained.status == STARTED and not waitOnFlip:
-            theseKeys = keyGroupMotionExplained.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
-            _keyGroupMotionExplained_allKeys.extend(theseKeys)
-            if len(_keyGroupMotionExplained_allKeys):
-                keyGroupMotionExplained.keys = _keyGroupMotionExplained_allKeys[-1].name  # just the last key pressed
-                keyGroupMotionExplained.rt = _keyGroupMotionExplained_allKeys[-1].rt
-                keyGroupMotionExplained.duration = _keyGroupMotionExplained_allKeys[-1].duration
+            win.callOnFlip(keyPracticeStart.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(keyPracticeStart.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if keyPracticeStart.status == STARTED and not waitOnFlip:
+            theseKeys = keyPracticeStart.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _keyPracticeStart_allKeys.extend(theseKeys)
+            if len(_keyPracticeStart_allKeys):
+                keyPracticeStart.keys = _keyPracticeStart_allKeys[-1].name  # just the last key pressed
+                keyPracticeStart.rt = _keyPracticeStart_allKeys[-1].rt
+                keyPracticeStart.duration = _keyPracticeStart_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
         
-        # *textGroupMotion* updates
+        # *textPracticeExplained* updates
         
-        # if textGroupMotion is starting this frame...
-        if textGroupMotion.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if textPracticeExplained is starting this frame...
+        if textPracticeExplained.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            textGroupMotion.frameNStart = frameN  # exact frame index
-            textGroupMotion.tStart = t  # local t and not account for scr refresh
-            textGroupMotion.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(textGroupMotion, 'tStartRefresh')  # time at next scr refresh
+            textPracticeExplained.frameNStart = frameN  # exact frame index
+            textPracticeExplained.tStart = t  # local t and not account for scr refresh
+            textPracticeExplained.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textPracticeExplained, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'textGroupMotion.started')
+            thisExp.timestampOnFlip(win, 'textPracticeExplained.started')
             # update status
-            textGroupMotion.status = STARTED
-            textGroupMotion.setAutoDraw(True)
+            textPracticeExplained.status = STARTED
+            textPracticeExplained.setAutoDraw(True)
         
-        # if textGroupMotion is active this frame...
-        if textGroupMotion.status == STARTED:
+        # if textPracticeExplained is active this frame...
+        if textPracticeExplained.status == STARTED:
             # update params
             pass
         
@@ -2693,17 +3519,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 thisExp=thisExp, 
                 win=win, 
                 timers=[routineTimer, globalClock], 
-                currentRoutine=groupMotionExplained,
+                currentRoutine=PracticeExplained,
             )
             # skip the frame we paused on
             continue
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
-            groupMotionExplained.forceEnded = routineForceEnded = True
+            PracticeExplained.forceEnded = routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in groupMotionExplained.components:
+        for thisComponent in PracticeExplained.components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -2712,24 +3538,145 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "groupMotionExplained" ---
-    for thisComponent in groupMotionExplained.components:
+    # --- Ending Routine "PracticeExplained" ---
+    for thisComponent in PracticeExplained.components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    # store stop times for groupMotionExplained
-    groupMotionExplained.tStop = globalClock.getTime(format='float')
-    groupMotionExplained.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('groupMotionExplained.stopped', groupMotionExplained.tStop)
+    # store stop times for PracticeExplained
+    PracticeExplained.tStop = globalClock.getTime(format='float')
+    PracticeExplained.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('PracticeExplained.stopped', PracticeExplained.tStop)
     # check responses
-    if keyGroupMotionExplained.keys in ['', [], None]:  # No response was made
-        keyGroupMotionExplained.keys = None
-    thisExp.addData('keyGroupMotionExplained.keys',keyGroupMotionExplained.keys)
-    if keyGroupMotionExplained.keys != None:  # we had a response
-        thisExp.addData('keyGroupMotionExplained.rt', keyGroupMotionExplained.rt)
-        thisExp.addData('keyGroupMotionExplained.duration', keyGroupMotionExplained.duration)
+    if keyPracticeStart.keys in ['', [], None]:  # No response was made
+        keyPracticeStart.keys = None
+    thisExp.addData('keyPracticeStart.keys',keyPracticeStart.keys)
+    if keyPracticeStart.keys != None:  # we had a response
+        thisExp.addData('keyPracticeStart.rt', keyPracticeStart.rt)
+        thisExp.addData('keyPracticeStart.duration', keyPracticeStart.duration)
     thisExp.nextEntry()
-    # the Routine "groupMotionExplained" was not non-slip safe, so reset the non-slip timer
+    # the Routine "PracticeExplained" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
+    
+    # --- Prepare to start Routine "blank800" ---
+    # create an object to store info about Routine blank800
+    blank800 = data.Routine(
+        name='blank800',
+        components=[FixationCrossBlank800],
+    )
+    blank800.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # store start times for blank800
+    blank800.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    blank800.tStart = globalClock.getTime(format='float')
+    blank800.status = STARTED
+    thisExp.addData('blank800.started', blank800.tStart)
+    blank800.maxDuration = None
+    # keep track of which components have finished
+    blank800Components = blank800.components
+    for thisComponent in blank800.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "blank800" ---
+    blank800.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine and routineTimer.getTime() < 0.8:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *FixationCrossBlank800* updates
+        
+        # if FixationCrossBlank800 is starting this frame...
+        if FixationCrossBlank800.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            FixationCrossBlank800.frameNStart = frameN  # exact frame index
+            FixationCrossBlank800.tStart = t  # local t and not account for scr refresh
+            FixationCrossBlank800.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(FixationCrossBlank800, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'FixationCrossBlank800.started')
+            # update status
+            FixationCrossBlank800.status = STARTED
+            FixationCrossBlank800.setAutoDraw(True)
+        
+        # if FixationCrossBlank800 is active this frame...
+        if FixationCrossBlank800.status == STARTED:
+            # update params
+            pass
+        
+        # if FixationCrossBlank800 is stopping this frame...
+        if FixationCrossBlank800.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > FixationCrossBlank800.tStartRefresh + 0.8-frameTolerance:
+                # keep track of stop time/frame for later
+                FixationCrossBlank800.tStop = t  # not accounting for scr refresh
+                FixationCrossBlank800.tStopRefresh = tThisFlipGlobal  # on global time
+                FixationCrossBlank800.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'FixationCrossBlank800.stopped')
+                # update status
+                FixationCrossBlank800.status = FINISHED
+                FixationCrossBlank800.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=blank800,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            blank800.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in blank800.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "blank800" ---
+    for thisComponent in blank800.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for blank800
+    blank800.tStop = globalClock.getTime(format='float')
+    blank800.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('blank800.stopped', blank800.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if blank800.maxDurationReached:
+        routineTimer.addTime(-blank800.maxDuration)
+    elif blank800.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-0.800000)
+    thisExp.nextEntry()
     
     # set up handler to look after randomisation of conditions etc
     practiceLoop = data.TrialHandler2(
@@ -2777,13 +3724,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # Run 'Begin Routine' code from codeObjectParametersPractice
         colorList = [
             "#E41A1C",  # red
-            "#377EB8",  # blue
-            "#4DAF4A",  # green
-            "#984EA3",  # purple
-            "#FF7F00",  # orange
-            "#A65628",  # brown
-            "#F781BF",  # pink
-            "#1B9E77"   # teal
+            "#1E88E5",  # blue
+            "#2EBD59",  # green
+            "#C200FB",  # purple
         ]
         
         causalColor = np.random.choice(colorList)
@@ -2791,22 +3734,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         direction = np.random.choice(["LR", "RL"])
         
         if direction == "LR":
-            leftFrame1_Pos = (-3, 2)
-            middleFrame1_Pos = (-1, 2)
-            rightFrame1_Pos = (1, 2)
+            leftFrame1_Pos = (-6, 3)
+            middleFrame1_Pos = (-2, 3)
+            rightFrame1_Pos = (2, 3)
         
-            leftFrame2_Pos = (-1, 2)
-            middleFrame2_Pos = (1, 2)
-            rightFrame2_Pos = (3, 2)
+            leftFrame2_Pos = (-2, 3)
+            middleFrame2_Pos = (2, 3)
+            rightFrame2_Pos = (6, 3)
         
         elif direction == "RL":
-            leftFrame1_Pos = (-1, 2)
-            middleFrame1_Pos = (1, 2)
-            rightFrame1_Pos = (3, 2)
+            leftFrame1_Pos = (-2, 3)
+            middleFrame1_Pos = (2, 3)
+            rightFrame1_Pos = (6, 3)
         
-            leftFrame2_Pos = (-3, 2)
-            middleFrame2_Pos = (-1, 2)
-            rightFrame2_Pos = (1, 2)
+            leftFrame2_Pos = (-6, 3)
+            middleFrame2_Pos = (-2, 3)
+            rightFrame2_Pos = (2, 3)
         
         # default: invisible causal objects
         portalOpacity = 0
@@ -2840,10 +3783,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if conditions_practice == "Portal" or conditions_practice == "Barrier":
             if direction == "LR":
                 rightFrame2_Color = causalColor
-                barrierPos = (2,2)
+                barrierPos = (4,3)
             elif direction == "RL":
                 leftFrame2_Color = causalColor
-                barrierPos = (-2,2)
+                barrierPos = (-4,3)
         
         thisExp.addData("causalColor", causalColor)
         thisExp.addData("direction", direction)
@@ -3655,6 +4598,129 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # the Routine "practiceFrame2" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
+        # --- Prepare to start Routine "blank500" ---
+        # create an object to store info about Routine blank500
+        blank500 = data.Routine(
+            name='blank500',
+            components=[blankText500],
+        )
+        blank500.status = NOT_STARTED
+        continueRoutine = True
+        # update component parameters for each repeat
+        # store start times for blank500
+        blank500.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+        blank500.tStart = globalClock.getTime(format='float')
+        blank500.status = STARTED
+        thisExp.addData('blank500.started', blank500.tStart)
+        blank500.maxDuration = None
+        # keep track of which components have finished
+        blank500Components = blank500.components
+        for thisComponent in blank500.components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
+        
+        # --- Run Routine "blank500" ---
+        blank500.forceEnded = routineForceEnded = not continueRoutine
+        while continueRoutine and routineTimer.getTime() < 0.5:
+            # if trial has changed, end Routine now
+            if hasattr(thisPracticeLoop, 'status') and thisPracticeLoop.status == STOPPING:
+                continueRoutine = False
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *blankText500* updates
+            
+            # if blankText500 is starting this frame...
+            if blankText500.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                blankText500.frameNStart = frameN  # exact frame index
+                blankText500.tStart = t  # local t and not account for scr refresh
+                blankText500.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(blankText500, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'blankText500.started')
+                # update status
+                blankText500.status = STARTED
+                blankText500.setAutoDraw(True)
+            
+            # if blankText500 is active this frame...
+            if blankText500.status == STARTED:
+                # update params
+                pass
+            
+            # if blankText500 is stopping this frame...
+            if blankText500.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > blankText500.tStartRefresh + 0.5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    blankText500.tStop = t  # not accounting for scr refresh
+                    blankText500.tStopRefresh = tThisFlipGlobal  # on global time
+                    blankText500.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'blankText500.stopped')
+                    # update status
+                    blankText500.status = FINISHED
+                    blankText500.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                thisExp.status = FINISHED
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, win=win)
+                return
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    win=win, 
+                    timers=[routineTimer, globalClock], 
+                    currentRoutine=blank500,
+                )
+                # skip the frame we paused on
+                continue
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                blank500.forceEnded = routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in blank500.components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "blank500" ---
+        for thisComponent in blank500.components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # store stop times for blank500
+        blank500.tStop = globalClock.getTime(format='float')
+        blank500.tStopRefresh = tThisFlipGlobal
+        thisExp.addData('blank500.stopped', blank500.tStop)
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if blank500.maxDurationReached:
+            routineTimer.addTime(-blank500.maxDuration)
+        elif blank500.forceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-0.500000)
+        
         # --- Prepare to start Routine "blank800" ---
         # create an object to store info about Routine blank800
         blank800 = data.Routine(
@@ -3940,6 +5006,127 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # the Routine "StartScreen" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
+    # --- Prepare to start Routine "blank800" ---
+    # create an object to store info about Routine blank800
+    blank800 = data.Routine(
+        name='blank800',
+        components=[FixationCrossBlank800],
+    )
+    blank800.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # store start times for blank800
+    blank800.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    blank800.tStart = globalClock.getTime(format='float')
+    blank800.status = STARTED
+    thisExp.addData('blank800.started', blank800.tStart)
+    blank800.maxDuration = None
+    # keep track of which components have finished
+    blank800Components = blank800.components
+    for thisComponent in blank800.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "blank800" ---
+    blank800.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine and routineTimer.getTime() < 0.8:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *FixationCrossBlank800* updates
+        
+        # if FixationCrossBlank800 is starting this frame...
+        if FixationCrossBlank800.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            FixationCrossBlank800.frameNStart = frameN  # exact frame index
+            FixationCrossBlank800.tStart = t  # local t and not account for scr refresh
+            FixationCrossBlank800.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(FixationCrossBlank800, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'FixationCrossBlank800.started')
+            # update status
+            FixationCrossBlank800.status = STARTED
+            FixationCrossBlank800.setAutoDraw(True)
+        
+        # if FixationCrossBlank800 is active this frame...
+        if FixationCrossBlank800.status == STARTED:
+            # update params
+            pass
+        
+        # if FixationCrossBlank800 is stopping this frame...
+        if FixationCrossBlank800.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > FixationCrossBlank800.tStartRefresh + 0.8-frameTolerance:
+                # keep track of stop time/frame for later
+                FixationCrossBlank800.tStop = t  # not accounting for scr refresh
+                FixationCrossBlank800.tStopRefresh = tThisFlipGlobal  # on global time
+                FixationCrossBlank800.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'FixationCrossBlank800.stopped')
+                # update status
+                FixationCrossBlank800.status = FINISHED
+                FixationCrossBlank800.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=blank800,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            blank800.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in blank800.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "blank800" ---
+    for thisComponent in blank800.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for blank800
+    blank800.tStop = globalClock.getTime(format='float')
+    blank800.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('blank800.stopped', blank800.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if blank800.maxDurationReached:
+        routineTimer.addTime(-blank800.maxDuration)
+    elif blank800.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-0.800000)
+    thisExp.nextEntry()
+    
     # set up handler to look after randomisation of conditions etc
     blockLoop = data.TrialHandler2(
         name='blockLoop',
@@ -4014,13 +5201,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # Run 'Begin Routine' code from codeObjectParameters
             colorList = [
                 "#E41A1C",  # red
-                "#377EB8",  # blue
-                "#4DAF4A",  # green
-                "#984EA3",  # purple
-                "#FF7F00",  # orange
-                "#A65628",  # brown
-                "#F781BF",  # pink
-                "#1B9E77"   # teal
+                "#1E88E5",  # blue
+                "#2EBD59",  # green
+                "#C200FB",  # purple
             ]
             
             causalColor = np.random.choice(colorList)
@@ -4028,22 +5211,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             direction = np.random.choice(["LR", "RL"])
             
             if direction == "LR":
-                leftFrame1_Pos = (-3, 2)
-                middleFrame1_Pos = (-1, 2)
-                rightFrame1_Pos = (1, 2)
+                leftFrame1_Pos = (-6, 3)
+                middleFrame1_Pos = (-2, 3)
+                rightFrame1_Pos = (2, 3)
             
-                leftFrame2_Pos = (-1, 2)
-                middleFrame2_Pos = (1, 2)
-                rightFrame2_Pos = (3, 2)
+                leftFrame2_Pos = (-2, 3)
+                middleFrame2_Pos = (2, 3)
+                rightFrame2_Pos = (6, 3)
             
             elif direction == "RL":
-                leftFrame1_Pos = (-1, 2)
-                middleFrame1_Pos = (1, 2)
-                rightFrame1_Pos = (3, 2)
+                leftFrame1_Pos = (-2, 3)
+                middleFrame1_Pos = (2, 3)
+                rightFrame1_Pos = (6, 3)
             
-                leftFrame2_Pos = (-3, 2)
-                middleFrame2_Pos = (-1, 2)
-                rightFrame2_Pos = (1, 2)
+                leftFrame2_Pos = (-6, 3)
+                middleFrame2_Pos = (-2, 3)
+                rightFrame2_Pos = (2, 3)
             
             # default: invisible causal objects
             portalOpacity = 0
@@ -4077,13 +5260,19 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             if condition == "Portal" or condition == "Barrier":
                 if direction == "LR":
                     rightFrame2_Color = causalColor
-                    barrierPos = (2,2)
+                    barrierPos = (4,3)
                 elif direction == "RL":
                     leftFrame2_Color = causalColor
-                    barrierPos = (-2,2)
+                    barrierPos = (-4,3)
             
-            thisExp.addData("causalColor", causalColor)
+            
+            thisExp.addData("group", group)
+            thisExp.addData("condition", condition)
+            thisExp.addData("interstim_interval", interstim_interval)
             thisExp.addData("direction", direction)
+            thisExp.addData("causalColor", causalColor)
+            thisExp.addData("blockNumber", blockNumber)
+            thisExp.addData("participantID", participantID)
             ternusObjLeft.setPos(leftFrame1_Pos)
             ternusObjMiddle.setPos(middleFrame1_Pos)
             ternusObjRight.setPos(rightFrame1_Pos)
@@ -4892,6 +6081,129 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # the Routine "ternusFrame2" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             
+            # --- Prepare to start Routine "blank500" ---
+            # create an object to store info about Routine blank500
+            blank500 = data.Routine(
+                name='blank500',
+                components=[blankText500],
+            )
+            blank500.status = NOT_STARTED
+            continueRoutine = True
+            # update component parameters for each repeat
+            # store start times for blank500
+            blank500.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+            blank500.tStart = globalClock.getTime(format='float')
+            blank500.status = STARTED
+            thisExp.addData('blank500.started', blank500.tStart)
+            blank500.maxDuration = None
+            # keep track of which components have finished
+            blank500Components = blank500.components
+            for thisComponent in blank500.components:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
+            
+            # --- Run Routine "blank500" ---
+            blank500.forceEnded = routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 0.5:
+                # if trial has changed, end Routine now
+                if hasattr(thisTrialLoop, 'status') and thisTrialLoop.status == STOPPING:
+                    continueRoutine = False
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+                
+                # *blankText500* updates
+                
+                # if blankText500 is starting this frame...
+                if blankText500.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    blankText500.frameNStart = frameN  # exact frame index
+                    blankText500.tStart = t  # local t and not account for scr refresh
+                    blankText500.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(blankText500, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'blankText500.started')
+                    # update status
+                    blankText500.status = STARTED
+                    blankText500.setAutoDraw(True)
+                
+                # if blankText500 is active this frame...
+                if blankText500.status == STARTED:
+                    # update params
+                    pass
+                
+                # if blankText500 is stopping this frame...
+                if blankText500.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > blankText500.tStartRefresh + 0.5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        blankText500.tStop = t  # not accounting for scr refresh
+                        blankText500.tStopRefresh = tThisFlipGlobal  # on global time
+                        blankText500.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'blankText500.stopped')
+                        # update status
+                        blankText500.status = FINISHED
+                        blankText500.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, win=win)
+                    return
+                # pause experiment here if requested
+                if thisExp.status == PAUSED:
+                    pauseExperiment(
+                        thisExp=thisExp, 
+                        win=win, 
+                        timers=[routineTimer, globalClock], 
+                        currentRoutine=blank500,
+                    )
+                    # skip the frame we paused on
+                    continue
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    blank500.forceEnded = routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in blank500.components:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
+            
+            # --- Ending Routine "blank500" ---
+            for thisComponent in blank500.components:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            # store stop times for blank500
+            blank500.tStop = globalClock.getTime(format='float')
+            blank500.tStopRefresh = tThisFlipGlobal
+            thisExp.addData('blank500.stopped', blank500.tStop)
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if blank500.maxDurationReached:
+                routineTimer.addTime(-blank500.maxDuration)
+            elif blank500.forceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-0.500000)
+            
             # --- Prepare to start Routine "blank800" ---
             # create an object to store info about Routine blank800
             blank800 = data.Routine(
@@ -5057,13 +6369,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             "Drücke die Leertaste, um mit dem nächsten Block fortzufahren."
         )
         
+        
         if blockNumber == 10:
             breakText = (
             "Sehr gut! Du hast Block " +str(blockNumber) + " von 10 abgeschlossen.\n\n"
-            "Das Experiment ist damit beendet! \n\n"
-            "Du kannst den Arbeitsplatz jetzt verlassen und dem Versuchsleiter Bescheid geben.\n\n"
-            "Vielen Dank für die Teilnahme!"
+            "Die Testphase ist damit beendet!\n\n"
+            "Als Letztes musst du noch einen kurzen Fragebogen zu deiner Erfahrung ausfüllen.\n\n"
+            "Drücke die Leertaste, um fortzufahren."
         )
+        
+        
+        
         
         # create starting attributes for keyBlockContinue
         keyBlockContinue.keys = []
@@ -5199,6 +6515,129 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             blockLoop.addData('keyBlockContinue.duration', keyBlockContinue.duration)
         # the Routine "blockBreak" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
+        
+        # --- Prepare to start Routine "blank800" ---
+        # create an object to store info about Routine blank800
+        blank800 = data.Routine(
+            name='blank800',
+            components=[FixationCrossBlank800],
+        )
+        blank800.status = NOT_STARTED
+        continueRoutine = True
+        # update component parameters for each repeat
+        # store start times for blank800
+        blank800.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+        blank800.tStart = globalClock.getTime(format='float')
+        blank800.status = STARTED
+        thisExp.addData('blank800.started', blank800.tStart)
+        blank800.maxDuration = None
+        # keep track of which components have finished
+        blank800Components = blank800.components
+        for thisComponent in blank800.components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
+        
+        # --- Run Routine "blank800" ---
+        blank800.forceEnded = routineForceEnded = not continueRoutine
+        while continueRoutine and routineTimer.getTime() < 0.8:
+            # if trial has changed, end Routine now
+            if hasattr(thisBlockLoop, 'status') and thisBlockLoop.status == STOPPING:
+                continueRoutine = False
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *FixationCrossBlank800* updates
+            
+            # if FixationCrossBlank800 is starting this frame...
+            if FixationCrossBlank800.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                FixationCrossBlank800.frameNStart = frameN  # exact frame index
+                FixationCrossBlank800.tStart = t  # local t and not account for scr refresh
+                FixationCrossBlank800.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(FixationCrossBlank800, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'FixationCrossBlank800.started')
+                # update status
+                FixationCrossBlank800.status = STARTED
+                FixationCrossBlank800.setAutoDraw(True)
+            
+            # if FixationCrossBlank800 is active this frame...
+            if FixationCrossBlank800.status == STARTED:
+                # update params
+                pass
+            
+            # if FixationCrossBlank800 is stopping this frame...
+            if FixationCrossBlank800.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > FixationCrossBlank800.tStartRefresh + 0.8-frameTolerance:
+                    # keep track of stop time/frame for later
+                    FixationCrossBlank800.tStop = t  # not accounting for scr refresh
+                    FixationCrossBlank800.tStopRefresh = tThisFlipGlobal  # on global time
+                    FixationCrossBlank800.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'FixationCrossBlank800.stopped')
+                    # update status
+                    FixationCrossBlank800.status = FINISHED
+                    FixationCrossBlank800.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                thisExp.status = FINISHED
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, win=win)
+                return
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    win=win, 
+                    timers=[routineTimer, globalClock], 
+                    currentRoutine=blank800,
+                )
+                # skip the frame we paused on
+                continue
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                blank800.forceEnded = routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in blank800.components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "blank800" ---
+        for thisComponent in blank800.components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # store stop times for blank800
+        blank800.tStop = globalClock.getTime(format='float')
+        blank800.tStopRefresh = tThisFlipGlobal
+        thisExp.addData('blank800.stopped', blank800.tStop)
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if blank800.maxDurationReached:
+            routineTimer.addTime(-blank800.maxDuration)
+        elif blank800.forceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-0.800000)
         # mark thisBlockLoop as finished
         if hasattr(thisBlockLoop, 'status'):
             thisBlockLoop.status = FINISHED

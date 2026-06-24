@@ -31,7 +31,7 @@
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
     <Param val="float" valType="str" updates="None" name="clockFormat"/>
     <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
-    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="#E0E0E0" valType="color" updates="None" name="color"/>
     <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
     <Param val="warning" valType="code" updates="None" name="consoleLoggingLevel"/>
     <Param val="default" valType="str" updates="None" name="ecSampleRate"/>
@@ -134,7 +134,7 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
       <TextComponent name="textStartMessage" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -791,10 +791,10 @@
       <CodeComponent name="codeObjectParameters" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="barrierPos = (2,2)&amp;#10;&amp;#10;# default Frame 2 Ternus colors&amp;#10;leftFrame2_Color = &quot;black&quot;&amp;#10;middleFrame2_Color = &quot;black&quot;&amp;#10;rightFrame2_Color = &quot;black&quot;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="barrierPos = [2, 2];&amp;#10;leftFrame2_Color = &quot;black&quot;;&amp;#10;middleFrame2_Color = &quot;black&quot;;&amp;#10;rightFrame2_Color = &quot;black&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="colorList = [&quot;#E41A1C&quot;, &quot;#377EB8&quot;, &quot;#4DAF4A&quot;, &quot;#984EA3&quot;, &quot;#FF7F00&quot;, &quot;#A65628&quot;, &quot;#F781BF&quot;, &quot;#1B9E77&quot;];&amp;#10;causalColor = np.random.choice(colorList);&amp;#10;direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;]);&amp;#10;if ((direction === &quot;LR&quot;)) {&amp;#10;    leftFrame1_Pos = [(- 3), 2];&amp;#10;    middleFrame1_Pos = [(- 1), 2];&amp;#10;    rightFrame1_Pos = [1, 2];&amp;#10;    leftFrame2_Pos = [(- 1), 2];&amp;#10;    middleFrame2_Pos = [1, 2];&amp;#10;    rightFrame2_Pos = [3, 2];&amp;#10;} else {&amp;#10;    if ((direction === &quot;RL&quot;)) {&amp;#10;        leftFrame1_Pos = [(- 1), 2];&amp;#10;        middleFrame1_Pos = [1, 2];&amp;#10;        rightFrame1_Pos = [3, 2];&amp;#10;        leftFrame2_Pos = [(- 3), 2];&amp;#10;        middleFrame2_Pos = [(- 1), 2];&amp;#10;        rightFrame2_Pos = [1, 2];&amp;#10;    }&amp;#10;}&amp;#10;portalOpacity = 0;&amp;#10;barrierOpacity = 0;&amp;#10;barrierPos = [2, 2];&amp;#10;ternusColor = &quot;black&quot;;&amp;#10;leftFrame2_Color = &quot;black&quot;;&amp;#10;middleFrame2_Color = &quot;black&quot;;&amp;#10;rightFrame2_Color = &quot;black&quot;;&amp;#10;if ((condition === &quot;Portal&quot;)) {&amp;#10;    portalOpacity = 1;&amp;#10;    barrierOpacity = 0;&amp;#10;} else {&amp;#10;    if ((condition === &quot;Barrier&quot;)) {&amp;#10;        portalOpacity = 0;&amp;#10;        barrierOpacity = 1;&amp;#10;    } else {&amp;#10;        if ((condition === &quot;Standard&quot;)) {&amp;#10;            portalOpacity = 0;&amp;#10;            barrierOpacity = 0;&amp;#10;            ternusColor = &quot;black&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if (((condition === &quot;Portal&quot;) || (condition === &quot;Barrier&quot;))) {&amp;#10;    if ((direction === &quot;LR&quot;)) {&amp;#10;        rightFrame2_Color = causalColor;&amp;#10;        barrierPos = [2, 2];&amp;#10;    } else {&amp;#10;        if ((direction === &quot;RL&quot;)) {&amp;#10;            leftFrame2_Color = causalColor;&amp;#10;            barrierPos = [(- 2), 2];&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;causalColor&quot;, causalColor);&amp;#10;psychoJS.experiment.addData(&quot;direction&quot;, direction);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="colorList = [&amp;#10;    &quot;#E41A1C&quot;,  # red&amp;#10;    &quot;#377EB8&quot;,  # blue&amp;#10;    &quot;#4DAF4A&quot;,  # green&amp;#10;    &quot;#984EA3&quot;,  # purple&amp;#10;    &quot;#FF7F00&quot;,  # orange&amp;#10;    &quot;#A65628&quot;,  # brown&amp;#10;    &quot;#F781BF&quot;,  # pink&amp;#10;    &quot;#1B9E77&quot;   # teal&amp;#10;]&amp;#10;&amp;#10;causalColor = np.random.choice(colorList)&amp;#10;&amp;#10;direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;])&amp;#10;&amp;#10;if direction == &quot;LR&quot;:&amp;#10;    leftFrame1_Pos = (-3, 2)&amp;#10;    middleFrame1_Pos = (-1, 2)&amp;#10;    rightFrame1_Pos = (1, 2)&amp;#10;&amp;#10;    leftFrame2_Pos = (-1, 2)&amp;#10;    middleFrame2_Pos = (1, 2)&amp;#10;    rightFrame2_Pos = (3, 2)&amp;#10;&amp;#10;elif direction == &quot;RL&quot;:&amp;#10;    leftFrame1_Pos = (-1, 2)&amp;#10;    middleFrame1_Pos = (1, 2)&amp;#10;    rightFrame1_Pos = (3, 2)&amp;#10;&amp;#10;    leftFrame2_Pos = (-3, 2)&amp;#10;    middleFrame2_Pos = (-1, 2)&amp;#10;    rightFrame2_Pos = (1, 2)&amp;#10;&amp;#10;# default: invisible causal objects&amp;#10;portalOpacity = 0&amp;#10;barrierOpacity = 0&amp;#10;barrierPos = (2,2)&amp;#10;&amp;#10;# default Ternus color&amp;#10;ternusColor = &quot;black&quot;&amp;#10;&amp;#10;# reset every trial&amp;#10;leftFrame2_Color = &quot;black&quot;&amp;#10;middleFrame2_Color = &quot;black&quot;&amp;#10;rightFrame2_Color = &quot;black&quot;&amp;#10;&amp;#10;if condition == &quot;Portal&quot;:&amp;#10;    portalOpacity = 1&amp;#10;    barrierOpacity = 0&amp;#10;&amp;#10;&amp;#10;elif condition == &quot;Barrier&quot;:&amp;#10;    portalOpacity = 0&amp;#10;    barrierOpacity = 1&amp;#10;&amp;#10;&amp;#10;elif condition == &quot;Standard&quot;:&amp;#10;    portalOpacity = 0&amp;#10;    barrierOpacity = 0&amp;#10;    ternusColor = &quot;black&quot;&amp;#10;&amp;#10;# color-change only in Portal/Barrier&amp;#10;if condition == &quot;Portal&quot; or condition == &quot;Barrier&quot;:&amp;#10;    if direction == &quot;LR&quot;:&amp;#10;        rightFrame2_Color = causalColor&amp;#10;        barrierPos = (2,2)&amp;#10;    elif direction == &quot;RL&quot;:&amp;#10;        leftFrame2_Color = causalColor&amp;#10;        barrierPos = (-2,2)&amp;#10;&amp;#10;thisExp.addData(&quot;causalColor&quot;, causalColor)&amp;#10;thisExp.addData(&quot;direction&quot;, direction)" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="# default Frame 2 Ternus colors&amp;#10;leftFrame2_Color = &quot;black&quot;&amp;#10;middleFrame2_Color = &quot;black&quot;&amp;#10;rightFrame2_Color = &quot;black&quot;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="leftFrame2_Color = &quot;black&quot;;&amp;#10;middleFrame2_Color = &quot;black&quot;;&amp;#10;rightFrame2_Color = &quot;black&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="colorList = [&quot;#E41A1C&quot;, &quot;#1E88E5&quot;, &quot;#2EBD59&quot;, &quot;#C200FB&quot;];&amp;#10;causalColor = np.random.choice(colorList);&amp;#10;direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;]);&amp;#10;if ((direction === &quot;LR&quot;)) {&amp;#10;    leftFrame1_Pos = [(- 6), 3];&amp;#10;    middleFrame1_Pos = [(- 2), 3];&amp;#10;    rightFrame1_Pos = [2, 3];&amp;#10;    leftFrame2_Pos = [(- 2), 3];&amp;#10;    middleFrame2_Pos = [2, 3];&amp;#10;    rightFrame2_Pos = [6, 3];&amp;#10;} else {&amp;#10;    if ((direction === &quot;RL&quot;)) {&amp;#10;        leftFrame1_Pos = [(- 2), 3];&amp;#10;        middleFrame1_Pos = [2, 3];&amp;#10;        rightFrame1_Pos = [6, 3];&amp;#10;        leftFrame2_Pos = [(- 6), 3];&amp;#10;        middleFrame2_Pos = [(- 2), 3];&amp;#10;        rightFrame2_Pos = [2, 3];&amp;#10;    }&amp;#10;}&amp;#10;portalOpacity = 0;&amp;#10;barrierOpacity = 0;&amp;#10;barrierPos = [2, 2];&amp;#10;ternusColor = &quot;black&quot;;&amp;#10;leftFrame2_Color = &quot;black&quot;;&amp;#10;middleFrame2_Color = &quot;black&quot;;&amp;#10;rightFrame2_Color = &quot;black&quot;;&amp;#10;if ((condition === &quot;Portal&quot;)) {&amp;#10;    portalOpacity = 1;&amp;#10;    barrierOpacity = 0;&amp;#10;} else {&amp;#10;    if ((condition === &quot;Barrier&quot;)) {&amp;#10;        portalOpacity = 0;&amp;#10;        barrierOpacity = 1;&amp;#10;    } else {&amp;#10;        if ((condition === &quot;Standard&quot;)) {&amp;#10;            portalOpacity = 0;&amp;#10;            barrierOpacity = 0;&amp;#10;            ternusColor = &quot;black&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if (((condition === &quot;Portal&quot;) || (condition === &quot;Barrier&quot;))) {&amp;#10;    if ((direction === &quot;LR&quot;)) {&amp;#10;        rightFrame2_Color = causalColor;&amp;#10;        barrierPos = [4, 3];&amp;#10;    } else {&amp;#10;        if ((direction === &quot;RL&quot;)) {&amp;#10;            leftFrame2_Color = causalColor;&amp;#10;            barrierPos = [(- 4), 3];&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;group&quot;, group);&amp;#10;psychoJS.experiment.addData(&quot;condition&quot;, condition);&amp;#10;psychoJS.experiment.addData(&quot;interstim_interval&quot;, interstim_interval);&amp;#10;psychoJS.experiment.addData(&quot;direction&quot;, direction);&amp;#10;psychoJS.experiment.addData(&quot;causalColor&quot;, causalColor);&amp;#10;psychoJS.experiment.addData(&quot;blockNumber&quot;, blockNumber);&amp;#10;psychoJS.experiment.addData(&quot;participantID&quot;, participantID);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="colorList = [&amp;#10;    &quot;#E41A1C&quot;,  # red&amp;#10;    &quot;#1E88E5&quot;,  # blue&amp;#10;    &quot;#2EBD59&quot;,  # green&amp;#10;    &quot;#C200FB&quot;,  # purple&amp;#10;]&amp;#10;&amp;#10;causalColor = np.random.choice(colorList)&amp;#10;&amp;#10;direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;])&amp;#10;&amp;#10;if direction == &quot;LR&quot;:&amp;#10;    leftFrame1_Pos = (-6, 3)&amp;#10;    middleFrame1_Pos = (-2, 3)&amp;#10;    rightFrame1_Pos = (2, 3)&amp;#10;&amp;#10;    leftFrame2_Pos = (-2, 3)&amp;#10;    middleFrame2_Pos = (2, 3)&amp;#10;    rightFrame2_Pos = (6, 3)&amp;#10;&amp;#10;elif direction == &quot;RL&quot;:&amp;#10;    leftFrame1_Pos = (-2, 3)&amp;#10;    middleFrame1_Pos = (2, 3)&amp;#10;    rightFrame1_Pos = (6, 3)&amp;#10;&amp;#10;    leftFrame2_Pos = (-6, 3)&amp;#10;    middleFrame2_Pos = (-2, 3)&amp;#10;    rightFrame2_Pos = (2, 3)&amp;#10;&amp;#10;# default: invisible causal objects&amp;#10;portalOpacity = 0&amp;#10;barrierOpacity = 0&amp;#10;barrierPos = (2,2)&amp;#10;&amp;#10;# default Ternus color&amp;#10;ternusColor = &quot;black&quot;&amp;#10;&amp;#10;# reset every trial&amp;#10;leftFrame2_Color = &quot;black&quot;&amp;#10;middleFrame2_Color = &quot;black&quot;&amp;#10;rightFrame2_Color = &quot;black&quot;&amp;#10;&amp;#10;if condition == &quot;Portal&quot;:&amp;#10;    portalOpacity = 1&amp;#10;    barrierOpacity = 0&amp;#10;&amp;#10;&amp;#10;elif condition == &quot;Barrier&quot;:&amp;#10;    portalOpacity = 0&amp;#10;    barrierOpacity = 1&amp;#10;&amp;#10;&amp;#10;elif condition == &quot;Standard&quot;:&amp;#10;    portalOpacity = 0&amp;#10;    barrierOpacity = 0&amp;#10;    ternusColor = &quot;black&quot;&amp;#10;&amp;#10;# color-change only in Portal/Barrier&amp;#10;if condition == &quot;Portal&quot; or condition == &quot;Barrier&quot;:&amp;#10;    if direction == &quot;LR&quot;:&amp;#10;        rightFrame2_Color = causalColor&amp;#10;        barrierPos = (4,3)&amp;#10;    elif direction == &quot;RL&quot;:&amp;#10;        leftFrame2_Color = causalColor&amp;#10;        barrierPos = (-4,3)&amp;#10;&amp;#10;&amp;#10;thisExp.addData(&quot;group&quot;, group)&amp;#10;thisExp.addData(&quot;condition&quot;, condition)&amp;#10;thisExp.addData(&quot;interstim_interval&quot;, interstim_interval)&amp;#10;thisExp.addData(&quot;direction&quot;, direction)&amp;#10;thisExp.addData(&quot;causalColor&quot;, causalColor)&amp;#10;thisExp.addData(&quot;blockNumber&quot;, blockNumber)&amp;#10;thisExp.addData(&quot;participantID&quot;, participantID)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -823,7 +823,7 @@
         <Param val="leftFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -852,7 +852,7 @@
         <Param val="middleFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -881,7 +881,7 @@
         <Param val="rightFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -910,7 +910,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -936,10 +936,10 @@
         <Param val="portalLeft" valType="code" updates="None" name="name"/>
         <Param val="portalOpacity" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-4, 2)" valType="list" updates="constant" name="pos"/>
+        <Param val="portalLeftPos" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -965,10 +965,10 @@
         <Param val="portalRight" valType="code" updates="None" name="name"/>
         <Param val="portalOpacity" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(4, 2)" valType="list" updates="constant" name="pos"/>
+        <Param val="portalRightPos" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -997,7 +997,7 @@
         <Param val="barrierPos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1044,7 +1044,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1111,7 +1111,7 @@
         <Param val="leftFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1140,7 +1140,7 @@
         <Param val="middleFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1169,7 +1169,7 @@
         <Param val="rightFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1198,7 +1198,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1224,10 +1224,10 @@
         <Param val="portalLeft_2" valType="code" updates="None" name="name"/>
         <Param val="portalOpacity" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-4, 2)" valType="list" updates="constant" name="pos"/>
+        <Param val="portalLeftPos" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1253,10 +1253,10 @@
         <Param val="portalRight_2" valType="code" updates="None" name="name"/>
         <Param val="portalOpacity" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(4, 2)" valType="list" updates="constant" name="pos"/>
+        <Param val="portalRightPos" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1285,7 +1285,7 @@
         <Param val="barrierPos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1319,8 +1319,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="blockNumber += 1;&amp;#10;breakText = ((&quot;Sehr gut! Du hast Block &quot; + blockNumber.toString()) + &quot; von 10 abgeschlossen.\n\nMach gerne eine kurze Pause.\n\nBitte dr\u00fccke die 'F'-Taste, wenn sich die Elemente unabh\u00e4ngig voneinander bewegen (Elementbewegung), und die 'J'-Taste, wenn sich die Elemente gemeinsam  bewegen (Gruppenbewegung).\n\nDr\u00fccke die Leertaste, um mit dem n\u00e4chsten Block fortzufahren.&quot;);&amp;#10;if ((blockNumber === 10)) {&amp;#10;    breakText = ((&quot;Sehr gut! Du hast Block &quot; + blockNumber.toString()) + &quot; von 10 abgeschlossen.\n\nDas Experiment ist damit beendet! \n\nDu kannst den Arbeitsplatz jetzt verlassen und dem Versuchsleiter Bescheid geben.\n\nVielen Dank f\u00fcr die Teilnahme!&quot;);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="blockNumber += 1&amp;#10;&amp;#10;breakText = (&amp;#10;    &quot;Sehr gut! Du hast Block &quot; +str(blockNumber) + &quot; von 10 abgeschlossen.\n\n&quot;&amp;#10;    &quot;Mach gerne eine kurze Pause.\n\n&quot;&amp;#10;    &quot;Bitte drücke die 'F'-Taste, wenn sich die Elemente unabhängig voneinander bewegen &quot;&amp;#10;    &quot;(Elementbewegung), und die 'J'-Taste, wenn sich die Elemente gemeinsam &quot;&amp;#10;    &quot; bewegen (Gruppenbewegung).\n\n&quot;&amp;#10;    &quot;Drücke die Leertaste, um mit dem nächsten Block fortzufahren.&quot;&amp;#10;)&amp;#10;&amp;#10;if blockNumber == 10:&amp;#10;    breakText = (&amp;#10;    &quot;Sehr gut! Du hast Block &quot; +str(blockNumber) + &quot; von 10 abgeschlossen.\n\n&quot;&amp;#10;    &quot;Das Experiment ist damit beendet! \n\n&quot;&amp;#10;    &quot;Du kannst den Arbeitsplatz jetzt verlassen und dem Versuchsleiter Bescheid geben.\n\n&quot;&amp;#10;    &quot;Vielen Dank für die Teilnahme!&quot;&amp;#10;)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="blockNumber += 1;&amp;#10;breakText = ((&quot;Sehr gut! Du hast Block &quot; + blockNumber.toString()) + &quot; von 10 abgeschlossen.\n\nMach gerne eine kurze Pause.\n\nBitte dr\u00fccke die 'F'-Taste, wenn sich die Elemente unabh\u00e4ngig voneinander bewegen (Elementbewegung), und die 'J'-Taste, wenn sich die Elemente gemeinsam  bewegen (Gruppenbewegung).\n\nDr\u00fccke die Leertaste, um mit dem n\u00e4chsten Block fortzufahren.&quot;);&amp;#10;if ((blockNumber === 10)) {&amp;#10;    breakText = ((&quot;Sehr gut! Du hast Block &quot; + blockNumber.toString()) + &quot; von 10 abgeschlossen.\n\nDie Testphase ist damit beendet!\n\nAls Letztes musst du noch einen kurzen Fragebogen zu deiner Erfahrung ausf\u00fcllen.\n\nDr\u00fccke die Leertaste, um fortzufahren.&quot;);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="blockNumber += 1&amp;#10;&amp;#10;breakText = (&amp;#10;    &quot;Sehr gut! Du hast Block &quot; +str(blockNumber) + &quot; von 10 abgeschlossen.\n\n&quot;&amp;#10;    &quot;Mach gerne eine kurze Pause.\n\n&quot;&amp;#10;    &quot;Bitte drücke die 'F'-Taste, wenn sich die Elemente unabhängig voneinander bewegen &quot;&amp;#10;    &quot;(Elementbewegung), und die 'J'-Taste, wenn sich die Elemente gemeinsam &quot;&amp;#10;    &quot; bewegen (Gruppenbewegung).\n\n&quot;&amp;#10;    &quot;Drücke die Leertaste, um mit dem nächsten Block fortzufahren.&quot;&amp;#10;)&amp;#10;&amp;#10;&amp;#10;if blockNumber == 10:&amp;#10;    breakText = (&amp;#10;    &quot;Sehr gut! Du hast Block &quot; +str(blockNumber) + &quot; von 10 abgeschlossen.\n\n&quot;&amp;#10;    &quot;Die Testphase ist damit beendet!\n\n&quot;&amp;#10;    &quot;Als Letztes musst du noch einen kurzen Fragebogen zu deiner Erfahrung ausfüllen.\n\n&quot;&amp;#10;    &quot;Drücke die Leertaste, um fortzufahren.&quot;&amp;#10;)&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -1352,7 +1352,7 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
       <TextComponent name="textBlockInstructions" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1459,7 +1459,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1472,6 +1472,40 @@
       </PolygonComponent>
     </Routine>
     <Routine name="InstructionScreen">
+      <CodeComponent name="codeGroupTracker" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="participantID = int(expInfo[&quot;participant&quot;])&amp;#10;&amp;#10;if participantID % 2 == 1:&amp;#10;    group = &quot;A&quot;&amp;#10;else:&amp;#10;    group = &quot;B&quot;&amp;#10;&amp;#10;thisExp.addData(&quot;group&quot;, group)&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="participantID = Number.parseInt(expInfo[&quot;participant&quot;]);&amp;#10;if (((participantID % 2) === 1)) {&amp;#10;    group = &quot;A&quot;;&amp;#10;} else {&amp;#10;    group = &quot;B&quot;;&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;group&quot;, group);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="codeGroupTracker" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <CodeComponent name="codeDimensionsAndPositions" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="blockNumber = 0&amp;#10;ternusDuration = 0.2&amp;#10;&amp;#10;ternusDiameter = (2.8)&amp;#10;fixationCrossDim = (0.3, 0.3)&amp;#10;PortalBarrierDim = (0.2, 3.2)&amp;#10;portalLeftPos = (-8, 3)&amp;#10;portalRightPos = (8, 3)&amp;#10;barrierPos = (4,3)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="blockNumber = 0;&amp;#10;ternusDuration = 0.2;&amp;#10;ternusDiameter = 2.8;&amp;#10;fixationCrossDim = [0.3, 0.3];&amp;#10;PortalBarrierDim = [0.2, 3.2];&amp;#10;portalLeftPos = [(- 8), 3];&amp;#10;portalRightPos = [8, 3];&amp;#10;barrierPos = [4, 3];&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="codeDimensionsAndPositions" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="InstructionScreen" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -1509,7 +1543,7 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
       <TextComponent name="textInstructions" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1530,7 +1564,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Im folgenden Teil der Studie siehst du wiederholt kurze Abfolgen von drei Kreisen. &amp;#10;&amp;#10;Zwischen den beiden Darstellungen können die Kreise auf unterschiedliche Weise wahrgenommen werden:&amp;#10;&amp;#10;&amp;#10;• Bei einer Gruppenbewegung scheinen sich alle drei Kreise gemeinsam als Gruppe zu bewegen.&amp;#10;&amp;#10;• Bei einer Elementbewegung entsteht der Eindruck, dass zwei Kreise ihre Position beibehalten, während ein weiterer Kreis verschwindet und auf der gegenüberliegenden Seite wieder erscheint.&amp;#10;&amp;#10;Deine Aufgabe besteht darin, bei jedem Durchgang anzugeben, welche Wahrnehmung du hattest.&amp;#10;&amp;#10;Drücke:&amp;#10;&amp;#10;F = Elementbewegung&amp;#10;&amp;#10;J = Gruppenbewegung&amp;#10;&amp;#10;Es gibt keine richtigen oder falschen Antworten. Bitte gib jeweils die Wahrnehmung an, die deinem Eindruck am besten entspricht.&amp;#10;&amp;#10; Zunächst siehst du zwei Beispiele und bearbeitest anschließend einige Übungsdurchgänge.&amp;#10;&amp;#10;Bitte fixiere während aller Durchgänge das Fixationskreuz in der Bildschirmmitte.&amp;#10;&amp;#10;Drücke die Leertaste, um fortzufahren." valType="str" updates="constant" name="text"/>
+        <Param val="Im folgenden Teil der Studie siehst du wiederholt kurze Abfolgen von drei Kreisen. &amp;#10;&amp;#10;Zwischen den beiden Darstellungen können die Kreise auf unterschiedliche Weise wahrgenommen werden:&amp;#10;&amp;#10;• Bei einer Elementbewegung entsteht der Eindruck, dass zwei Kreise ihre Position beibehalten, während ein weiterer Kreis verschwindet und auf der gegenüberliegenden Seite wieder erscheint.&amp;#10;&amp;#10;&amp;#10;• Bei einer Gruppenbewegung scheinen sich alle drei Kreise gemeinsam als Gruppe zu bewegen.&amp;#10;&amp;#10;Deine Aufgabe besteht darin, bei jedem Durchgang anzugeben, welche Wahrnehmung du hattest.&amp;#10;&amp;#10;Drücke:&amp;#10;&amp;#10;F = Elementbewegung&amp;#10;&amp;#10;J = Gruppenbewegung&amp;#10;&amp;#10;Es gibt keine richtigen oder falschen Antworten. Bitte gib jeweils die Wahrnehmung an, die deinem Eindruck am besten entspricht.&amp;#10;&amp;#10; Zunächst siehst du zwei Beispiele und bearbeitest anschließend einige Übungsdurchgänge.&amp;#10;&amp;#10;Bitte fixiere während aller Durchgänge das Fixationskreuz in der Bildschirmmitte.&amp;#10;&amp;#10;Drücke die Leertaste, um fortzufahren." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -1571,7 +1605,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1621,7 +1655,7 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
       <TextComponent name="textElementMotion" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1642,7 +1676,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Bei sehr kurzen Unterbrechungen entsteht häufig der Eindruck einer Elementbewegung.&amp;#10;&amp;#10;&amp;#10;&amp;#10;Bei kurzen Unterbrechungen entsteht häufig der Eindruck einer Elementbewegung. Dabei scheinen zwei Kreise ihre Position beizubehalten, während ein weiterer Kreis auf der gegenüberliegenden Seite erscheint.&amp;#10;&amp;#10;&amp;#10;&amp;#10;Drücke die Leertaste, um fortzufahren." valType="str" updates="constant" name="text"/>
+        <Param val="Bei kurzen Unterbrechungen entsteht häufig der Eindruck einer Elementbewegung. &amp;#10;&amp;#10;Dabei scheinen zwei Kreise ihre Position beizubehalten, während ein weiterer Kreis auf der gegenüberliegenden Seite erscheint.&amp;#10;&amp;#10;&amp;#10;&amp;#10;Drücke die Leertaste, um das Beispiel zu sehen.&amp;#10;Lass deinen Blick dabei auf dem Fixationskreuz ruhen." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -1686,7 +1720,7 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
       <TextComponent name="textGroupMotion" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -1707,7 +1741,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Bei längeren Unterbrechungen entsteht häufig der Eindruck einer Gruppenbewegung.&amp;#10;&amp;#10;&amp;#10;&amp;#10;Dabei scheinen sich alle drei Kreise gemeinsam als Gruppe zu bewegen.&amp;#10;&amp;#10;&amp;#10;&amp;#10;Drücke die Leertaste, um mit den Übungsdurchgängen zu beginnen.&amp;#10;&amp;#10;Dabei musst du nach jeder Bewegung deinen Eindruck angeben, ob es sich um eine Elementbewegung ('F'-Taste) oder eine Gruppenbewegung ('J'-Taste) handelte.&amp;#10;&amp;#10;Bitte halte während aller Durchgänge deinen Blick auf das Fixationskreuz in der Bildschirmmitte gerichtet." valType="str" updates="constant" name="text"/>
+        <Param val="Bei längeren Unterbrechungen entsteht häufig der Eindruck einer Gruppenbewegung.&amp;#10;&amp;#10;&amp;#10;Dabei scheinen sich alle drei Kreise gemeinsam als Gruppe zu bewegen.&amp;#10;&amp;#10;&amp;#10;Drücke die Leertaste, um das Beispiel zu sehen." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -1733,10 +1767,10 @@
       <CodeComponent name="codeObjectParametersPractice" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="blockNumber = 0&amp;#10;ternusDuration = 0.2&amp;#10;&amp;#10;# default Frame 2 Ternus colors&amp;#10;leftFrame2_Color = &quot;black&quot;&amp;#10;middleFrame2_Color = &quot;black&quot;&amp;#10;rightFrame2_Color = &quot;black&quot;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="blockNumber = 0;&amp;#10;ternusDuration = 0.2;&amp;#10;leftFrame2_Color = &quot;black&quot;;&amp;#10;middleFrame2_Color = &quot;black&quot;;&amp;#10;rightFrame2_Color = &quot;black&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="colorList = [&quot;#E41A1C&quot;, &quot;#377EB8&quot;, &quot;#4DAF4A&quot;, &quot;#984EA3&quot;, &quot;#FF7F00&quot;, &quot;#A65628&quot;, &quot;#F781BF&quot;, &quot;#1B9E77&quot;];&amp;#10;causalColor = np.random.choice(colorList);&amp;#10;direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;]);&amp;#10;if ((direction === &quot;LR&quot;)) {&amp;#10;    leftFrame1_Pos = [(- 3), 2];&amp;#10;    middleFrame1_Pos = [(- 1), 2];&amp;#10;    rightFrame1_Pos = [1, 2];&amp;#10;    leftFrame2_Pos = [(- 1), 2];&amp;#10;    middleFrame2_Pos = [1, 2];&amp;#10;    rightFrame2_Pos = [3, 2];&amp;#10;} else {&amp;#10;    if ((direction === &quot;RL&quot;)) {&amp;#10;        leftFrame1_Pos = [(- 1), 2];&amp;#10;        middleFrame1_Pos = [1, 2];&amp;#10;        rightFrame1_Pos = [3, 2];&amp;#10;        leftFrame2_Pos = [(- 3), 2];&amp;#10;        middleFrame2_Pos = [(- 1), 2];&amp;#10;        rightFrame2_Pos = [1, 2];&amp;#10;    }&amp;#10;}&amp;#10;portalOpacity = 0;&amp;#10;barrierOpacity = 0;&amp;#10;barrierPos = [2, 2];&amp;#10;ternusColor = &quot;black&quot;;&amp;#10;leftFrame2_Color = &quot;black&quot;;&amp;#10;middleFrame2_Color = &quot;black&quot;;&amp;#10;rightFrame2_Color = &quot;black&quot;;&amp;#10;if ((conditions_practice === &quot;Portal&quot;)) {&amp;#10;    portalOpacity = 1;&amp;#10;    barrierOpacity = 0;&amp;#10;} else {&amp;#10;    if ((conditions_practice === &quot;Barrier&quot;)) {&amp;#10;        portalOpacity = 0;&amp;#10;        barrierOpacity = 1;&amp;#10;    } else {&amp;#10;        if ((conditions_practice === &quot;Standard&quot;)) {&amp;#10;            portalOpacity = 0;&amp;#10;            barrierOpacity = 0;&amp;#10;            ternusColor = &quot;black&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if (((conditions_practice === &quot;Portal&quot;) || (conditions_practice === &quot;Barrier&quot;))) {&amp;#10;    if ((direction === &quot;LR&quot;)) {&amp;#10;        rightFrame2_Color = causalColor;&amp;#10;        barrierPos = [2, 2];&amp;#10;    } else {&amp;#10;        if ((direction === &quot;RL&quot;)) {&amp;#10;            leftFrame2_Color = causalColor;&amp;#10;            barrierPos = [(- 2), 2];&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;causalColor&quot;, causalColor);&amp;#10;psychoJS.experiment.addData(&quot;direction&quot;, direction);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="colorList = [&amp;#10;    &quot;#E41A1C&quot;,  # red&amp;#10;    &quot;#377EB8&quot;,  # blue&amp;#10;    &quot;#4DAF4A&quot;,  # green&amp;#10;    &quot;#984EA3&quot;,  # purple&amp;#10;    &quot;#FF7F00&quot;,  # orange&amp;#10;    &quot;#A65628&quot;,  # brown&amp;#10;    &quot;#F781BF&quot;,  # pink&amp;#10;    &quot;#1B9E77&quot;   # teal&amp;#10;]&amp;#10;&amp;#10;causalColor = np.random.choice(colorList)&amp;#10;&amp;#10;direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;])&amp;#10;&amp;#10;if direction == &quot;LR&quot;:&amp;#10;    leftFrame1_Pos = (-3, 2)&amp;#10;    middleFrame1_Pos = (-1, 2)&amp;#10;    rightFrame1_Pos = (1, 2)&amp;#10;&amp;#10;    leftFrame2_Pos = (-1, 2)&amp;#10;    middleFrame2_Pos = (1, 2)&amp;#10;    rightFrame2_Pos = (3, 2)&amp;#10;&amp;#10;elif direction == &quot;RL&quot;:&amp;#10;    leftFrame1_Pos = (-1, 2)&amp;#10;    middleFrame1_Pos = (1, 2)&amp;#10;    rightFrame1_Pos = (3, 2)&amp;#10;&amp;#10;    leftFrame2_Pos = (-3, 2)&amp;#10;    middleFrame2_Pos = (-1, 2)&amp;#10;    rightFrame2_Pos = (1, 2)&amp;#10;&amp;#10;# default: invisible causal objects&amp;#10;portalOpacity = 0&amp;#10;barrierOpacity = 0&amp;#10;barrierPos = (2,2)&amp;#10;&amp;#10;# default Ternus color&amp;#10;ternusColor = &quot;black&quot;&amp;#10;&amp;#10;# reset every trial&amp;#10;leftFrame2_Color = &quot;black&quot;&amp;#10;middleFrame2_Color = &quot;black&quot;&amp;#10;rightFrame2_Color = &quot;black&quot;&amp;#10;&amp;#10;if conditions_practice == &quot;Portal&quot;:&amp;#10;    portalOpacity = 1&amp;#10;    barrierOpacity = 0&amp;#10;&amp;#10;&amp;#10;elif conditions_practice == &quot;Barrier&quot;:&amp;#10;    portalOpacity = 0&amp;#10;    barrierOpacity = 1&amp;#10;&amp;#10;&amp;#10;elif conditions_practice == &quot;Standard&quot;:&amp;#10;    portalOpacity = 0&amp;#10;    barrierOpacity = 0&amp;#10;    ternusColor = &quot;black&quot;&amp;#10;&amp;#10;# color-change only in Portal/Barrier&amp;#10;if conditions_practice == &quot;Portal&quot; or conditions_practice == &quot;Barrier&quot;:&amp;#10;    if direction == &quot;LR&quot;:&amp;#10;        rightFrame2_Color = causalColor&amp;#10;        barrierPos = (2,2)&amp;#10;    elif direction == &quot;RL&quot;:&amp;#10;        leftFrame2_Color = causalColor&amp;#10;        barrierPos = (-2,2)&amp;#10;&amp;#10;thisExp.addData(&quot;causalColor&quot;, causalColor)&amp;#10;thisExp.addData(&quot;direction&quot;, direction)" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="# default Frame 2 Ternus colors&amp;#10;leftFrame2_Color = &quot;black&quot;&amp;#10;middleFrame2_Color = &quot;black&quot;&amp;#10;rightFrame2_Color = &quot;black&quot;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="leftFrame2_Color = &quot;black&quot;;&amp;#10;middleFrame2_Color = &quot;black&quot;;&amp;#10;rightFrame2_Color = &quot;black&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="colorList = [&quot;#E41A1C&quot;, &quot;#1E88E5&quot;, &quot;#2EBD59&quot;, &quot;#C200FB&quot;];&amp;#10;causalColor = np.random.choice(colorList);&amp;#10;direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;]);&amp;#10;if ((direction === &quot;LR&quot;)) {&amp;#10;    leftFrame1_Pos = [(- 6), 3];&amp;#10;    middleFrame1_Pos = [(- 2), 3];&amp;#10;    rightFrame1_Pos = [2, 3];&amp;#10;    leftFrame2_Pos = [(- 2), 3];&amp;#10;    middleFrame2_Pos = [2, 3];&amp;#10;    rightFrame2_Pos = [6, 3];&amp;#10;} else {&amp;#10;    if ((direction === &quot;RL&quot;)) {&amp;#10;        leftFrame1_Pos = [(- 2), 3];&amp;#10;        middleFrame1_Pos = [2, 3];&amp;#10;        rightFrame1_Pos = [6, 3];&amp;#10;        leftFrame2_Pos = [(- 6), 3];&amp;#10;        middleFrame2_Pos = [(- 2), 3];&amp;#10;        rightFrame2_Pos = [2, 3];&amp;#10;    }&amp;#10;}&amp;#10;portalOpacity = 0;&amp;#10;barrierOpacity = 0;&amp;#10;barrierPos = [2, 2];&amp;#10;ternusColor = &quot;black&quot;;&amp;#10;leftFrame2_Color = &quot;black&quot;;&amp;#10;middleFrame2_Color = &quot;black&quot;;&amp;#10;rightFrame2_Color = &quot;black&quot;;&amp;#10;if ((conditions_practice === &quot;Portal&quot;)) {&amp;#10;    portalOpacity = 1;&amp;#10;    barrierOpacity = 0;&amp;#10;} else {&amp;#10;    if ((conditions_practice === &quot;Barrier&quot;)) {&amp;#10;        portalOpacity = 0;&amp;#10;        barrierOpacity = 1;&amp;#10;    } else {&amp;#10;        if ((conditions_practice === &quot;Standard&quot;)) {&amp;#10;            portalOpacity = 0;&amp;#10;            barrierOpacity = 0;&amp;#10;            ternusColor = &quot;black&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if (((conditions_practice === &quot;Portal&quot;) || (conditions_practice === &quot;Barrier&quot;))) {&amp;#10;    if ((direction === &quot;LR&quot;)) {&amp;#10;        rightFrame2_Color = causalColor;&amp;#10;        barrierPos = [4, 3];&amp;#10;    } else {&amp;#10;        if ((direction === &quot;RL&quot;)) {&amp;#10;            leftFrame2_Color = causalColor;&amp;#10;            barrierPos = [(- 4), 3];&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;causalColor&quot;, causalColor);&amp;#10;psychoJS.experiment.addData(&quot;direction&quot;, direction);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="colorList = [&amp;#10;    &quot;#E41A1C&quot;,  # red&amp;#10;    &quot;#1E88E5&quot;,  # blue&amp;#10;    &quot;#2EBD59&quot;,  # green&amp;#10;    &quot;#C200FB&quot;,  # purple&amp;#10;]&amp;#10;&amp;#10;causalColor = np.random.choice(colorList)&amp;#10;&amp;#10;direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;])&amp;#10;&amp;#10;if direction == &quot;LR&quot;:&amp;#10;    leftFrame1_Pos = (-6, 3)&amp;#10;    middleFrame1_Pos = (-2, 3)&amp;#10;    rightFrame1_Pos = (2, 3)&amp;#10;&amp;#10;    leftFrame2_Pos = (-2, 3)&amp;#10;    middleFrame2_Pos = (2, 3)&amp;#10;    rightFrame2_Pos = (6, 3)&amp;#10;&amp;#10;elif direction == &quot;RL&quot;:&amp;#10;    leftFrame1_Pos = (-2, 3)&amp;#10;    middleFrame1_Pos = (2, 3)&amp;#10;    rightFrame1_Pos = (6, 3)&amp;#10;&amp;#10;    leftFrame2_Pos = (-6, 3)&amp;#10;    middleFrame2_Pos = (-2, 3)&amp;#10;    rightFrame2_Pos = (2, 3)&amp;#10;&amp;#10;# default: invisible causal objects&amp;#10;portalOpacity = 0&amp;#10;barrierOpacity = 0&amp;#10;barrierPos = (2,2)&amp;#10;&amp;#10;# default Ternus color&amp;#10;ternusColor = &quot;black&quot;&amp;#10;&amp;#10;# reset every trial&amp;#10;leftFrame2_Color = &quot;black&quot;&amp;#10;middleFrame2_Color = &quot;black&quot;&amp;#10;rightFrame2_Color = &quot;black&quot;&amp;#10;&amp;#10;if conditions_practice == &quot;Portal&quot;:&amp;#10;    portalOpacity = 1&amp;#10;    barrierOpacity = 0&amp;#10;&amp;#10;&amp;#10;elif conditions_practice == &quot;Barrier&quot;:&amp;#10;    portalOpacity = 0&amp;#10;    barrierOpacity = 1&amp;#10;&amp;#10;&amp;#10;elif conditions_practice == &quot;Standard&quot;:&amp;#10;    portalOpacity = 0&amp;#10;    barrierOpacity = 0&amp;#10;    ternusColor = &quot;black&quot;&amp;#10;&amp;#10;# color-change only in Portal/Barrier&amp;#10;if conditions_practice == &quot;Portal&quot; or conditions_practice == &quot;Barrier&quot;:&amp;#10;    if direction == &quot;LR&quot;:&amp;#10;        rightFrame2_Color = causalColor&amp;#10;        barrierPos = (4,3)&amp;#10;    elif direction == &quot;RL&quot;:&amp;#10;        leftFrame2_Color = causalColor&amp;#10;        barrierPos = (-4,3)&amp;#10;&amp;#10;thisExp.addData(&quot;causalColor&quot;, causalColor)&amp;#10;thisExp.addData(&quot;direction&quot;, direction)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -1765,7 +1799,7 @@
         <Param val="leftFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1794,7 +1828,7 @@
         <Param val="middleFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1823,7 +1857,7 @@
         <Param val="rightFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1852,7 +1886,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1878,10 +1912,10 @@
         <Param val="portalLeftPrac" valType="code" updates="None" name="name"/>
         <Param val="portalOpacity" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-4, 2)" valType="list" updates="constant" name="pos"/>
+        <Param val="portalLeftPos" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1907,10 +1941,10 @@
         <Param val="portalRightPrac" valType="code" updates="None" name="name"/>
         <Param val="portalOpacity" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(4, 2)" valType="list" updates="constant" name="pos"/>
+        <Param val="portalRightPos" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1939,7 +1973,7 @@
         <Param val="barrierPos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2006,7 +2040,7 @@
         <Param val="leftFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2035,7 +2069,7 @@
         <Param val="middleFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2064,7 +2098,7 @@
         <Param val="rightFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2093,7 +2127,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2119,10 +2153,10 @@
         <Param val="portalLeftPrac_2" valType="code" updates="None" name="name"/>
         <Param val="portalOpacity" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-4, 2)" valType="list" updates="constant" name="pos"/>
+        <Param val="portalLeftPos" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2148,10 +2182,10 @@
         <Param val="portalRightPrac_2" valType="code" updates="None" name="name"/>
         <Param val="portalOpacity" valType="num" updates="set every repeat" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(4, 2)" valType="list" updates="constant" name="pos"/>
+        <Param val="portalRightPos" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2180,7 +2214,7 @@
         <Param val="barrierPos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(0.1, 2)" valType="list" updates="constant" name="size"/>
+        <Param val="PortalBarrierDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2227,7 +2261,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2502,8 +2536,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;]);&amp;#10;psychoJS.experiment.addData(&quot;direction&quot;, direction);&amp;#10;if ((direction === &quot;LR&quot;)) {&amp;#10;    leftFrame1_Pos = [(- 3), 2];&amp;#10;    middleFrame1_Pos = [(- 1), 2];&amp;#10;    rightFrame1_Pos = [1, 2];&amp;#10;    leftFrame2_Pos = [(- 1), 2];&amp;#10;    middleFrame2_Pos = [1, 2];&amp;#10;    rightFrame2_Pos = [3, 2];&amp;#10;} else {&amp;#10;    if ((direction === &quot;RL&quot;)) {&amp;#10;        leftFrame1_Pos = [(- 1), 2];&amp;#10;        middleFrame1_Pos = [1, 2];&amp;#10;        rightFrame1_Pos = [3, 2];&amp;#10;        leftFrame2_Pos = [(- 3), 2];&amp;#10;        middleFrame2_Pos = [(- 1), 2];&amp;#10;        rightFrame2_Pos = [1, 2];&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;])&amp;#10;thisExp.addData(&quot;direction&quot;, direction)&amp;#10;&amp;#10;if direction == &quot;LR&quot;:&amp;#10;    leftFrame1_Pos = (-3, 2)&amp;#10;    middleFrame1_Pos = (-1, 2)&amp;#10;    rightFrame1_Pos = (1, 2)&amp;#10;&amp;#10;    leftFrame2_Pos = (-1, 2)&amp;#10;    middleFrame2_Pos = (1, 2)&amp;#10;    rightFrame2_Pos = (3, 2)&amp;#10;&amp;#10;elif direction == &quot;RL&quot;:&amp;#10;    leftFrame1_Pos = (-1, 2)&amp;#10;    middleFrame1_Pos = (1, 2)&amp;#10;    rightFrame1_Pos = (3, 2)&amp;#10;&amp;#10;    leftFrame2_Pos = (-3, 2)&amp;#10;    middleFrame2_Pos = (-1, 2)&amp;#10;    rightFrame2_Pos = (1, 2)" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;]);&amp;#10;psychoJS.experiment.addData(&quot;direction&quot;, direction);&amp;#10;if ((direction === &quot;LR&quot;)) {&amp;#10;    leftFrame1_Pos = [(- 6), 3];&amp;#10;    middleFrame1_Pos = [(- 2), 3];&amp;#10;    rightFrame1_Pos = [2, 3];&amp;#10;    leftFrame2_Pos = [(- 2), 3];&amp;#10;    middleFrame2_Pos = [2, 3];&amp;#10;    rightFrame2_Pos = [6, 3];&amp;#10;} else {&amp;#10;    if ((direction === &quot;RL&quot;)) {&amp;#10;        leftFrame1_Pos = [(- 2), 3];&amp;#10;        middleFrame1_Pos = [2, 3];&amp;#10;        rightFrame1_Pos = [6, 3];&amp;#10;        leftFrame2_Pos = [(- 6), 3];&amp;#10;        middleFrame2_Pos = [(- 2), 3];&amp;#10;        rightFrame2_Pos = [2, 3];&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="direction = np.random.choice([&quot;LR&quot;, &quot;RL&quot;])&amp;#10;thisExp.addData(&quot;direction&quot;, direction)&amp;#10;&amp;#10;if direction == &quot;LR&quot;:&amp;#10;    leftFrame1_Pos = (-6, 3)&amp;#10;    middleFrame1_Pos = (-2, 3)&amp;#10;    rightFrame1_Pos = (2, 3)&amp;#10;&amp;#10;    leftFrame2_Pos = (-2, 3)&amp;#10;    middleFrame2_Pos = (2, 3)&amp;#10;    rightFrame2_Pos = (6, 3)&amp;#10;&amp;#10;elif direction == &quot;RL&quot;:&amp;#10;    leftFrame1_Pos = (-2, 3)&amp;#10;    middleFrame1_Pos = (2, 3)&amp;#10;    rightFrame1_Pos = (6, 3)&amp;#10;&amp;#10;    leftFrame2_Pos = (-6, 3)&amp;#10;    middleFrame2_Pos = (-2, 3)&amp;#10;    rightFrame2_Pos = (2, 3)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -2532,7 +2566,7 @@
         <Param val="leftFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2561,7 +2595,7 @@
         <Param val="middleFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2590,7 +2624,7 @@
         <Param val="rightFrame1_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2619,7 +2653,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2666,7 +2700,7 @@
         <Param val="leftFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2695,7 +2729,7 @@
         <Param val="middleFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2724,7 +2758,7 @@
         <Param val="rightFrame2_Pos" valType="list" updates="set every repeat" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="circle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.6)" valType="list" updates="constant" name="size"/>
+        <Param val="ternusDiameter" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2753,7 +2787,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="fixationCrossDim" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2765,9 +2799,392 @@
         <Param val="" valType="list" updates="constant" name="vertices"/>
       </PolygonComponent>
     </Routine>
+    <Routine name="PracticeExplained">
+      <RoutineSettingsComponent name="PracticeExplained" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="PracticeExplained" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <KeyboardComponent name="keyPracticeStart" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="keyPracticeStart" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <TextComponent name="textPracticeExplained" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.025" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="textPracticeExplained" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Drücke die Leertaste, um mit den Übungsdurchgängen zu beginnen.&amp;#10;&amp;#10;Dabei musst du nach jeder Bewegung deinen Eindruck angeben, ob es sich um eine Elementbewegung ('F'-Taste) oder eine Gruppenbewegung ('J'-Taste) handelte.&amp;#10;&amp;#10;Bitte halte während aller Durchgänge deinen Blick auf das Fixationskreuz in der Bildschirmmitte gerichtet." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="colorTest">
+      <RoutineSettingsComponent name="colorTest" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="colorTest" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <KeyboardComponent name="keyColorTest" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="keyColorTest" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <PolygonComponent name="redCircle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="#E41A1C" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="#E41A1C" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="redCircle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="blueCircle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="#2196F3" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="#2196F3" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="blueCircle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(4, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="greenCircle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="#32CD32" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="#32CD32" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="greenCircle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(3, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="purpleCircle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="#7F00FF" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="#7F00FF" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="purpleCircle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(2, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="orangeCircle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="#c200fb" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="#c200fb" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="orangeCircle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(1, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="brownCircle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="#007ad1" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="#007ad1" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="brownCircle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="pinkCircle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="#3f8700" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="#3f8700" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="pinkCircle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-1, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="tealCircle" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="#ee002c" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="#ee002c" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="tealCircle" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-2, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="circle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="blank500">
+      <RoutineSettingsComponent name="blank500" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="blank500" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="blankText500" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="blankText500" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
   </Routines>
   <Flow>
+    <Routine name="colorTest"/>
     <Routine name="InstructionScreen"/>
+    <Routine name="elementMotionExplained"/>
+    <Routine name="blank800"/>
     <LoopInitiator loopType="TrialHandler" name="elementMotionDemo">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -2783,7 +3200,8 @@
     <Routine name="exampleFrame2"/>
     <Routine name="blank800"/>
     <LoopTerminator name="elementMotionDemo"/>
-    <Routine name="elementMotionExplained"/>
+    <Routine name="groupMotionExplained"/>
+    <Routine name="blank800"/>
     <LoopInitiator loopType="TrialHandler" name="groupMotionDemo">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -2800,7 +3218,8 @@
     <Routine name="exampleFrame2"/>
     <Routine name="blank800"/>
     <LoopTerminator name="groupMotionDemo"/>
-    <Routine name="groupMotionExplained"/>
+    <Routine name="PracticeExplained"/>
+    <Routine name="blank800"/>
     <LoopInitiator loopType="TrialHandler" name="practiceLoop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'conditions_practice': 'Portal', 'ISI_practice': 0}, {'conditions_practice': 'Portal', 'ISI_practice': 0.02}, {'conditions_practice': 'Portal', 'ISI_practice': 0.08}, {'conditions_practice': 'Portal', 'ISI_practice': 0.16}, {'conditions_practice': 'Barrier', 'ISI_practice': 0}, {'conditions_practice': 'Barrier', 'ISI_practice': 0.02}, {'conditions_practice': 'Barrier', 'ISI_practice': 0.08}, {'conditions_practice': 'Barrier', 'ISI_practice': 0.16}, {'conditions_practice': 'Standard', 'ISI_practice': 0}, {'conditions_practice': 'Standard', 'ISI_practice': 0.02}, {'conditions_practice': 'Standard', 'ISI_practice': 0.08}, {'conditions_practice': 'Standard', 'ISI_practice': 0.16}]" valType="str"/>
@@ -2815,9 +3234,11 @@
     <Routine name="practiceFrame1"/>
     <Routine name="blankISI_Practice"/>
     <Routine name="practiceFrame2"/>
+    <Routine name="blank500"/>
     <Routine name="blank800"/>
     <LoopTerminator name="practiceLoop"/>
     <Routine name="StartScreen"/>
+    <Routine name="blank800"/>
     <LoopInitiator loopType="TrialHandler" name="blockLoop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -2843,9 +3264,11 @@
     <Routine name="ternusFrame1"/>
     <Routine name="blankISI"/>
     <Routine name="ternusFrame2"/>
+    <Routine name="blank500"/>
     <Routine name="blank800"/>
     <LoopTerminator name="trialLoop"/>
     <Routine name="blockBreak"/>
+    <Routine name="blank800"/>
     <LoopTerminator name="blockLoop"/>
   </Flow>
 </PsychoPy2experiment>

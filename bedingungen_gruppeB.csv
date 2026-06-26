@@ -1,0 +1,9 @@
+typ,start_index,ziel_index,durchgang_index,farbe,loesung
+normal,1,3,0,gruen,right right
+normal,1,3,0,blau,right right
+normal,2,0,0,gruen,left left
+normal,2,0,0,blau,left left
+normal,1,3,0,rot,right right
+normal,1,3,0,lila,right right
+normal,2,0,0,rot,left left
+normal,2,0,0,lila,left left

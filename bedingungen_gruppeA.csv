@@ -1,0 +1,17 @@
+typ,start_index,ziel_index,durchgang_index,farbe,loesung
+durchgang,1,3,2,gruen,right right
+durchgang,1,3,2,blau,right right
+durchgang,2,0,0,gruen,left left
+durchgang,2,0,0,blau,left left
+portal,1,3,0,gruen,left left
+portal,1,3,0,blau,right right right right right right 
+portal,2,0,0,gruen,left left left left left left
+portal,2,0,0,blau,right right
+durchgang,1,3,2,rot,right right
+durchgang,1,3,2,lila,right right
+durchgang,2,0,0,rot,left left
+durchgang,2,0,0,lila,left left
+portal,1,3,0,rot,left left
+portal,1,3,0,lila,right right right right right right 
+portal,2,0,0,rot,left left left left left left
+portal,2,0,0,lila,right right
